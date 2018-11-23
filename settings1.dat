@@ -1,0 +1,18 @@
+# solver settings
+
+$NEWTON_TOLER 0.001 0.0001 0.0001 ;
+$FIN_DIFFER 0.00001 0.00001       ;
+$PLOT_STEP  0.001                 ;
+$GP_REFRESH_RATE 1.0              ;
+$DISP_PROF T                      ;
+$NB_THREADS 2                     ;
+$T_LOAD_REST 0.005                ;
+$FULL_UPDATE F                    ;
+$SKIP_CONV T                      ;
+$SCHEME DE                        ; 
+$OMEGA_REF COI                    ;
+$SPARSE_SOLVER KLU ;
+
+DCTL SIM_MINMAXVOLT MINMAXVOLT_Warning 0.85 1.10 5.0 1 ;
+DCTL SIM_MINMAXVOLT MINMAXVOLT_Stopping 0.7 1.20 5.0 0 ;
+# DCTL RT 1.0 ;
