@@ -1,0 +1,80 @@
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 21:26 15/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at       20.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       20.011000 CHGPRM EXC g1 V0 -0.05 0
+MESSAGE FROM DCTL sim_minmaxvolt MINMAXVOLT_Warning: 
+t =  124.5930         Voltage out of bounds at bus 1041 :  0.85
+STOP CALL FROM DCTL sim_minmaxvolt MINMAXVOLT_Stopping: 
+t =  167.5530         Voltage out of bounds at bus g6 :  0.70
+
+Total elapsed time                            8.1565 s
+CPU time per thread                           1.7656 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.1283 s ( 1.57 %)
+Reduced system elliminations & factorization (network)                     0.0181 s ( 0.22 %)
+Reduced system solution (TN network)                                       0.0458 s ( 0.56 %)
+Injector evaluation and solution                                           0.4222 s ( 5.18 %)
+Convergence checks at end of each N-I                                      0.1032 s ( 1.27 %)
+Discrete events and other at end of time step                              0.0322 s ( 0.39 %)
+Discrete controller computation (DCTL)                                     0.0197 s ( 0.24 %)
+Latency computation                                                        0.0003 s ( 0.00 %)
+Writing/displaying Observables                                             0.0601 s ( 0.74 %)
+Time step initialization                                                   0.2094 s ( 2.57 %)
+Remaining time                                                             7.0591 s (86.55 %)
+
+Average time step                             0.0200 s
+
+Time steps                       8390
+
+Network Jacobians                  28
+Network solutions               11231
+Network evaluations             28124
+Injector Jacobians              21916 (on average              509 per injector)
+Injector solutions             578592 (on average            13455 per injector)
+Injector evaluations          1758372 (on average            40892 per injector)
+ 
+**Simulation finished**
