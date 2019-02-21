@@ -18,6 +18,6 @@ plot 'temp_display.cur' using 1: 3 notitle
 set xrange [0 :      240.000 ]
 set xlabel 't (s)'
 set ylabel 'Omega (pu)'
-set title 'Machine g1
+set title 'Machine g2
 plot 'temp_display.cur' using 1: 4 notitle
 unset multiplot
