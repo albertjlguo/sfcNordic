@@ -1768,3 +1768,243 @@ Injector solutions             510835 (on average            11879 per injector)
 Injector evaluations          1526185 (on average            35492 per injector)
  
 **Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:34 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+Pausing at        1.000
+Pausing at        2.000
+Pausing at        3.000
+Pausing at        4.000
+Pausing at        5.000
+Pausing at        6.000
+Pausing at        7.000
+Pausing at        8.000
+Pausing at        9.000
+Pausing at       10.000
+Pausing at       11.000
+Pausing at       12.000
+Pausing at       13.000
+Pausing at       14.000
+Pausing at       15.000
+Pausing at       16.000
+Pausing at       17.000
+Pausing at       18.000
+Pausing at       19.000
+Pausing at       20.000
+Pausing at       21.000
+Pausing at       22.000
+Pausing at       23.000
+Pausing at       24.000
+Pausing at       25.000
+Pausing at       26.000
+Pausing at       27.000
+Pausing at       28.000
+Pausing at       29.000
+Pausing at       30.000
+Pausing at       31.000
+Pausing at       32.000
+Pausing at       33.000
+Pausing at       34.000
+Pausing at       35.000
+Pausing at       36.000
+Pausing at       37.000
+Pausing at       38.000
+Pausing at       39.000
+Pausing at       40.000
+Pausing at       41.000
+Pausing at       42.000
+Pausing at       43.000
+Pausing at       44.000
+Pausing at       45.000
+Pausing at       46.000
+Pausing at       47.000
+Pausing at       48.000
+Pausing at       49.000
+Pausing at       50.000
+Pausing at       51.000
+Pausing at       52.000
+Pausing at       53.000
+Pausing at       54.000
+Pausing at       55.000
+Pausing at       56.000
+Pausing at       57.000
+Pausing at       58.000
+Pausing at       59.000
+Pausing at       60.000
+Pausing at       61.000
+Pausing at       62.000
+Pausing at       63.000
+Pausing at       64.000
+Pausing at       65.000
+Pausing at       66.000
+Pausing at       67.000
+Pausing at       68.000
+Pausing at       69.000
+Pausing at       70.000
+Pausing at       71.000
+Pausing at       72.000
+Pausing at       73.000
+Pausing at       74.000
+Pausing at       75.000
+Pausing at       76.000
+Pausing at       77.000
+Pausing at       78.000
+Pausing at       79.000
+Pausing at       80.000
+Pausing at       81.000
+Pausing at       82.000
+Pausing at       83.000
+Pausing at       84.000
+Pausing at       85.000
+Pausing at       86.000
+Pausing at       87.000
+Pausing at       88.000
+Pausing at       89.000
+Pausing at       90.000
+Pausing at       91.000
+Pausing at       92.000
+Pausing at       93.000
+Pausing at       94.000
+Pausing at       95.000
+Pausing at       96.000
+Pausing at       97.000
+Pausing at       98.000
+Pausing at       99.000
+Pausing at      100.000
+Pausing at      101.000
+Pausing at      102.000
+Pausing at      103.000
+Pausing at      104.000
+Pausing at      105.000
+Pausing at      106.000
+Pausing at      107.000
+Pausing at      108.000
+Pausing at      109.000
+Pausing at      110.000
+Pausing at      111.000
+Pausing at      112.000
+Pausing at      113.000
+Pausing at      114.000
+Pausing at      115.000
+Pausing at      116.000
+Pausing at      117.000
+Pausing at      118.000
+Pausing at      119.000
+Pausing at      120.000
+Pausing at      121.000
+Pausing at      122.000
+Pausing at      123.000
+Pausing at      124.000
+Pausing at      125.000
+Pausing at      126.000
+Pausing at      127.000
+Pausing at      128.000
+Pausing at      129.000
+Pausing at      130.000
+MESSAGE FROM DCTL sim_minmaxvolt MINMAXVOLT_Warning: 
+t =  130.0200         Voltage out of bounds at bus 1041 :  0.85
+Pausing at      131.000
+Pausing at      132.000
+Pausing at      133.000
+Pausing at      134.000
+Pausing at      135.000
+Pausing at      136.000
+Pausing at      137.000
+Pausing at      138.000
+Pausing at      139.000
+Pausing at      140.000
+Pausing at      141.000
+Pausing at      142.000
+Pausing at      143.000
+Pausing at      144.000
+Pausing at      145.000
+Pausing at      146.000
+Pausing at      147.000
+Pausing at      148.000
+Pausing at      149.000
+Pausing at      150.000
+Pausing at      151.000
+Pausing at      152.000
+Pausing at      153.000
+Pausing at      154.000
+Pausing at      155.000
+Pausing at      156.000
+Pausing at      157.000
+Pausing at      158.000
+Pausing at      159.000
+Pausing at      160.000
+Pausing at      161.000
+Pausing at      162.000
+STOP CALL FROM DCTL sim_minmaxvolt MINMAXVOLT_Stopping: 
+t =  162.1600         Voltage out of bounds at bus g6 :  0.70
+
+Total elapsed time                           11.6002 s
+CPU time per thread                           2.2422 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.1619 s ( 1.40 %)
+Reduced system elliminations & factorization (network)                     0.0485 s ( 0.42 %)
+Reduced system solution (TN network)                                       0.0438 s ( 0.38 %)
+Injector evaluation and solution                                           0.4544 s ( 3.92 %)
+Convergence checks at end of each N-I                                      0.1077 s ( 0.93 %)
+Discrete events and other at end of time step                              0.0373 s ( 0.32 %)
+Discrete controller computation (DCTL)                                     0.0259 s ( 0.22 %)
+Latency computation                                                        0.0003 s ( 0.00 %)
+Writing/displaying Observables                                             0.0686 s ( 0.59 %)
+Time step initialization                                                   0.2333 s ( 2.01 %)
+Remaining time                                                            10.3724 s (89.42 %)
+
+Average time step                             0.0199 s
+
+Time steps                       8163
+
+Network Jacobians                 501
+Network solutions                9296
+Network evaluations             26079
+Injector Jacobians              26941 (on average              626 per injector)
+Injector solutions             536862 (on average            12485 per injector)
+Injector evaluations          1630752 (on average            37924 per injector)
+ 
+**Simulation finished**
