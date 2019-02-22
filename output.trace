@@ -2008,3 +2008,2414 @@ Injector solutions             536862 (on average            12485 per injector)
 Injector evaluations          1630752 (on average            37924 per injector)
  
 **Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:46 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:46 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0312 s
+CPU time per thread                           0.0234 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0004 s ( 1.14 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.24 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.13 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0011 s ( 3.43 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0307 s (98.33 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:47 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            7.7325 s
+CPU time per thread                           0.1094 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.00 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.00 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.00 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.00 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.00 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.00 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0009 s ( 0.01 %)
+Time step initialization                                                   0.0000 s ( 0.00 %)
+Remaining time                                                             7.7320 s (99.99 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:49 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+Pausing at        1.000
+Pausing at        2.000
+Pausing at        3.000
+Pausing at        4.000
+Pausing at        5.000
+Pausing at        6.000
+Pausing at        7.000
+Pausing at        8.000
+Pausing at        9.000
+Pausing at       10.000
+Pausing at       11.000
+Pausing at       12.000
+Pausing at       13.000
+Pausing at       14.000
+Pausing at       15.000
+Pausing at       16.000
+Pausing at       17.000
+Pausing at       18.000
+Pausing at       19.000
+Pausing at       20.000
+Pausing at       21.000
+Pausing at       22.000
+Pausing at       23.000
+Pausing at       24.000
+Pausing at       25.000
+Pausing at       26.000
+Pausing at       27.000
+Pausing at       28.000
+Pausing at       29.000
+Pausing at       30.000
+Pausing at       31.000
+Pausing at       32.000
+Pausing at       33.000
+Pausing at       34.000
+Pausing at       35.000
+Pausing at       36.000
+Pausing at       37.000
+Pausing at       38.000
+Pausing at       39.000
+Pausing at       40.000
+Pausing at       41.000
+Pausing at       42.000
+Pausing at       43.000
+Pausing at       44.000
+Pausing at       45.000
+Pausing at       46.000
+Pausing at       47.000
+Pausing at       48.000
+Pausing at       49.000
+Pausing at       50.000
+Pausing at       51.000
+Pausing at       52.000
+Pausing at       53.000
+Pausing at       54.000
+Pausing at       55.000
+Pausing at       56.000
+Pausing at       57.000
+Pausing at       58.000
+Pausing at       59.000
+Pausing at       60.000
+Pausing at       61.000
+Pausing at       62.000
+Pausing at       63.000
+Pausing at       64.000
+Pausing at       65.000
+Pausing at       66.000
+Pausing at       67.000
+Pausing at       68.000
+Pausing at       69.000
+Pausing at       70.000
+Pausing at       71.000
+Pausing at       72.000
+Pausing at       73.000
+Pausing at       74.000
+Pausing at       75.000
+Pausing at       76.000
+Pausing at       77.000
+Pausing at       78.000
+Pausing at       79.000
+Pausing at       80.000
+Pausing at       81.000
+Pausing at       82.000
+Pausing at       83.000
+Pausing at       84.000
+Pausing at       85.000
+Pausing at       86.000
+Pausing at       87.000
+Pausing at       88.000
+Pausing at       89.000
+Pausing at       90.000
+Pausing at       91.000
+Pausing at       92.000
+Pausing at       93.000
+Pausing at       94.000
+Pausing at       95.000
+Pausing at       96.000
+Pausing at       97.000
+Pausing at       98.000
+Pausing at       99.000
+Pausing at      100.000
+Pausing at      101.000
+Pausing at      102.000
+Pausing at      103.000
+Pausing at      104.000
+Pausing at      105.000
+Pausing at      106.000
+Pausing at      107.000
+Pausing at      108.000
+Pausing at      109.000
+Pausing at      110.000
+Pausing at      111.000
+Pausing at      112.000
+Pausing at      113.000
+Pausing at      114.000
+Pausing at      115.000
+Pausing at      116.000
+Pausing at      117.000
+Pausing at      118.000
+Pausing at      119.000
+Pausing at      120.000
+Pausing at      121.000
+Pausing at      122.000
+Pausing at      123.000
+Pausing at      124.000
+Pausing at      125.000
+Pausing at      126.000
+Pausing at      127.000
+Pausing at      128.000
+Pausing at      129.000
+Pausing at      130.000
+MESSAGE FROM DCTL sim_minmaxvolt MINMAXVOLT_Warning: 
+t =  130.0200         Voltage out of bounds at bus 1041 :  0.85
+Pausing at      131.000
+Pausing at      132.000
+Pausing at      133.000
+Pausing at      134.000
+Pausing at      135.000
+Pausing at      136.000
+Pausing at      137.000
+Pausing at      138.000
+Pausing at      139.000
+Pausing at      140.000
+Pausing at      141.000
+Pausing at      142.000
+Pausing at      143.000
+Pausing at      144.000
+Pausing at      145.000
+Pausing at      146.000
+Pausing at      147.000
+Pausing at      148.000
+Pausing at      149.000
+Pausing at      150.000
+Pausing at      151.000
+Pausing at      152.000
+Pausing at      153.000
+Pausing at      154.000
+Pausing at      155.000
+Pausing at      156.000
+Pausing at      157.000
+Pausing at      158.000
+Pausing at      159.000
+Pausing at      160.000
+Pausing at      161.000
+Pausing at      162.000
+STOP CALL FROM DCTL sim_minmaxvolt MINMAXVOLT_Stopping: 
+t =  162.1600         Voltage out of bounds at bus g6 :  0.70
+
+Total elapsed time                           16.4872 s
+CPU time per thread                           2.3125 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.1550 s ( 0.94 %)
+Reduced system elliminations & factorization (network)                     0.0475 s ( 0.29 %)
+Reduced system solution (TN network)                                       0.0437 s ( 0.27 %)
+Injector evaluation and solution                                           0.4608 s ( 2.79 %)
+Convergence checks at end of each N-I                                      0.1075 s ( 0.65 %)
+Discrete events and other at end of time step                              0.0374 s ( 0.23 %)
+Discrete controller computation (DCTL)                                     0.0260 s ( 0.16 %)
+Latency computation                                                        0.0003 s ( 0.00 %)
+Writing/displaying Observables                                             0.0690 s ( 0.42 %)
+Time step initialization                                                   0.2299 s ( 1.39 %)
+Remaining time                                                            15.2597 s (92.56 %)
+
+Average time step                             0.0199 s
+
+Time steps                       8163
+
+Network Jacobians                 501
+Network solutions                9296
+Network evaluations             26079
+Injector Jacobians              26941 (on average              626 per injector)
+Injector solutions             536862 (on average            12485 per injector)
+Injector evaluations          1630752 (on average            37924 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:51 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                           10.8295 s
+CPU time per thread                           0.1094 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.00 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.00 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.00 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.00 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.00 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.00 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 0.01 %)
+Time step initialization                                                   0.0000 s ( 0.00 %)
+Remaining time                                                            10.8290 s (***** %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:54 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                          123.8162 s
+CPU time per thread                           0.1016 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0004 s ( 0.00 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.00 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.00 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.00 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.00 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.00 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0010 s ( 0.00 %)
+Time step initialization                                                   0.0000 s ( 0.00 %)
+Remaining time                                                           123.8157 s (***** %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 12:58 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+Pausing at        1.000
+Pausing at        2.000
+Pausing at        3.000
+Pausing at        4.000
+Pausing at        5.000
+Pausing at        6.000
+Pausing at        7.000
+Pausing at        8.000
+Pausing at        9.000
+Pausing at       10.000
+Pausing at       11.000
+Pausing at       12.000
+Pausing at       13.000
+Pausing at       14.000
+Pausing at       15.000
+Pausing at       16.000
+Pausing at       17.000
+Pausing at       18.000
+Pausing at       19.000
+Pausing at       20.000
+Pausing at       21.000
+Pausing at       22.000
+Pausing at       23.000
+Pausing at       24.000
+Pausing at       25.000
+Pausing at       26.000
+Pausing at       27.000
+Pausing at       28.000
+Pausing at       29.000
+Pausing at       30.000
+Pausing at       31.000
+Pausing at       32.000
+Pausing at       33.000
+Pausing at       34.000
+Pausing at       35.000
+Pausing at       36.000
+Pausing at       37.000
+Pausing at       38.000
+Pausing at       39.000
+Pausing at       40.000
+Pausing at       41.000
+Pausing at       42.000
+Pausing at       43.000
+Pausing at       44.000
+Pausing at       45.000
+Pausing at       46.000
+Pausing at       47.000
+Pausing at       48.000
+Pausing at       49.000
+Pausing at       50.000
+Pausing at       51.000
+Pausing at       52.000
+Pausing at       53.000
+Pausing at       54.000
+Pausing at       55.000
+Pausing at       56.000
+Pausing at       57.000
+Pausing at       58.000
+Pausing at       59.000
+Pausing at       60.000
+Pausing at       61.000
+Pausing at       62.000
+Pausing at       63.000
+Pausing at       64.000
+Pausing at       65.000
+Pausing at       66.000
+Pausing at       67.000
+Pausing at       68.000
+Pausing at       69.000
+Pausing at       70.000
+Pausing at       71.000
+Pausing at       72.000
+Pausing at       73.000
+Pausing at       74.000
+Pausing at       75.000
+Pausing at       76.000
+Pausing at       77.000
+Pausing at       78.000
+Pausing at       79.000
+Pausing at       80.000
+Pausing at       81.000
+Pausing at       82.000
+Pausing at       83.000
+Pausing at       84.000
+Pausing at       85.000
+Pausing at       86.000
+Pausing at       87.000
+Pausing at       88.000
+Pausing at       89.000
+Pausing at       90.000
+Pausing at       91.000
+Pausing at       92.000
+Pausing at       93.000
+Pausing at       94.000
+Pausing at       95.000
+Pausing at       96.000
+Pausing at       97.000
+Pausing at       98.000
+Pausing at       99.000
+Pausing at      100.000
+Pausing at      101.000
+Pausing at      102.000
+Pausing at      103.000
+Pausing at      104.000
+Pausing at      105.000
+Pausing at      106.000
+Pausing at      107.000
+Pausing at      108.000
+Pausing at      109.000
+Pausing at      110.000
+Pausing at      111.000
+Pausing at      112.000
+Pausing at      113.000
+Pausing at      114.000
+Pausing at      115.000
+Pausing at      116.000
+Pausing at      117.000
+Pausing at      118.000
+Pausing at      119.000
+Pausing at      120.000
+Pausing at      121.000
+Pausing at      122.000
+Pausing at      123.000
+Pausing at      124.000
+Pausing at      125.000
+Pausing at      126.000
+Pausing at      127.000
+Pausing at      128.000
+Pausing at      129.000
+Pausing at      130.000
+MESSAGE FROM DCTL sim_minmaxvolt MINMAXVOLT_Warning: 
+t =  130.0200         Voltage out of bounds at bus 1041 :  0.85
+Pausing at      131.000
+Pausing at      132.000
+Pausing at      133.000
+Pausing at      134.000
+Pausing at      135.000
+Pausing at      136.000
+Pausing at      137.000
+Pausing at      138.000
+Pausing at      139.000
+Pausing at      140.000
+Pausing at      141.000
+Pausing at      142.000
+Pausing at      143.000
+Pausing at      144.000
+Pausing at      145.000
+Pausing at      146.000
+Pausing at      147.000
+Pausing at      148.000
+Pausing at      149.000
+Pausing at      150.000
+Pausing at      151.000
+Pausing at      152.000
+Pausing at      153.000
+Pausing at      154.000
+Pausing at      155.000
+Pausing at      156.000
+Pausing at      157.000
+Pausing at      158.000
+Pausing at      159.000
+Pausing at      160.000
+Pausing at      161.000
+Pausing at      162.000
+STOP CALL FROM DCTL sim_minmaxvolt MINMAXVOLT_Stopping: 
+t =  162.1600         Voltage out of bounds at bus g6 :  0.70
+
+Total elapsed time                           10.1190 s
+CPU time per thread                           2.1953 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.1499 s ( 1.48 %)
+Reduced system elliminations & factorization (network)                     0.0461 s ( 0.46 %)
+Reduced system solution (TN network)                                       0.0421 s ( 0.42 %)
+Injector evaluation and solution                                           0.4353 s ( 4.30 %)
+Convergence checks at end of each N-I                                      0.1039 s ( 1.03 %)
+Discrete events and other at end of time step                              0.0352 s ( 0.35 %)
+Discrete controller computation (DCTL)                                     0.0240 s ( 0.24 %)
+Latency computation                                                        0.0003 s ( 0.00 %)
+Writing/displaying Observables                                             0.0624 s ( 0.62 %)
+Time step initialization                                                   0.2218 s ( 2.19 %)
+Remaining time                                                             8.9491 s (88.44 %)
+
+Average time step                             0.0199 s
+
+Time steps                       8163
+
+Network Jacobians                 501
+Network solutions                9296
+Network evaluations             26079
+Injector Jacobians              26941 (on average              626 per injector)
+Injector solutions             536862 (on average            12485 per injector)
+Injector evaluations          1630752 (on average            37924 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:00 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0345 s
+CPU time per thread                           0.0156 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 1.01 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.20 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.11 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.06 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.05 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0011 s ( 3.15 %)
+Time step initialization                                                   0.0000 s ( 0.02 %)
+Remaining time                                                             0.0340 s (98.49 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:03 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0305 s
+CPU time per thread                           0.0234 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 1.05 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.32 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0001 s ( 0.18 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 3.88 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0300 s (98.29 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:06 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            6.2302 s
+CPU time per thread                           0.1172 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0004 s ( 0.01 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.00 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.00 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.00 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.00 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.00 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 0.02 %)
+Time step initialization                                                   0.0000 s ( 0.00 %)
+Remaining time                                                             6.2296 s (99.99 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:08 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 -0.25 0
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0307 s
+CPU time per thread                           0.0312 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.98 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.23 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.13 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 3.93 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0302 s (98.50 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:09 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+Pausing at        1.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        1.010000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        1.010000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        1.010000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        1.010000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        1.010000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:13 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg14Tm00.00
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg15Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg16Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg17Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TORg18Tm00.00
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0325 s
+CPU time per thread                           0.0234 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0004 s ( 1.21 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.33 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.12 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.01 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 3.68 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0319 s (98.20 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:14 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0272 s
+CPU time per thread                           0.0312 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0002 s ( 0.85 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.45 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.14 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.06 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 4.30 %)
+Time step initialization                                                   0.0000 s ( 0.02 %)
+Remaining time                                                             0.0268 s (98.37 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:16 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0270 s
+CPU time per thread                           0.0312 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0004 s ( 1.43 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.31 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.14 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.06 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0011 s ( 4.14 %)
+Time step initialization                                                   0.0000 s ( 0.02 %)
+Remaining time                                                             0.0265 s (97.94 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:17 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0299 s
+CPU time per thread                           0.0312 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0004 s ( 1.27 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.31 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.13 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 3.89 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0294 s (98.12 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:19 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            7.7262 s
+CPU time per thread                           0.0938 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.00 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.00 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.00 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.00 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.00 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.00 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0011 s ( 0.01 %)
+Time step initialization                                                   0.0000 s ( 0.00 %)
+Remaining time                                                             7.7257 s (99.99 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:20 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14  Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15  Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16  Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17  Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18  Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0304 s
+CPU time per thread                           0.0156 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.84 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.21 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0001 s ( 0.23 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.05 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0012 s ( 3.84 %)
+Time step initialization                                                   0.0000 s ( 0.02 %)
+Remaining time                                                             0.0300 s (98.56 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:21 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0381 s
+CPU time per thread                           0.0391 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.72 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.18 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.11 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.04 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.03 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.01 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0013 s ( 3.29 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0377 s (98.86 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:22 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0288 s
+CPU time per thread                           0.0156 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 1.01 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.24 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.13 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.06 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.04 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.02 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0011 s ( 3.73 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0284 s (98.45 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:23 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+Pausing at        1.000
+Pausing at        2.000
+Pausing at        3.000
+Pausing at        4.000
+Pausing at        5.000
+Pausing at        6.000
+Pausing at        7.000
+Pausing at        8.000
+Pausing at        9.000
+Pausing at       10.000
+Pausing at       11.000
+Pausing at       12.000
+Pausing at       13.000
+Pausing at       14.000
+Pausing at       15.000
+Pausing at       16.000
+Pausing at       17.000
+Pausing at       18.000
+Pausing at       19.000
+Pausing at       20.000
+Pausing at       21.000
+Pausing at       22.000
+Pausing at       23.000
+Pausing at       24.000
+Pausing at       25.000
+Pausing at       26.000
+Pausing at       27.000
+Pausing at       28.000
+Pausing at       29.000
+Pausing at       30.000
+Pausing at       31.000
+Pausing at       32.000
+Pausing at       33.000
+Pausing at       34.000
+Pausing at       35.000
+Pausing at       36.000
+Pausing at       37.000
+Pausing at       38.000
+Pausing at       39.000
+Pausing at       40.000
+Pausing at       41.000
+Pausing at       42.000
+Pausing at       43.000
+Pausing at       44.000
+Pausing at       45.000
+Pausing at       46.000
+Pausing at       47.000
+Pausing at       48.000
+Pausing at       49.000
+Pausing at       50.000
+Pausing at       51.000
+Pausing at       52.000
+Pausing at       53.000
+Pausing at       54.000
+Pausing at       55.000
+Pausing at       56.000
+Pausing at       57.000
+Pausing at       58.000
+Pausing at       59.000
+Pausing at       60.000
+Pausing at       61.000
+Pausing at       62.000
+Pausing at       63.000
+Pausing at       64.000
+Pausing at       65.000
+Pausing at       66.000
+Pausing at       67.000
+Pausing at       68.000
+Pausing at       69.000
+Pausing at       70.000
+Pausing at       71.000
+Pausing at       72.000
+Pausing at       73.000
+Pausing at       74.000
+Pausing at       75.000
+Pausing at       76.000
+Pausing at       77.000
+Pausing at       78.000
+Pausing at       79.000
+Pausing at       80.000
+Pausing at       81.000
+Pausing at       82.000
+Pausing at       83.000
+Pausing at       84.000
+Pausing at       85.000
+Pausing at       86.000
+Pausing at       87.000
+Pausing at       88.000
+Pausing at       89.000
+Pausing at       90.000
+Pausing at       91.000
+Pausing at       92.000
+Pausing at       93.000
+Pausing at       94.000
+Pausing at       95.000
+Pausing at       96.000
+Pausing at       97.000
+Pausing at       98.000
+Pausing at       99.000
+Pausing at      100.000
+Pausing at      101.000
+Pausing at      102.000
+Pausing at      103.000
+Pausing at      104.000
+Pausing at      105.000
+Pausing at      106.000
+Pausing at      107.000
+Pausing at      108.000
+Pausing at      109.000
+Pausing at      110.000
+Pausing at      111.000
+Pausing at      112.000
+Pausing at      113.000
+Pausing at      114.000
+Pausing at      115.000
+Pausing at      116.000
+Pausing at      117.000
+Pausing at      118.000
+Pausing at      119.000
+Pausing at      120.000
+Pausing at      121.000
+Pausing at      122.000
+Pausing at      123.000
+Pausing at      124.000
+Pausing at      125.000
+Pausing at      126.000
+Pausing at      127.000
+Pausing at      128.000
+Pausing at      129.000
+Pausing at      130.000
+MESSAGE FROM DCTL sim_minmaxvolt MINMAXVOLT_Warning: 
+t =  130.0200         Voltage out of bounds at bus 1041 :  0.85
+Pausing at      131.000
+Pausing at      132.000
+Pausing at      133.000
+Pausing at      134.000
+Pausing at      135.000
+Pausing at      136.000
+Pausing at      137.000
+Pausing at      138.000
+Pausing at      139.000
+Pausing at      140.000
+Pausing at      141.000
+Pausing at      142.000
+Pausing at      143.000
+Pausing at      144.000
+Pausing at      145.000
+Pausing at      146.000
+Pausing at      147.000
+Pausing at      148.000
+Pausing at      149.000
+Pausing at      150.000
+Pausing at      151.000
+Pausing at      152.000
+Pausing at      153.000
+Pausing at      154.000
+Pausing at      155.000
+Pausing at      156.000
+Pausing at      157.000
+Pausing at      158.000
+Pausing at      159.000
+Pausing at      160.000
+Pausing at      161.000
+Pausing at      162.000
+STOP CALL FROM DCTL sim_minmaxvolt MINMAXVOLT_Stopping: 
+t =  162.1600         Voltage out of bounds at bus g6 :  0.70
+
+Total elapsed time                           10.2586 s
+CPU time per thread                           2.1562 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.1491 s ( 1.45 %)
+Reduced system elliminations & factorization (network)                     0.0469 s ( 0.46 %)
+Reduced system solution (TN network)                                       0.0425 s ( 0.41 %)
+Injector evaluation and solution                                           0.4241 s ( 4.13 %)
+Convergence checks at end of each N-I                                      0.1034 s ( 1.01 %)
+Discrete events and other at end of time step                              0.0355 s ( 0.35 %)
+Discrete controller computation (DCTL)                                     0.0228 s ( 0.22 %)
+Latency computation                                                        0.0003 s ( 0.00 %)
+Writing/displaying Observables                                             0.0620 s ( 0.60 %)
+Time step initialization                                                   0.2220 s ( 2.16 %)
+Remaining time                                                             9.1011 s (88.72 %)
+
+Average time step                             0.0199 s
+
+Time steps                       8163
+
+Network Jacobians                 501
+Network solutions                9296
+Network evaluations             26079
+Injector Jacobians              26941 (on average              626 per injector)
+Injector solutions             536862 (on average            12485 per injector)
+Injector evaluations          1630752 (on average            37924 per injector)
+ 
+**Simulation finished**
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Limited Version)
+
+(c) University of Liege, Belgium
+Permission is hereby granted to download and use this limited version of
+the software for educational, research, and not-for-profit purposes, without
+fee and without a signed licensing agreement. The software must not be
+redistributed; new users should be invited to download the software
+themselves. The authors and their University disclaim all liability
+regarding the use of the software. For uses outside the above scope
+contact Dr. Thierry Van Cutsem (t.vancutsem@ulg.ac.be)
+
+
+Execution time: 13:25 22/02/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Using the KLU sparse solver
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at        0.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g14 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g15 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g16 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g17 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance        0.011000 CHGPRM TOR g18 Tm0 0.0 0
+MESSAGE FROM add_disturb: 
+you are trying to add a disturbance after the STOP time
+STOP CALL FROM apply_disturb: 
+
+t =    0.0010Mistake in disturbance description: unknown disturbance type
+                                                                                                                                                                                                                                                                
+
+Total elapsed time                            0.0336 s
+CPU time per thread                           0.0234 s
+
+Profiling
+=========
+Local system building, factorization and Schur complement factors          0.0003 s ( 0.88 %)
+Reduced system elliminations & factorization (network)                     0.0001 s ( 0.21 %)
+Reduced system solution (TN network)                                       0.0000 s ( 0.00 %)
+Injector evaluation and solution                                           0.0000 s ( 0.12 %)
+Convergence checks at end of each N-I                                      0.0000 s ( 0.05 %)
+Discrete events and other at end of time step                              0.0000 s ( 0.05 %)
+Discrete controller computation (DCTL)                                     0.0000 s ( 0.01 %)
+Latency computation                                                        0.0000 s ( 0.00 %)
+Writing/displaying Observables                                             0.0011 s ( 3.26 %)
+Time step initialization                                                   0.0000 s ( 0.01 %)
+Remaining time                                                             0.0331 s (98.63 %)
+
+Average time step                             0.0010 s
+
+Time steps                          1
+
+Network Jacobians                   1
+Network solutions                   0
+Network evaluations                 2
+Injector Jacobians                 42 (on average                0 per injector)
+Injector solutions                 42 (on average                0 per injector)
+Injector evaluations              126 (on average                2 per injector)
+ 
+**Simulation finished**
