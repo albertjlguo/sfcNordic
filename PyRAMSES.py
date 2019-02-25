@@ -62,8 +62,8 @@ for ki in range(2):
 			ram.contSim(ram.getInfTime())
 			
 		# Rename cur file
-		os.rename(r'\Users\el17jg\Desktop\GitHub\Nordic-test-system\temp_display.cur', r'\Users\el17jg\Desktop\GitHub\Nordic-test-system\temp_display_' + str(kp) + '-' + str(ki) + '.cur')
+		#os.rename(r'C:\Users\el17jg\Desktop\GitHub\Nordic-test-system\temp_display.cur', r'C:\Users\el17jg\Desktop\GitHub\Nordic-test-system\temp_display_' + str(kp) + '-' + str(ki) + '.cur')
 			
 		# Copy cur file to folder
-		shutil.move(r'\Users\el17jg\Desktop\GitHub\Nordic-test-system\temp_display_' + str(kp) + '-' + str(ki) + '.cur', r'\Users\el17jg\Desktop\GitHub\Nordic-test-system\curfiles')
+		#shutil.move(r'C:\Users\el17jg\Desktop\GitHub\Nordic-test-system\temp_display_' + str(kp) + '-' + str(ki) + '.cur', r'C:\Users\el17jg\Desktop\GitHub\Nordic-test-system\curfiles')
 			
