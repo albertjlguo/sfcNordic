@@ -5,33 +5,28 @@ s2 = 's';
 s3 = '.cur';
 
 figure();
-
-for delay = 0.10:0.10:1.00
-    for kp = 0.70           %kp
-        for ki = 0.70       %ki
+hold on
+for kp = 0.10:0.10:0.70
+    for ki = 0.10:0.10:0.70
+        for delay = 0.00:0.10:1.0
+            if delay == 0.00
+                delay = 0.01
+            end
+            
             s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3]
             a = importdata(s)
             x0 = a(:,1)
             y0 = a(:,4)
-            plot(x0, y0)
-            hold on
+            txt = ['kp = ', num2str(kp), ', ki = ', num2str(ki), ', delay = ',num2str(delay)];
+            plot(x0, y0, 'DisplayName',txt)
         end
     end
 end
 hold off
 
-legend('delay = 0.1s',...
-       'delay = 0.2s',...
-       'delay = 0.3s',...
-       'delay = 0.4s',...
-       'delay = 0.5s',...
-       'delay = 0.6s',...
-       'delay = 0.7s',...
-       'delay = 0.8s',...
-       'delay = 0.9s',...
-       'delay = 1.0s')
+legend show
 
-theTitle = ['Machine g2, when kp = ' num2str(kp,'%.2f') ', ki = ' num2str(kp,'%.2f')]
+theTitle = ['Machine g2']
 title(theTitle)
 
 xlabel('t(s)')
