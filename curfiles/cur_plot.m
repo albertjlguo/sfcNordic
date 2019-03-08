@@ -6,23 +6,6 @@ s3 = '.cur';
 
 figure();
 hold on
-<<<<<<< HEAD
-for kp = 0.35
-    for ki = 0.25
-        for delay = 0.01:0.99:1.01
-            if delay == 0.00
-                delay = 0.01
-            end
-            
-            s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3]
-            a = importdata(s)
-            x0 = a(:,1)
-            y0 = a(:,4)
-            txt = ['kp = ', num2str(kp), ', ki = ', num2str(ki), ', delay = ',num2str(delay)];
-            plot(x0, y0, 'DisplayName',txt)
-            S = stepinfo(y0)
-            settlingTime = S.SettlingTime
-=======
 %T = [];
 KP = [];
 KI = [];
@@ -44,7 +27,6 @@ for kp = 0.10
             KI = [KI; ki];
             DELAY = [DELAY; delay];
             SETTLINGTIME = [SETTLINGTIME; settlingTime];
->>>>>>> 87292286ea956879287ec52b4c249649cef50fa4
         end
     end
 end
