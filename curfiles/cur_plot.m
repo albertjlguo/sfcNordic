@@ -6,7 +6,6 @@ s3 = '.cur';
 
 figure();
 hold on
-%T = [];
 KP = [];
 KI = [];
 DELAY = [];
