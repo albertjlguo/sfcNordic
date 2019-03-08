@@ -6,9 +6,9 @@ s3 = '.cur';
 
 figure();
 hold on
-for kp = 0.10:0.10:0.70
-    for ki = 0.10:0.10:0.70
-        for delay = 0.00:0.10:1.0
+for kp = 0.35
+    for ki = 0.25
+        for delay = 0.01:0.99:1.01
             if delay == 0.00
                 delay = 0.01
             end
@@ -19,6 +19,8 @@ for kp = 0.10:0.10:0.70
             y0 = a(:,4)
             txt = ['kp = ', num2str(kp), ', ki = ', num2str(ki), ', delay = ',num2str(delay)];
             plot(x0, y0, 'DisplayName',txt)
+            S = stepinfo(y0)
+            settlingTime = S.SettlingTime
         end
     end
 end
@@ -32,3 +34,4 @@ title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
 grid on
+
