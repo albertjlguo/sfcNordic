@@ -12,8 +12,8 @@ DELAY = [];
 SETTLINGTIME = [];
 
 for kp = 0.10
-    for ki = 0.10
-        for delay = 0.01:0.01:0.10        
+    for ki = 0.30
+        for delay = 0.01
             s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3];
             a = importdata(s);
             t = a(:,1);
