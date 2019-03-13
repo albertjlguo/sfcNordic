@@ -1,0 +1,9 @@
+
+t =    0.0000 START
+
+t =    0.0000 CONTINUE SOLVER BD 0.020 0.001 0. ABL                                                                                             
+t =    0.0000 + 0.0010 : net it  0 NET   0.3773E-03             1 NET JU  
+                         inj it  0 INJ     Infinity               42  JU    42 S  =>  0.1554E-14 (g20)
+                                   NET   0.3773E-03         
+                         inj it  1 INJ   0.2274E-12            
+t =    0.0010 + 0.0010 : Numerical exception was raised with smallest possible time-step. Exiting...
