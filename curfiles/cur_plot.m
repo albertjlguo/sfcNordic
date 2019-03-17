@@ -9,23 +9,27 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
-for kp = 0.10:0.50:20.10
-    for ki = 0.10:0.50:0.60
+for kp = 15.6
+    for ki = 0.1:0.5:20.1
         for delay = 0.01
             s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3];
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);
-            info = stepinfo(f,t);
-            if info.SettlingMax < 1.01 && info.SettlingMin > 0.99
-                txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ', delay = ',num2str(delay,'%.3f')];
-                plot(t, f, 'DisplayName',txt)
-                settlingTime = info.SettlingTime;
-                KP = [KP; kp];
-                KI = [KI; ki];
-                DELAY = [DELAY; delay];
-                SETTLINGTIME = [SETTLINGTIME; settlingTime];
+            info = stepinfo(f,t,1.0); % set y_final to nominal value.
+            %if info.SettlingMax < 1.01 && info.SettlingMin > 0.99 &&
+            %max(f) < 1.01 && min(f) > 0.99
+            txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ', delay = ',num2str(delay,'%.3f')];
+            plot(t, f, 'DisplayName',txt)
+            settlingTime = info.SettlingTime;
+            if max(t) < 499
+                settlingTime = 999999999;
             end
+            KP = [KP; kp];
+            KI = [KI; ki];
+            DELAY = [DELAY; delay];
+            SETTLINGTIME = [SETTLINGTIME; settlingTime];
+            %end
         end
     end
 end
