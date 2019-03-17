@@ -9,7 +9,7 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
-for kp = 15.6
+for kp = 0.1:0.5:20.1
     for ki = 0.1:0.5:20.1
         for delay = 0.01
             s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3];
@@ -34,8 +34,8 @@ for kp = 15.6
     end
 end
 T = table(KP, KI, DELAY, SETTLINGTIME);
-xlsx_dic = '\Users\el17jg\Desktop\GitHub\Nordic-test-system\curfiles\rank.xlsx'; % save to a dictionary
-writetable(T,'rank.xlsx');
+xlsx_dic = '/Users/realgjl/Dropbox/Nordic/search-space/delay_0.01s/rank.xlsx'; % save to a dictionary
+writetable(T,xlsx_dic);
 hold off
 
 legend show
