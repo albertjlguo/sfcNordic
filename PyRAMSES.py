@@ -74,7 +74,7 @@ def move_file(flag, kp, ki, td):
 
 		# Rename the file in new folder (cur)
 		os.rename('/Users/el17jg/OneDrive - University of Leeds/Nordic/search-space/cur/temp_display_.cur', 
-							'/Users/el17jg/OneDrive - University of Leeds/Nordic/search-space/cur/temp_display_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
+				  '/Users/el17jg/OneDrive - University of Leeds/Nordic/search-space/cur/temp_display_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
 		print("rename cur successfully")
 
 
@@ -96,7 +96,7 @@ def move_file(flag, kp, ki, td):
 
 		# Rename the file in new folder (output.trace)
 		os.rename('/Users/el17jg/OneDrive - University of Leeds/Nordic/search-space/output/output_.trace',
-							'/Users/el17jg/OneDrive - University of Leeds/Nordic/search-space/output/output_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.trace')
+				 '/Users/el17jg/OneDrive - University of Leeds/Nordic/search-space/output/output_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.trace')
 		print("rename output.trace successfully")
 
 
