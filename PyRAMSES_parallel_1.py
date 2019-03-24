@@ -1,5 +1,5 @@
 '''
-Update at 2019/03/21 8:51
+Update at 2019/03/24
 '''
 
 
@@ -194,4 +194,55 @@ if __name__ == '__main__':
 	tuning kp & ki:
 	'''
 	
-	sfc(5.6, 4.6, 0.01)
+	if __name__ == '__main__':
+		'''
+		tuning kp & ki:
+		'''
+		
+		for td in np.arange(0.01, 0.02, 0.02):  # td: 0.010 sec
+			td = "{0:.2f}".format(round(td,2))
+			for kp in np.arange(50.6, 199.7, 0.5):  # kp: 50.6-199.6
+						
+				if float(kp)>=50.6 and float(kp)<=99.6:  # kp: 50.6-99.6
+					kp = "{0:.2f}".format(round(float(kp),2))
+					for ki in np.arange(0.1, 0.57*float(kp), 0.5):  # ki: 0.1-0.57*kp
+						ki = "{0:.2f}".format(round(float(ki),2))
+
+						print("kp = " + str(kp))
+						print("ki = " + str(ki))
+						print("td = " + str(td))
+						
+						'''
+						Run sfc:
+						'''
+						sfc(kp, ki, td)
+						
+				if float(kp)>=100.6 and float(kp)<=149.6:  # kp: 100.6-149.6
+					kp = "{0:.2f}".format(round(float(kp),2))
+					for ki in np.arange(0.1, 0.5355*float(kp), 0.5):  # ki: 0.1-0.5355*kp
+						ki = "{0:.2f}".format(round(float(ki),2))
+
+						print("kp = " + str(kp))
+						print("ki = " + str(ki))
+						print("td = " + str(td))
+						
+						'''
+						Run sfc:
+						'''
+						sfc(kp, ki, td)
+						
+				if float(kp)>=150.6 and float(kp)<=199.6:  # kp: 150.6-199.6
+					kp = "{0:.2f}".format(round(float(kp),2))
+					for ki in np.arange(0.1, 0.4837*float(kp), 0.5):  # ki: 0.1-0.4837*kp
+						ki = "{0:.2f}".format(round(float(ki),2))
+
+						print("kp = " + str(kp))
+						print("ki = " + str(ki))
+						print("td = " + str(td))
+						
+						'''
+						Run sfc:
+						'''
+						sfc(kp, ki, td)
+						pass
+				pass
