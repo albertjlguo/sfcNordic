@@ -12,7 +12,14 @@ def end_simulation(ram, case, flag):
 	'''
 	End the simulation without starting both the simulation and AGC:
 	'''
-	if ram.getEndSim() == 0:
+	
+	if flag == 1:
+		print("flag = 1: cannot start simulation........")
+
+		# Kill gnuplot
+		os.system("TASKKILL /F /IM gnuplot.exe /T")
+		print("kill gnuplot successfully: no-simulation...")
+
 		# End simulation and exit
 		try:
 			ram.endSim()
@@ -20,6 +27,24 @@ def end_simulation(ram, case, flag):
 		except:
 			print("skip endSim(): no-simulation...")
 
+			
+	'''
+	End the simulation normally:
+	'''
+	
+	if flag == 0:
+		# Kill gnuplot
+		os.system("TASKKILL /F /IM gnuplot.exe /T")
+		print("kill gnuplot successfully")
+
+		# End simulation and exit
+		try:
+			ram.endSim()
+			print("endSim() successfully")
+		except:
+			print("skip endSim()")
+			
+			
 	'''
 	Make sure the process of simulation and the case is ended.
 	'''
@@ -44,12 +69,12 @@ def move_file(flag, kp, ki, td):
 		print("re-write cur successfully")
 
 		# Copy the file (in public folder) to another prepared folder (cur)
-		shutil.copy("temp_display_.cur", 'cur')
+		shutil.copy("temp_display_.cur", r'D:\OneDrive - University of Leeds\Nordic\search-space\cur')
 		print("copy cur successfully")
 
 		# Rename the file in new folder (cur)
-		os.rename('cur/temp_display_.cur', 
-				  'cur/temp_display_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
+		os.rename(r'D:\OneDrive - University of Leeds\Nordic\search-space\cur\temp_display_.cur', 
+							r'D:\OneDrive - University of Leeds\Nordic\search-space\cur\temp_display_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
 		print("rename cur successfully")
 
 
@@ -66,12 +91,12 @@ def move_file(flag, kp, ki, td):
 		print("re-write output.trace successfully")
 
 		# Copy the file (in public folder) to another prepared folder (output.trace)
-		shutil.copy("output_.trace", 'output')
+		shutil.copy("output_.trace", r'D:\OneDrive - University of Leeds\Nordic\search-space\output')
 		print("copy output.trace successfully")
 
 		# Rename the file in new folder (output.trace)
-		os.rename('output/output_.trace',
-				 'output/output_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.trace')
+		os.rename(r'D:\OneDrive - University of Leeds\Nordic\search-space\output\output_.trace',
+							r'D:\OneDrive - University of Leeds\Nordic\search-space\output\output_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.trace')
 		print("rename output.trace successfully")
 		'''
 
@@ -84,14 +109,13 @@ def move_file(flag, kp, ki, td):
 		os.unlink("temp_display_.cur")
 		print("delete temp_display(_).cur successfully")
 
-		# Delete trace: cont, disc, init, output
+		# Delete trace: cont, disc, init, output(_)
 		os.unlink("cont.trace")
 		os.unlink("disc.trace")
 		os.unlink("init.trace")
 		os.unlink("output.trace")
 		# os.unlink("output_.trace")
 		print("delete trace: cont, disc, init, output successfully\n")
-
 
 
 
@@ -122,6 +146,7 @@ def sfc(kp, ki, td):
 		ram.execSim(case,start_time)
 	except:  # skip to end simulation & move files
 		flag = 1
+		pass
 	
 	
 	'''
@@ -142,6 +167,8 @@ def sfc(kp, ki, td):
 		Run agc control:
 		'''
 		agc(ram, start_time, t, comp_type, comp_name, obs_name, nominal_frequency, errSum, kp, ki, list_of_gens, td)
+		pass
+
 	
 	'''
 	End simulation & Move files:
@@ -185,7 +212,7 @@ def agc(ram, start_time, t, comp_type, comp_name, obs_name, nominal_frequency, e
 			ram.contSim(i) # be parallel under the for loop (for gen in list_of_gens).
 		except:
 			print("RAMSES error => break....., ready to kill gnuplot")
-			return
+			break
 		
 		
 
