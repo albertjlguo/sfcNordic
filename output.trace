@@ -1,0 +1,2268 @@
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Full Version)
+
+(c) University of Liege, Belgium
+Execution time: 14:44 24/03/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at       15.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       15.011000 CHGPRM TOR g6 Tm0 0.15013094580904968 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       15.011000 CHGPRM TOR g7 Tm0 0.15013094580904968 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       15.011000 CHGPRM TOR g14 Tm0 0.15013094580904968 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       15.011000 CHGPRM TOR g15 Tm0 0.15013094580904968 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       15.011000 CHGPRM TOR g16 Tm0 0.15013094580904968 0
+Pausing at       16.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       16.010000 CHGPRM TOR g6 Tm0 0.10955943367035621 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       16.010000 CHGPRM TOR g7 Tm0 0.10955943367035621 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       16.010000 CHGPRM TOR g14 Tm0 0.10955943367035621 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       16.010000 CHGPRM TOR g15 Tm0 0.10955943367035621 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       16.010000 CHGPRM TOR g16 Tm0 0.10955943367035621 0
+MESSAGE FROM DCTL sim_minmaxvolt MINMAXVOLT_Warning: 
+t =   16.3120         Voltage out of bounds at bus 4041 :  1.10
+Pausing at       17.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       17.010000 CHGPRM TOR g6 Tm0 -0.012646542599721167 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       17.010000 CHGPRM TOR g7 Tm0 -0.012646542599721167 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       17.010000 CHGPRM TOR g14 Tm0 -0.012646542599721167 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       17.010000 CHGPRM TOR g15 Tm0 -0.012646542599721167 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       17.010000 CHGPRM TOR g16 Tm0 -0.012646542599721167 0
+Pausing at       18.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       18.010000 CHGPRM TOR g6 Tm0 -0.10582788764555562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       18.010000 CHGPRM TOR g7 Tm0 -0.10582788764555562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       18.010000 CHGPRM TOR g14 Tm0 -0.10582788764555562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       18.010000 CHGPRM TOR g15 Tm0 -0.10582788764555562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       18.010000 CHGPRM TOR g16 Tm0 -0.10582788764555562 0
+Pausing at       19.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       19.010000 CHGPRM TOR g6 Tm0 -0.12407021750687572 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       19.010000 CHGPRM TOR g7 Tm0 -0.12407021750687572 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       19.010000 CHGPRM TOR g14 Tm0 -0.12407021750687572 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       19.010000 CHGPRM TOR g15 Tm0 -0.12407021750687572 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       19.010000 CHGPRM TOR g16 Tm0 -0.12407021750687572 0
+Pausing at       20.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       20.010000 CHGPRM TOR g6 Tm0 -0.06455831355592168 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       20.010000 CHGPRM TOR g7 Tm0 -0.06455831355592168 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       20.010000 CHGPRM TOR g14 Tm0 -0.06455831355592168 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       20.010000 CHGPRM TOR g15 Tm0 -0.06455831355592168 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       20.010000 CHGPRM TOR g16 Tm0 -0.06455831355592168 0
+Pausing at       21.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       21.010000 CHGPRM TOR g6 Tm0 0.026357495352319016 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       21.010000 CHGPRM TOR g7 Tm0 0.026357495352319016 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       21.010000 CHGPRM TOR g14 Tm0 0.026357495352319016 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       21.010000 CHGPRM TOR g15 Tm0 0.026357495352319016 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       21.010000 CHGPRM TOR g16 Tm0 0.026357495352319016 0
+Pausing at       22.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       22.010000 CHGPRM TOR g6 Tm0 0.09513327753063727 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       22.010000 CHGPRM TOR g7 Tm0 0.09513327753063727 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       22.010000 CHGPRM TOR g14 Tm0 0.09513327753063727 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       22.010000 CHGPRM TOR g15 Tm0 0.09513327753063727 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       22.010000 CHGPRM TOR g16 Tm0 0.09513327753063727 0
+Pausing at       23.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       23.010000 CHGPRM TOR g6 Tm0 0.09145309449623108 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       23.010000 CHGPRM TOR g7 Tm0 0.09145309449623108 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       23.010000 CHGPRM TOR g14 Tm0 0.09145309449623108 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       23.010000 CHGPRM TOR g15 Tm0 0.09145309449623108 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       23.010000 CHGPRM TOR g16 Tm0 0.09145309449623108 0
+Pausing at       24.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       24.010000 CHGPRM TOR g6 Tm0 0.031515935479983555 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       24.010000 CHGPRM TOR g7 Tm0 0.031515935479983555 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       24.010000 CHGPRM TOR g14 Tm0 0.031515935479983555 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       24.010000 CHGPRM TOR g15 Tm0 0.031515935479983555 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       24.010000 CHGPRM TOR g16 Tm0 0.031515935479983555 0
+Pausing at       25.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       25.010000 CHGPRM TOR g6 Tm0 -0.042254619672049715 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       25.010000 CHGPRM TOR g7 Tm0 -0.042254619672049715 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       25.010000 CHGPRM TOR g14 Tm0 -0.042254619672049715 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       25.010000 CHGPRM TOR g15 Tm0 -0.042254619672049715 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       25.010000 CHGPRM TOR g16 Tm0 -0.042254619672049715 0
+Pausing at       26.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       26.010000 CHGPRM TOR g6 Tm0 -0.07944976522999048 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       26.010000 CHGPRM TOR g7 Tm0 -0.07944976522999048 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       26.010000 CHGPRM TOR g14 Tm0 -0.07944976522999048 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       26.010000 CHGPRM TOR g15 Tm0 -0.07944976522999048 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       26.010000 CHGPRM TOR g16 Tm0 -0.07944976522999048 0
+Pausing at       27.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       27.010000 CHGPRM TOR g6 Tm0 -0.06376175742421855 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       27.010000 CHGPRM TOR g7 Tm0 -0.06376175742421855 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       27.010000 CHGPRM TOR g14 Tm0 -0.06376175742421855 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       27.010000 CHGPRM TOR g15 Tm0 -0.06376175742421855 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       27.010000 CHGPRM TOR g16 Tm0 -0.06376175742421855 0
+Pausing at       28.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       28.010000 CHGPRM TOR g6 Tm0 -0.010550403154655306 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       28.010000 CHGPRM TOR g7 Tm0 -0.010550403154655306 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       28.010000 CHGPRM TOR g14 Tm0 -0.010550403154655306 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       28.010000 CHGPRM TOR g15 Tm0 -0.010550403154655306 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       28.010000 CHGPRM TOR g16 Tm0 -0.010550403154655306 0
+Pausing at       29.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       29.010000 CHGPRM TOR g6 Tm0 0.043539608712610416 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       29.010000 CHGPRM TOR g7 Tm0 0.043539608712610416 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       29.010000 CHGPRM TOR g14 Tm0 0.043539608712610416 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       29.010000 CHGPRM TOR g15 Tm0 0.043539608712610416 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       29.010000 CHGPRM TOR g16 Tm0 0.043539608712610416 0
+Pausing at       30.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       30.010000 CHGPRM TOR g6 Tm0 0.06444366463764148 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       30.010000 CHGPRM TOR g7 Tm0 0.06444366463764148 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       30.010000 CHGPRM TOR g14 Tm0 0.06444366463764148 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       30.010000 CHGPRM TOR g15 Tm0 0.06444366463764148 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       30.010000 CHGPRM TOR g16 Tm0 0.06444366463764148 0
+Pausing at       31.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       31.010000 CHGPRM TOR g6 Tm0 0.041242647654979786 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       31.010000 CHGPRM TOR g7 Tm0 0.041242647654979786 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       31.010000 CHGPRM TOR g14 Tm0 0.041242647654979786 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       31.010000 CHGPRM TOR g15 Tm0 0.041242647654979786 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       31.010000 CHGPRM TOR g16 Tm0 0.041242647654979786 0
+Pausing at       32.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       32.010000 CHGPRM TOR g6 Tm0 -0.004914344418050567 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       32.010000 CHGPRM TOR g7 Tm0 -0.004914344418050567 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       32.010000 CHGPRM TOR g14 Tm0 -0.004914344418050567 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       32.010000 CHGPRM TOR g15 Tm0 -0.004914344418050567 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       32.010000 CHGPRM TOR g16 Tm0 -0.004914344418050567 0
+Pausing at       33.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       33.010000 CHGPRM TOR g6 Tm0 -0.04231572963016453 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       33.010000 CHGPRM TOR g7 Tm0 -0.04231572963016453 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       33.010000 CHGPRM TOR g14 Tm0 -0.04231572963016453 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       33.010000 CHGPRM TOR g15 Tm0 -0.04231572963016453 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       33.010000 CHGPRM TOR g16 Tm0 -0.04231572963016453 0
+Pausing at       34.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       34.010000 CHGPRM TOR g6 Tm0 -0.0485581491498358 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       34.010000 CHGPRM TOR g7 Tm0 -0.0485581491498358 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       34.010000 CHGPRM TOR g14 Tm0 -0.0485581491498358 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       34.010000 CHGPRM TOR g15 Tm0 -0.0485581491498358 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       34.010000 CHGPRM TOR g16 Tm0 -0.0485581491498358 0
+Pausing at       35.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       35.010000 CHGPRM TOR g6 Tm0 -0.02403717826853255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       35.010000 CHGPRM TOR g7 Tm0 -0.02403717826853255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       35.010000 CHGPRM TOR g14 Tm0 -0.02403717826853255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       35.010000 CHGPRM TOR g15 Tm0 -0.02403717826853255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       35.010000 CHGPRM TOR g16 Tm0 -0.02403717826853255 0
+Pausing at       36.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       36.010000 CHGPRM TOR g6 Tm0 0.01287600291564987 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       36.010000 CHGPRM TOR g7 Tm0 0.01287600291564987 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       36.010000 CHGPRM TOR g14 Tm0 0.01287600291564987 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       36.010000 CHGPRM TOR g15 Tm0 0.01287600291564987 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       36.010000 CHGPRM TOR g16 Tm0 0.01287600291564987 0
+Pausing at       37.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       37.010000 CHGPRM TOR g6 Tm0 0.037721392024406705 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       37.010000 CHGPRM TOR g7 Tm0 0.037721392024406705 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       37.010000 CHGPRM TOR g14 Tm0 0.037721392024406705 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       37.010000 CHGPRM TOR g15 Tm0 0.037721392024406705 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       37.010000 CHGPRM TOR g16 Tm0 0.037721392024406705 0
+Pausing at       38.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       38.010000 CHGPRM TOR g6 Tm0 0.035813491685646535 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       38.010000 CHGPRM TOR g7 Tm0 0.035813491685646535 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       38.010000 CHGPRM TOR g14 Tm0 0.035813491685646535 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       38.010000 CHGPRM TOR g15 Tm0 0.035813491685646535 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       38.010000 CHGPRM TOR g16 Tm0 0.035813491685646535 0
+Pausing at       39.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       39.010000 CHGPRM TOR g6 Tm0 0.011511250515524544 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       39.010000 CHGPRM TOR g7 Tm0 0.011511250515524544 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       39.010000 CHGPRM TOR g14 Tm0 0.011511250515524544 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       39.010000 CHGPRM TOR g15 Tm0 0.011511250515524544 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       39.010000 CHGPRM TOR g16 Tm0 0.011511250515524544 0
+Pausing at       40.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       40.010000 CHGPRM TOR g6 Tm0 -0.01690266629504481 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       40.010000 CHGPRM TOR g7 Tm0 -0.01690266629504481 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       40.010000 CHGPRM TOR g14 Tm0 -0.01690266629504481 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       40.010000 CHGPRM TOR g15 Tm0 -0.01690266629504481 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       40.010000 CHGPRM TOR g16 Tm0 -0.01690266629504481 0
+Pausing at       41.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       41.010000 CHGPRM TOR g6 Tm0 -0.0310872585162321 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       41.010000 CHGPRM TOR g7 Tm0 -0.0310872585162321 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       41.010000 CHGPRM TOR g14 Tm0 -0.0310872585162321 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       41.010000 CHGPRM TOR g15 Tm0 -0.0310872585162321 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       41.010000 CHGPRM TOR g16 Tm0 -0.0310872585162321 0
+Pausing at       42.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       42.010000 CHGPRM TOR g6 Tm0 -0.024024032536984347 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       42.010000 CHGPRM TOR g7 Tm0 -0.024024032536984347 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       42.010000 CHGPRM TOR g14 Tm0 -0.024024032536984347 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       42.010000 CHGPRM TOR g15 Tm0 -0.024024032536984347 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       42.010000 CHGPRM TOR g16 Tm0 -0.024024032536984347 0
+Pausing at       43.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       43.010000 CHGPRM TOR g6 Tm0 -0.00263663921948751 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       43.010000 CHGPRM TOR g7 Tm0 -0.00263663921948751 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       43.010000 CHGPRM TOR g14 Tm0 -0.00263663921948751 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       43.010000 CHGPRM TOR g15 Tm0 -0.00263663921948751 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       43.010000 CHGPRM TOR g16 Tm0 -0.00263663921948751 0
+Pausing at       44.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       44.010000 CHGPRM TOR g6 Tm0 0.018160788551739745 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       44.010000 CHGPRM TOR g7 Tm0 0.018160788551739745 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       44.010000 CHGPRM TOR g14 Tm0 0.018160788551739745 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       44.010000 CHGPRM TOR g15 Tm0 0.018160788551739745 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       44.010000 CHGPRM TOR g16 Tm0 0.018160788551739745 0
+Pausing at       45.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       45.010000 CHGPRM TOR g6 Tm0 0.02524339866841343 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       45.010000 CHGPRM TOR g7 Tm0 0.02524339866841343 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       45.010000 CHGPRM TOR g14 Tm0 0.02524339866841343 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       45.010000 CHGPRM TOR g15 Tm0 0.02524339866841343 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       45.010000 CHGPRM TOR g16 Tm0 0.02524339866841343 0
+Pausing at       46.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       46.010000 CHGPRM TOR g6 Tm0 0.015642183930210107 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       46.010000 CHGPRM TOR g7 Tm0 0.015642183930210107 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       46.010000 CHGPRM TOR g14 Tm0 0.015642183930210107 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       46.010000 CHGPRM TOR g15 Tm0 0.015642183930210107 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       46.010000 CHGPRM TOR g16 Tm0 0.015642183930210107 0
+Pausing at       47.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       47.010000 CHGPRM TOR g6 Tm0 -0.002505944934888612 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       47.010000 CHGPRM TOR g7 Tm0 -0.002505944934888612 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       47.010000 CHGPRM TOR g14 Tm0 -0.002505944934888612 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       47.010000 CHGPRM TOR g15 Tm0 -0.002505944934888612 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       47.010000 CHGPRM TOR g16 Tm0 -0.002505944934888612 0
+Pausing at       48.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       48.010000 CHGPRM TOR g6 Tm0 -0.016683737876077756 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       48.010000 CHGPRM TOR g7 Tm0 -0.016683737876077756 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       48.010000 CHGPRM TOR g14 Tm0 -0.016683737876077756 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       48.010000 CHGPRM TOR g15 Tm0 -0.016683737876077756 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       48.010000 CHGPRM TOR g16 Tm0 -0.016683737876077756 0
+Pausing at       49.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       49.010000 CHGPRM TOR g6 Tm0 -0.01849571144440779 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       49.010000 CHGPRM TOR g7 Tm0 -0.01849571144440779 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       49.010000 CHGPRM TOR g14 Tm0 -0.01849571144440779 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       49.010000 CHGPRM TOR g15 Tm0 -0.01849571144440779 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       49.010000 CHGPRM TOR g16 Tm0 -0.01849571144440779 0
+Pausing at       50.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       50.010000 CHGPRM TOR g6 Tm0 -0.00831732894827549 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       50.010000 CHGPRM TOR g7 Tm0 -0.00831732894827549 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       50.010000 CHGPRM TOR g14 Tm0 -0.00831732894827549 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       50.010000 CHGPRM TOR g15 Tm0 -0.00831732894827549 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       50.010000 CHGPRM TOR g16 Tm0 -0.00831732894827549 0
+Pausing at       51.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       51.010000 CHGPRM TOR g6 Tm0 0.006101145001520511 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       51.010000 CHGPRM TOR g7 Tm0 0.006101145001520511 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       51.010000 CHGPRM TOR g14 Tm0 0.006101145001520511 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       51.010000 CHGPRM TOR g15 Tm0 0.006101145001520511 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       51.010000 CHGPRM TOR g16 Tm0 0.006101145001520511 0
+Pausing at       52.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       52.010000 CHGPRM TOR g6 Tm0 0.015192064923991952 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       52.010000 CHGPRM TOR g7 Tm0 0.015192064923991952 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       52.010000 CHGPRM TOR g14 Tm0 0.015192064923991952 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       52.010000 CHGPRM TOR g15 Tm0 0.015192064923991952 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       52.010000 CHGPRM TOR g16 Tm0 0.015192064923991952 0
+Pausing at       53.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       53.010000 CHGPRM TOR g6 Tm0 0.013783444391988375 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       53.010000 CHGPRM TOR g7 Tm0 0.013783444391988375 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       53.010000 CHGPRM TOR g14 Tm0 0.013783444391988375 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       53.010000 CHGPRM TOR g15 Tm0 0.013783444391988375 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       53.010000 CHGPRM TOR g16 Tm0 0.013783444391988375 0
+Pausing at       54.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       54.010000 CHGPRM TOR g6 Tm0 0.004010574504590357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       54.010000 CHGPRM TOR g7 Tm0 0.004010574504590357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       54.010000 CHGPRM TOR g14 Tm0 0.004010574504590357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       54.010000 CHGPRM TOR g15 Tm0 0.004010574504590357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       54.010000 CHGPRM TOR g16 Tm0 0.004010574504590357 0
+Pausing at       55.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       55.010000 CHGPRM TOR g6 Tm0 -0.006917968194477669 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       55.010000 CHGPRM TOR g7 Tm0 -0.006917968194477669 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       55.010000 CHGPRM TOR g14 Tm0 -0.006917968194477669 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       55.010000 CHGPRM TOR g15 Tm0 -0.006917968194477669 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       55.010000 CHGPRM TOR g16 Tm0 -0.006917968194477669 0
+Pausing at       56.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       56.010000 CHGPRM TOR g6 Tm0 -0.011972780593125083 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       56.010000 CHGPRM TOR g7 Tm0 -0.011972780593125083 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       56.010000 CHGPRM TOR g14 Tm0 -0.011972780593125083 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       56.010000 CHGPRM TOR g15 Tm0 -0.011972780593125083 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       56.010000 CHGPRM TOR g16 Tm0 -0.011972780593125083 0
+Pausing at       57.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       57.010000 CHGPRM TOR g6 Tm0 -0.008695436778648005 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       57.010000 CHGPRM TOR g7 Tm0 -0.008695436778648005 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       57.010000 CHGPRM TOR g14 Tm0 -0.008695436778648005 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       57.010000 CHGPRM TOR g15 Tm0 -0.008695436778648005 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       57.010000 CHGPRM TOR g16 Tm0 -0.008695436778648005 0
+Pausing at       58.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       58.010000 CHGPRM TOR g6 Tm0 -0.00013288658159913008 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       58.010000 CHGPRM TOR g7 Tm0 -0.00013288658159913008 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       58.010000 CHGPRM TOR g14 Tm0 -0.00013288658159913008 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       58.010000 CHGPRM TOR g15 Tm0 -0.00013288658159913008 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       58.010000 CHGPRM TOR g16 Tm0 -0.00013288658159913008 0
+Pausing at       59.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       59.010000 CHGPRM TOR g6 Tm0 0.007712867340010657 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       59.010000 CHGPRM TOR g7 Tm0 0.007712867340010657 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       59.010000 CHGPRM TOR g14 Tm0 0.007712867340010657 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       59.010000 CHGPRM TOR g15 Tm0 0.007712867340010657 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       59.010000 CHGPRM TOR g16 Tm0 0.007712867340010657 0
+Pausing at       60.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       60.010000 CHGPRM TOR g6 Tm0 0.009951141185534255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       60.010000 CHGPRM TOR g7 Tm0 0.009951141185534255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       60.010000 CHGPRM TOR g14 Tm0 0.009951141185534255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       60.010000 CHGPRM TOR g15 Tm0 0.009951141185534255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       60.010000 CHGPRM TOR g16 Tm0 0.009951141185534255 0
+Pausing at       61.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       61.010000 CHGPRM TOR g6 Tm0 0.0058146288940626924 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       61.010000 CHGPRM TOR g7 Tm0 0.0058146288940626924 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       61.010000 CHGPRM TOR g14 Tm0 0.0058146288940626924 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       61.010000 CHGPRM TOR g15 Tm0 0.0058146288940626924 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       61.010000 CHGPRM TOR g16 Tm0 0.0058146288940626924 0
+Pausing at       62.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       62.010000 CHGPRM TOR g6 Tm0 -0.0013098904607974182 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       62.010000 CHGPRM TOR g7 Tm0 -0.0013098904607974182 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       62.010000 CHGPRM TOR g14 Tm0 -0.0013098904607974182 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       62.010000 CHGPRM TOR g15 Tm0 -0.0013098904607974182 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       62.010000 CHGPRM TOR g16 Tm0 -0.0013098904607974182 0
+Pausing at       63.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       63.010000 CHGPRM TOR g6 Tm0 -0.006555598651694842 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       63.010000 CHGPRM TOR g7 Tm0 -0.006555598651694842 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       63.010000 CHGPRM TOR g14 Tm0 -0.006555598651694842 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       63.010000 CHGPRM TOR g15 Tm0 -0.006555598651694842 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       63.010000 CHGPRM TOR g16 Tm0 -0.006555598651694842 0
+Pausing at       64.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       64.010000 CHGPRM TOR g6 Tm0 -0.006842164354428938 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       64.010000 CHGPRM TOR g7 Tm0 -0.006842164354428938 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       64.010000 CHGPRM TOR g14 Tm0 -0.006842164354428938 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       64.010000 CHGPRM TOR g15 Tm0 -0.006842164354428938 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       64.010000 CHGPRM TOR g16 Tm0 -0.006842164354428938 0
+Pausing at       65.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       65.010000 CHGPRM TOR g6 Tm0 -0.0025846261424301484 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       65.010000 CHGPRM TOR g7 Tm0 -0.0025846261424301484 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       65.010000 CHGPRM TOR g14 Tm0 -0.0025846261424301484 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       65.010000 CHGPRM TOR g15 Tm0 -0.0025846261424301484 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       65.010000 CHGPRM TOR g16 Tm0 -0.0025846261424301484 0
+Pausing at       66.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       66.010000 CHGPRM TOR g6 Tm0 0.002995934709831087 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       66.010000 CHGPRM TOR g7 Tm0 0.002995934709831087 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       66.010000 CHGPRM TOR g14 Tm0 0.002995934709831087 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       66.010000 CHGPRM TOR g15 Tm0 0.002995934709831087 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       66.010000 CHGPRM TOR g16 Tm0 0.002995934709831087 0
+Pausing at       67.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       67.010000 CHGPRM TOR g6 Tm0 0.0062123554678046 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       67.010000 CHGPRM TOR g7 Tm0 0.0062123554678046 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       67.010000 CHGPRM TOR g14 Tm0 0.0062123554678046 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       67.010000 CHGPRM TOR g15 Tm0 0.0062123554678046 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       67.010000 CHGPRM TOR g16 Tm0 0.0062123554678046 0
+Pausing at       68.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       68.010000 CHGPRM TOR g6 Tm0 0.005296723337053608 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       68.010000 CHGPRM TOR g7 Tm0 0.005296723337053608 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       68.010000 CHGPRM TOR g14 Tm0 0.005296723337053608 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       68.010000 CHGPRM TOR g15 Tm0 0.005296723337053608 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       68.010000 CHGPRM TOR g16 Tm0 0.005296723337053608 0
+Pausing at       69.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       69.010000 CHGPRM TOR g6 Tm0 0.001321682516099605 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       69.010000 CHGPRM TOR g7 Tm0 0.001321682516099605 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       69.010000 CHGPRM TOR g14 Tm0 0.001321682516099605 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       69.010000 CHGPRM TOR g15 Tm0 0.001321682516099605 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       69.010000 CHGPRM TOR g16 Tm0 0.001321682516099605 0
+Pausing at       70.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       70.010000 CHGPRM TOR g6 Tm0 -0.0028307916139087477 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       70.010000 CHGPRM TOR g7 Tm0 -0.0028307916139087477 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       70.010000 CHGPRM TOR g14 Tm0 -0.0028307916139087477 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       70.010000 CHGPRM TOR g15 Tm0 -0.0028307916139087477 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       70.010000 CHGPRM TOR g16 Tm0 -0.0028307916139087477 0
+Pausing at       71.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       71.010000 CHGPRM TOR g6 Tm0 -0.0045118595831105685 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       71.010000 CHGPRM TOR g7 Tm0 -0.0045118595831105685 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       71.010000 CHGPRM TOR g14 Tm0 -0.0045118595831105685 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       71.010000 CHGPRM TOR g15 Tm0 -0.0045118595831105685 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       71.010000 CHGPRM TOR g16 Tm0 -0.0045118595831105685 0
+Pausing at       72.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       72.010000 CHGPRM TOR g6 Tm0 -0.002958102832151273 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       72.010000 CHGPRM TOR g7 Tm0 -0.002958102832151273 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       72.010000 CHGPRM TOR g14 Tm0 -0.002958102832151273 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       72.010000 CHGPRM TOR g15 Tm0 -0.002958102832151273 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       72.010000 CHGPRM TOR g16 Tm0 -0.002958102832151273 0
+Pausing at       73.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       73.010000 CHGPRM TOR g6 Tm0 0.00046107270970509263 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       73.010000 CHGPRM TOR g7 Tm0 0.00046107270970509263 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       73.010000 CHGPRM TOR g14 Tm0 0.00046107270970509263 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       73.010000 CHGPRM TOR g15 Tm0 0.00046107270970509263 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       73.010000 CHGPRM TOR g16 Tm0 0.00046107270970509263 0
+Pausing at       74.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       74.010000 CHGPRM TOR g6 Tm0 0.0033609235942264255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       74.010000 CHGPRM TOR g7 Tm0 0.0033609235942264255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       74.010000 CHGPRM TOR g14 Tm0 0.0033609235942264255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       74.010000 CHGPRM TOR g15 Tm0 0.0033609235942264255 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       74.010000 CHGPRM TOR g16 Tm0 0.0033609235942264255 0
+Pausing at       75.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       75.010000 CHGPRM TOR g6 Tm0 0.00396080644476207 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       75.010000 CHGPRM TOR g7 Tm0 0.00396080644476207 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       75.010000 CHGPRM TOR g14 Tm0 0.00396080644476207 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       75.010000 CHGPRM TOR g15 Tm0 0.00396080644476207 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       75.010000 CHGPRM TOR g16 Tm0 0.00396080644476207 0
+Pausing at       76.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       76.010000 CHGPRM TOR g6 Tm0 0.00214973820599103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       76.010000 CHGPRM TOR g7 Tm0 0.00214973820599103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       76.010000 CHGPRM TOR g14 Tm0 0.00214973820599103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       76.010000 CHGPRM TOR g15 Tm0 0.00214973820599103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       76.010000 CHGPRM TOR g16 Tm0 0.00214973820599103 0
+Pausing at       77.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       77.010000 CHGPRM TOR g6 Tm0 -0.000637603380667846 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       77.010000 CHGPRM TOR g7 Tm0 -0.000637603380667846 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       77.010000 CHGPRM TOR g14 Tm0 -0.000637603380667846 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       77.010000 CHGPRM TOR g15 Tm0 -0.000637603380667846 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       77.010000 CHGPRM TOR g16 Tm0 -0.000637603380667846 0
+Pausing at       78.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       78.010000 CHGPRM TOR g6 Tm0 -0.002519594062959021 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       78.010000 CHGPRM TOR g7 Tm0 -0.002519594062959021 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       78.010000 CHGPRM TOR g14 Tm0 -0.002519594062959021 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       78.010000 CHGPRM TOR g15 Tm0 -0.002519594062959021 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       78.010000 CHGPRM TOR g16 Tm0 -0.002519594062959021 0
+Pausing at       79.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       79.010000 CHGPRM TOR g6 Tm0 -0.002415899143508682 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       79.010000 CHGPRM TOR g7 Tm0 -0.002415899143508682 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       79.010000 CHGPRM TOR g14 Tm0 -0.002415899143508682 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       79.010000 CHGPRM TOR g15 Tm0 -0.002415899143508682 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       79.010000 CHGPRM TOR g16 Tm0 -0.002415899143508682 0
+Pausing at       80.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       80.010000 CHGPRM TOR g6 Tm0 -0.000540531809449698 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       80.010000 CHGPRM TOR g7 Tm0 -0.000540531809449698 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       80.010000 CHGPRM TOR g14 Tm0 -0.000540531809449698 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       80.010000 CHGPRM TOR g15 Tm0 -0.000540531809449698 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       80.010000 CHGPRM TOR g16 Tm0 -0.000540531809449698 0
+Pausing at       81.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       81.010000 CHGPRM TOR g6 Tm0 0.0014811886854438948 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       81.010000 CHGPRM TOR g7 Tm0 0.0014811886854438948 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       81.010000 CHGPRM TOR g14 Tm0 0.0014811886854438948 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       81.010000 CHGPRM TOR g15 Tm0 0.0014811886854438948 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       81.010000 CHGPRM TOR g16 Tm0 0.0014811886854438948 0
+Pausing at       82.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       82.010000 CHGPRM TOR g6 Tm0 0.0025223637141294298 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       82.010000 CHGPRM TOR g7 Tm0 0.0025223637141294298 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       82.010000 CHGPRM TOR g14 Tm0 0.0025223637141294298 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       82.010000 CHGPRM TOR g15 Tm0 0.0025223637141294298 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       82.010000 CHGPRM TOR g16 Tm0 0.0025223637141294298 0
+Pausing at       83.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       83.010000 CHGPRM TOR g6 Tm0 0.002004722457697965 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       83.010000 CHGPRM TOR g7 Tm0 0.002004722457697965 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       83.010000 CHGPRM TOR g14 Tm0 0.002004722457697965 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       83.010000 CHGPRM TOR g15 Tm0 0.002004722457697965 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       83.010000 CHGPRM TOR g16 Tm0 0.002004722457697965 0
+Pausing at       84.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       84.010000 CHGPRM TOR g6 Tm0 0.00042714770758230276 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       84.010000 CHGPRM TOR g7 Tm0 0.00042714770758230276 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       84.010000 CHGPRM TOR g14 Tm0 0.00042714770758230276 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       84.010000 CHGPRM TOR g15 Tm0 0.00042714770758230276 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       84.010000 CHGPRM TOR g16 Tm0 0.00042714770758230276 0
+Pausing at       85.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       85.010000 CHGPRM TOR g6 Tm0 -0.001072340245034451 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       85.010000 CHGPRM TOR g7 Tm0 -0.001072340245034451 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       85.010000 CHGPRM TOR g14 Tm0 -0.001072340245034451 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       85.010000 CHGPRM TOR g15 Tm0 -0.001072340245034451 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       85.010000 CHGPRM TOR g16 Tm0 -0.001072340245034451 0
+Pausing at       86.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       86.010000 CHGPRM TOR g6 Tm0 -0.001574960921641755 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       86.010000 CHGPRM TOR g7 Tm0 -0.001574960921641755 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       86.010000 CHGPRM TOR g14 Tm0 -0.001574960921641755 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       86.010000 CHGPRM TOR g15 Tm0 -0.001574960921641755 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       86.010000 CHGPRM TOR g16 Tm0 -0.001574960921641755 0
+Pausing at       87.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       87.010000 CHGPRM TOR g6 Tm0 -0.0008686464651945647 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       87.010000 CHGPRM TOR g7 Tm0 -0.0008686464651945647 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       87.010000 CHGPRM TOR g14 Tm0 -0.0008686464651945647 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       87.010000 CHGPRM TOR g15 Tm0 -0.0008686464651945647 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       87.010000 CHGPRM TOR g16 Tm0 -0.0008686464651945647 0
+Pausing at       88.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       88.010000 CHGPRM TOR g6 Tm0 0.0004425413673126188 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       88.010000 CHGPRM TOR g7 Tm0 0.0004425413673126188 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       88.010000 CHGPRM TOR g14 Tm0 0.0004425413673126188 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       88.010000 CHGPRM TOR g15 Tm0 0.0004425413673126188 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       88.010000 CHGPRM TOR g16 Tm0 0.0004425413673126188 0
+Pausing at       89.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       89.010000 CHGPRM TOR g6 Tm0 0.0014560284259717625 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       89.010000 CHGPRM TOR g7 Tm0 0.0014560284259717625 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       89.010000 CHGPRM TOR g14 Tm0 0.0014560284259717625 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       89.010000 CHGPRM TOR g15 Tm0 0.0014560284259717625 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       89.010000 CHGPRM TOR g16 Tm0 0.0014560284259717625 0
+Pausing at       90.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       90.010000 CHGPRM TOR g6 Tm0 0.0015795191039638646 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       90.010000 CHGPRM TOR g7 Tm0 0.0015795191039638646 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       90.010000 CHGPRM TOR g14 Tm0 0.0015795191039638646 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       90.010000 CHGPRM TOR g15 Tm0 0.0015795191039638646 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       90.010000 CHGPRM TOR g16 Tm0 0.0015795191039638646 0
+Pausing at       91.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       91.010000 CHGPRM TOR g6 Tm0 0.0005852116956509557 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       91.010000 CHGPRM TOR g7 Tm0 0.0005852116956509557 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       91.010000 CHGPRM TOR g14 Tm0 0.0005852116956509557 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       91.010000 CHGPRM TOR g15 Tm0 0.0005852116956509557 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       91.010000 CHGPRM TOR g16 Tm0 0.0005852116956509557 0
+Pausing at       92.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       92.010000 CHGPRM TOR g6 Tm0 -0.00015245782712275166 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       92.010000 CHGPRM TOR g7 Tm0 -0.00015245782712275166 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       92.010000 CHGPRM TOR g14 Tm0 -0.00015245782712275166 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       92.010000 CHGPRM TOR g15 Tm0 -0.00015245782712275166 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       92.010000 CHGPRM TOR g16 Tm0 -0.00015245782712275166 0
+Pausing at       93.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       93.010000 CHGPRM TOR g6 Tm0 -0.0006859739351670457 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       93.010000 CHGPRM TOR g7 Tm0 -0.0006859739351670457 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       93.010000 CHGPRM TOR g14 Tm0 -0.0006859739351670457 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       93.010000 CHGPRM TOR g15 Tm0 -0.0006859739351670457 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       93.010000 CHGPRM TOR g16 Tm0 -0.0006859739351670457 0
+Pausing at       94.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       94.010000 CHGPRM TOR g6 Tm0 -0.0006307740854732868 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       94.010000 CHGPRM TOR g7 Tm0 -0.0006307740854732868 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       94.010000 CHGPRM TOR g14 Tm0 -0.0006307740854732868 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       94.010000 CHGPRM TOR g15 Tm0 -0.0006307740854732868 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       94.010000 CHGPRM TOR g16 Tm0 -0.0006307740854732868 0
+Pausing at       95.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       95.010000 CHGPRM TOR g6 Tm0 -4.970245632289317e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       95.010000 CHGPRM TOR g7 Tm0 -4.970245632289317e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       95.010000 CHGPRM TOR g14 Tm0 -4.970245632289317e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       95.010000 CHGPRM TOR g15 Tm0 -4.970245632289317e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       95.010000 CHGPRM TOR g16 Tm0 -4.970245632289317e-05 0
+Pausing at       96.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       96.010000 CHGPRM TOR g6 Tm0 0.0005824733992739839 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       96.010000 CHGPRM TOR g7 Tm0 0.0005824733992739839 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       96.010000 CHGPRM TOR g14 Tm0 0.0005824733992739839 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       96.010000 CHGPRM TOR g15 Tm0 0.0005824733992739839 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       96.010000 CHGPRM TOR g16 Tm0 0.0005824733992739839 0
+Pausing at       97.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       97.010000 CHGPRM TOR g6 Tm0 0.0009553179570064385 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       97.010000 CHGPRM TOR g7 Tm0 0.0009553179570064385 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       97.010000 CHGPRM TOR g14 Tm0 0.0009553179570064385 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       97.010000 CHGPRM TOR g15 Tm0 0.0009553179570064385 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       97.010000 CHGPRM TOR g16 Tm0 0.0009553179570064385 0
+Pausing at       98.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       98.010000 CHGPRM TOR g6 Tm0 0.0007986501991832862 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       98.010000 CHGPRM TOR g7 Tm0 0.0007986501991832862 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       98.010000 CHGPRM TOR g14 Tm0 0.0007986501991832862 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       98.010000 CHGPRM TOR g15 Tm0 0.0007986501991832862 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       98.010000 CHGPRM TOR g16 Tm0 0.0007986501991832862 0
+Pausing at       99.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       99.010000 CHGPRM TOR g6 Tm0 0.0004314771766869097 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       99.010000 CHGPRM TOR g7 Tm0 0.0004314771766869097 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       99.010000 CHGPRM TOR g14 Tm0 0.0004314771766869097 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       99.010000 CHGPRM TOR g15 Tm0 0.0004314771766869097 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance       99.010000 CHGPRM TOR g16 Tm0 0.0004314771766869097 0
+Pausing at      100.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      100.010000 CHGPRM TOR g6 Tm0 -0.00026805870764797565 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      100.010000 CHGPRM TOR g7 Tm0 -0.00026805870764797565 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      100.010000 CHGPRM TOR g14 Tm0 -0.00026805870764797565 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      100.010000 CHGPRM TOR g15 Tm0 -0.00026805870764797565 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      100.010000 CHGPRM TOR g16 Tm0 -0.00026805870764797565 0
+Pausing at      101.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      101.010000 CHGPRM TOR g6 Tm0 -0.0005423741565105366 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      101.010000 CHGPRM TOR g7 Tm0 -0.0005423741565105366 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      101.010000 CHGPRM TOR g14 Tm0 -0.0005423741565105366 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      101.010000 CHGPRM TOR g15 Tm0 -0.0005423741565105366 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      101.010000 CHGPRM TOR g16 Tm0 -0.0005423741565105366 0
+Pausing at      102.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      102.010000 CHGPRM TOR g6 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      102.010000 CHGPRM TOR g7 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      102.010000 CHGPRM TOR g14 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      102.010000 CHGPRM TOR g15 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      102.010000 CHGPRM TOR g16 Tm0 6.425389314028253e-05 0
+Pausing at      103.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      103.010000 CHGPRM TOR g6 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      103.010000 CHGPRM TOR g7 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      103.010000 CHGPRM TOR g14 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      103.010000 CHGPRM TOR g15 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      103.010000 CHGPRM TOR g16 Tm0 6.425389314028253e-05 0
+Pausing at      104.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      104.010000 CHGPRM TOR g6 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      104.010000 CHGPRM TOR g7 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      104.010000 CHGPRM TOR g14 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      104.010000 CHGPRM TOR g15 Tm0 6.425389314028253e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      104.010000 CHGPRM TOR g16 Tm0 6.425389314028253e-05 0
+Pausing at      105.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      105.010000 CHGPRM TOR g6 Tm0 0.0005405817382792932 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      105.010000 CHGPRM TOR g7 Tm0 0.0005405817382792932 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      105.010000 CHGPRM TOR g14 Tm0 0.0005405817382792932 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      105.010000 CHGPRM TOR g15 Tm0 0.0005405817382792932 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      105.010000 CHGPRM TOR g16 Tm0 0.0005405817382792932 0
+Pausing at      106.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      106.010000 CHGPRM TOR g6 Tm0 0.0006328080040220562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      106.010000 CHGPRM TOR g7 Tm0 0.0006328080040220562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      106.010000 CHGPRM TOR g14 Tm0 0.0006328080040220562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      106.010000 CHGPRM TOR g15 Tm0 0.0006328080040220562 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      106.010000 CHGPRM TOR g16 Tm0 0.0006328080040220562 0
+Pausing at      107.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      107.010000 CHGPRM TOR g6 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      107.010000 CHGPRM TOR g7 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      107.010000 CHGPRM TOR g14 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      107.010000 CHGPRM TOR g15 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      107.010000 CHGPRM TOR g16 Tm0 0.0002911906531439357 0
+Pausing at      108.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      108.010000 CHGPRM TOR g6 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      108.010000 CHGPRM TOR g7 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      108.010000 CHGPRM TOR g14 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      108.010000 CHGPRM TOR g15 Tm0 0.0002911906531439357 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      108.010000 CHGPRM TOR g16 Tm0 0.0002911906531439357 0
+Pausing at      109.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      109.010000 CHGPRM TOR g6 Tm0 -0.0001575828331069928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      109.010000 CHGPRM TOR g7 Tm0 -0.0001575828331069928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      109.010000 CHGPRM TOR g14 Tm0 -0.0001575828331069928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      109.010000 CHGPRM TOR g15 Tm0 -0.0001575828331069928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      109.010000 CHGPRM TOR g16 Tm0 -0.0001575828331069928 0
+Pausing at      110.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      110.010000 CHGPRM TOR g6 Tm0 -0.00029145837004950436 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      110.010000 CHGPRM TOR g7 Tm0 -0.00029145837004950436 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      110.010000 CHGPRM TOR g14 Tm0 -0.00029145837004950436 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      110.010000 CHGPRM TOR g15 Tm0 -0.00029145837004950436 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      110.010000 CHGPRM TOR g16 Tm0 -0.00029145837004950436 0
+Pausing at      111.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      111.010000 CHGPRM TOR g6 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      111.010000 CHGPRM TOR g7 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      111.010000 CHGPRM TOR g14 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      111.010000 CHGPRM TOR g15 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      111.010000 CHGPRM TOR g16 Tm0 6.589752232057044e-05 0
+Pausing at      112.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      112.010000 CHGPRM TOR g6 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      112.010000 CHGPRM TOR g7 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      112.010000 CHGPRM TOR g14 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      112.010000 CHGPRM TOR g15 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      112.010000 CHGPRM TOR g16 Tm0 6.589752232057044e-05 0
+Pausing at      113.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      113.010000 CHGPRM TOR g6 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      113.010000 CHGPRM TOR g7 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      113.010000 CHGPRM TOR g14 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      113.010000 CHGPRM TOR g15 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      113.010000 CHGPRM TOR g16 Tm0 6.589752232057044e-05 0
+Pausing at      114.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      114.010000 CHGPRM TOR g6 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      114.010000 CHGPRM TOR g7 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      114.010000 CHGPRM TOR g14 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      114.010000 CHGPRM TOR g15 Tm0 6.589752232057044e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      114.010000 CHGPRM TOR g16 Tm0 6.589752232057044e-05 0
+Pausing at      115.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      115.010000 CHGPRM TOR g6 Tm0 0.0006202820381476838 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      115.010000 CHGPRM TOR g7 Tm0 0.0006202820381476838 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      115.010000 CHGPRM TOR g14 Tm0 0.0006202820381476838 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      115.010000 CHGPRM TOR g15 Tm0 0.0006202820381476838 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      115.010000 CHGPRM TOR g16 Tm0 0.0006202820381476838 0
+Pausing at      116.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      116.010000 CHGPRM TOR g6 Tm0 0.0006511106027051073 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      116.010000 CHGPRM TOR g7 Tm0 0.0006511106027051073 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      116.010000 CHGPRM TOR g14 Tm0 0.0006511106027051073 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      116.010000 CHGPRM TOR g15 Tm0 0.0006511106027051073 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      116.010000 CHGPRM TOR g16 Tm0 0.0006511106027051073 0
+Pausing at      117.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      117.010000 CHGPRM TOR g6 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      117.010000 CHGPRM TOR g7 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      117.010000 CHGPRM TOR g14 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      117.010000 CHGPRM TOR g15 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      117.010000 CHGPRM TOR g16 Tm0 0.00031132169934747103 0
+Pausing at      118.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      118.010000 CHGPRM TOR g6 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      118.010000 CHGPRM TOR g7 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      118.010000 CHGPRM TOR g14 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      118.010000 CHGPRM TOR g15 Tm0 0.00031132169934747103 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      118.010000 CHGPRM TOR g16 Tm0 0.00031132169934747103 0
+Pausing at      119.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      119.010000 CHGPRM TOR g6 Tm0 -0.00041009236364011317 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      119.010000 CHGPRM TOR g7 Tm0 -0.00041009236364011317 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      119.010000 CHGPRM TOR g14 Tm0 -0.00041009236364011317 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      119.010000 CHGPRM TOR g15 Tm0 -0.00041009236364011317 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      119.010000 CHGPRM TOR g16 Tm0 -0.00041009236364011317 0
+Pausing at      120.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      120.010000 CHGPRM TOR g6 Tm0 -0.0005284594337774928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      120.010000 CHGPRM TOR g7 Tm0 -0.0005284594337774928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      120.010000 CHGPRM TOR g14 Tm0 -0.0005284594337774928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      120.010000 CHGPRM TOR g15 Tm0 -0.0005284594337774928 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      120.010000 CHGPRM TOR g16 Tm0 -0.0005284594337774928 0
+Pausing at      121.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      121.010000 CHGPRM TOR g6 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      121.010000 CHGPRM TOR g7 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      121.010000 CHGPRM TOR g14 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      121.010000 CHGPRM TOR g15 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      121.010000 CHGPRM TOR g16 Tm0 -2.7172117102955977e-05 0
+Pausing at      122.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      122.010000 CHGPRM TOR g6 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      122.010000 CHGPRM TOR g7 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      122.010000 CHGPRM TOR g14 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      122.010000 CHGPRM TOR g15 Tm0 -2.7172117102955977e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      122.010000 CHGPRM TOR g16 Tm0 -2.7172117102955977e-05 0
+Pausing at      123.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      123.010000 CHGPRM TOR g6 Tm0 0.0004967923273797803 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      123.010000 CHGPRM TOR g7 Tm0 0.0004967923273797803 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      123.010000 CHGPRM TOR g14 Tm0 0.0004967923273797803 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      123.010000 CHGPRM TOR g15 Tm0 0.0004967923273797803 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      123.010000 CHGPRM TOR g16 Tm0 0.0004967923273797803 0
+Pausing at      124.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      124.010000 CHGPRM TOR g6 Tm0 0.0006984713410639598 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      124.010000 CHGPRM TOR g7 Tm0 0.0006984713410639598 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      124.010000 CHGPRM TOR g14 Tm0 0.0006984713410639598 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      124.010000 CHGPRM TOR g15 Tm0 0.0006984713410639598 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      124.010000 CHGPRM TOR g16 Tm0 0.0006984713410639598 0
+Pausing at      125.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      125.010000 CHGPRM TOR g6 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      125.010000 CHGPRM TOR g7 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      125.010000 CHGPRM TOR g14 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      125.010000 CHGPRM TOR g15 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      125.010000 CHGPRM TOR g16 Tm0 0.0002469585821813558 0
+Pausing at      126.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      126.010000 CHGPRM TOR g6 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      126.010000 CHGPRM TOR g7 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      126.010000 CHGPRM TOR g14 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      126.010000 CHGPRM TOR g15 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      126.010000 CHGPRM TOR g16 Tm0 0.0002469585821813558 0
+Pausing at      127.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      127.010000 CHGPRM TOR g6 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      127.010000 CHGPRM TOR g7 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      127.010000 CHGPRM TOR g14 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      127.010000 CHGPRM TOR g15 Tm0 0.0002469585821813558 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      127.010000 CHGPRM TOR g16 Tm0 0.0002469585821813558 0
+Pausing at      128.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      128.010000 CHGPRM TOR g6 Tm0 -0.0003699724375528258 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      128.010000 CHGPRM TOR g7 Tm0 -0.0003699724375528258 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      128.010000 CHGPRM TOR g14 Tm0 -0.0003699724375528258 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      128.010000 CHGPRM TOR g15 Tm0 -0.0003699724375528258 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      128.010000 CHGPRM TOR g16 Tm0 -0.0003699724375528258 0
+Pausing at      129.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      129.010000 CHGPRM TOR g6 Tm0 -0.00042662539614129807 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      129.010000 CHGPRM TOR g7 Tm0 -0.00042662539614129807 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      129.010000 CHGPRM TOR g14 Tm0 -0.00042662539614129807 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      129.010000 CHGPRM TOR g15 Tm0 -0.00042662539614129807 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      129.010000 CHGPRM TOR g16 Tm0 -0.00042662539614129807 0
+Pausing at      130.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      130.010000 CHGPRM TOR g6 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      130.010000 CHGPRM TOR g7 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      130.010000 CHGPRM TOR g14 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      130.010000 CHGPRM TOR g15 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      130.010000 CHGPRM TOR g16 Tm0 -3.161668329842105e-05 0
+Pausing at      131.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      131.010000 CHGPRM TOR g6 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      131.010000 CHGPRM TOR g7 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      131.010000 CHGPRM TOR g14 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      131.010000 CHGPRM TOR g15 Tm0 -3.161668329842105e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      131.010000 CHGPRM TOR g16 Tm0 -3.161668329842105e-05 0
+Pausing at      132.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      132.010000 CHGPRM TOR g6 Tm0 0.00047761672355908666 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      132.010000 CHGPRM TOR g7 Tm0 0.00047761672355908666 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      132.010000 CHGPRM TOR g14 Tm0 0.00047761672355908666 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      132.010000 CHGPRM TOR g15 Tm0 0.00047761672355908666 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      132.010000 CHGPRM TOR g16 Tm0 0.00047761672355908666 0
+Pausing at      133.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      133.010000 CHGPRM TOR g6 Tm0 0.000650447286785374 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      133.010000 CHGPRM TOR g7 Tm0 0.000650447286785374 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      133.010000 CHGPRM TOR g14 Tm0 0.000650447286785374 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      133.010000 CHGPRM TOR g15 Tm0 0.000650447286785374 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      133.010000 CHGPRM TOR g16 Tm0 0.000650447286785374 0
+Pausing at      134.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      134.010000 CHGPRM TOR g6 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      134.010000 CHGPRM TOR g7 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      134.010000 CHGPRM TOR g14 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      134.010000 CHGPRM TOR g15 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      134.010000 CHGPRM TOR g16 Tm0 0.0002291416124228052 0
+Pausing at      135.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      135.010000 CHGPRM TOR g6 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      135.010000 CHGPRM TOR g7 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      135.010000 CHGPRM TOR g14 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      135.010000 CHGPRM TOR g15 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      135.010000 CHGPRM TOR g16 Tm0 0.0002291416124228052 0
+Pausing at      136.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      136.010000 CHGPRM TOR g6 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      136.010000 CHGPRM TOR g7 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      136.010000 CHGPRM TOR g14 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      136.010000 CHGPRM TOR g15 Tm0 0.0002291416124228052 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      136.010000 CHGPRM TOR g16 Tm0 0.0002291416124228052 0
+Pausing at      137.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      137.010000 CHGPRM TOR g6 Tm0 -0.00040577855641010785 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      137.010000 CHGPRM TOR g7 Tm0 -0.00040577855641010785 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      137.010000 CHGPRM TOR g14 Tm0 -0.00040577855641010785 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      137.010000 CHGPRM TOR g15 Tm0 -0.00040577855641010785 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      137.010000 CHGPRM TOR g16 Tm0 -0.00040577855641010785 0
+Pausing at      138.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      138.010000 CHGPRM TOR g6 Tm0 -0.00045255314611127864 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      138.010000 CHGPRM TOR g7 Tm0 -0.00045255314611127864 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      138.010000 CHGPRM TOR g14 Tm0 -0.00045255314611127864 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      138.010000 CHGPRM TOR g15 Tm0 -0.00045255314611127864 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      138.010000 CHGPRM TOR g16 Tm0 -0.00045255314611127864 0
+Pausing at      139.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      139.010000 CHGPRM TOR g6 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      139.010000 CHGPRM TOR g7 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      139.010000 CHGPRM TOR g14 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      139.010000 CHGPRM TOR g15 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      139.010000 CHGPRM TOR g16 Tm0 -5.4738371190370396e-05 0
+Pausing at      140.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      140.010000 CHGPRM TOR g6 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      140.010000 CHGPRM TOR g7 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      140.010000 CHGPRM TOR g14 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      140.010000 CHGPRM TOR g15 Tm0 -5.4738371190370396e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      140.010000 CHGPRM TOR g16 Tm0 -5.4738371190370396e-05 0
+Pausing at      141.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      141.010000 CHGPRM TOR g6 Tm0 0.00046594322025331973 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      141.010000 CHGPRM TOR g7 Tm0 0.00046594322025331973 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      141.010000 CHGPRM TOR g14 Tm0 0.00046594322025331973 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      141.010000 CHGPRM TOR g15 Tm0 0.00046594322025331973 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      141.010000 CHGPRM TOR g16 Tm0 0.00046594322025331973 0
+Pausing at      142.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      142.010000 CHGPRM TOR g6 Tm0 0.0006526600049168473 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      142.010000 CHGPRM TOR g7 Tm0 0.0006526600049168473 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      142.010000 CHGPRM TOR g14 Tm0 0.0006526600049168473 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      142.010000 CHGPRM TOR g15 Tm0 0.0006526600049168473 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      142.010000 CHGPRM TOR g16 Tm0 0.0006526600049168473 0
+Pausing at      143.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      143.010000 CHGPRM TOR g6 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      143.010000 CHGPRM TOR g7 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      143.010000 CHGPRM TOR g14 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      143.010000 CHGPRM TOR g15 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      143.010000 CHGPRM TOR g16 Tm0 0.00021432651602332876 0
+Pausing at      144.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      144.010000 CHGPRM TOR g6 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      144.010000 CHGPRM TOR g7 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      144.010000 CHGPRM TOR g14 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      144.010000 CHGPRM TOR g15 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      144.010000 CHGPRM TOR g16 Tm0 0.00021432651602332876 0
+Pausing at      145.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      145.010000 CHGPRM TOR g6 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      145.010000 CHGPRM TOR g7 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      145.010000 CHGPRM TOR g14 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      145.010000 CHGPRM TOR g15 Tm0 0.00021432651602332876 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      145.010000 CHGPRM TOR g16 Tm0 0.00021432651602332876 0
+Pausing at      146.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      146.010000 CHGPRM TOR g6 Tm0 -0.00038722574669239226 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      146.010000 CHGPRM TOR g7 Tm0 -0.00038722574669239226 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      146.010000 CHGPRM TOR g14 Tm0 -0.00038722574669239226 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      146.010000 CHGPRM TOR g15 Tm0 -0.00038722574669239226 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      146.010000 CHGPRM TOR g16 Tm0 -0.00038722574669239226 0
+Pausing at      147.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      147.010000 CHGPRM TOR g6 Tm0 -0.0004507395448188589 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      147.010000 CHGPRM TOR g7 Tm0 -0.0004507395448188589 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      147.010000 CHGPRM TOR g14 Tm0 -0.0004507395448188589 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      147.010000 CHGPRM TOR g15 Tm0 -0.0004507395448188589 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      147.010000 CHGPRM TOR g16 Tm0 -0.0004507395448188589 0
+Pausing at      148.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      148.010000 CHGPRM TOR g6 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      148.010000 CHGPRM TOR g7 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      148.010000 CHGPRM TOR g14 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      148.010000 CHGPRM TOR g15 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      148.010000 CHGPRM TOR g16 Tm0 -5.932660659039079e-05 0
+Pausing at      149.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      149.010000 CHGPRM TOR g6 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      149.010000 CHGPRM TOR g7 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      149.010000 CHGPRM TOR g14 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      149.010000 CHGPRM TOR g15 Tm0 -5.932660659039079e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      149.010000 CHGPRM TOR g16 Tm0 -5.932660659039079e-05 0
+Pausing at      150.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      150.010000 CHGPRM TOR g6 Tm0 0.0003990899838859629 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      150.010000 CHGPRM TOR g7 Tm0 0.0003990899838859629 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      150.010000 CHGPRM TOR g14 Tm0 0.0003990899838859629 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      150.010000 CHGPRM TOR g15 Tm0 0.0003990899838859629 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      150.010000 CHGPRM TOR g16 Tm0 0.0003990899838859629 0
+Pausing at      151.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      151.010000 CHGPRM TOR g6 Tm0 0.0005851759576889925 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      151.010000 CHGPRM TOR g7 Tm0 0.0005851759576889925 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      151.010000 CHGPRM TOR g14 Tm0 0.0005851759576889925 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      151.010000 CHGPRM TOR g15 Tm0 0.0005851759576889925 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      151.010000 CHGPRM TOR g16 Tm0 0.0005851759576889925 0
+Pausing at      152.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      152.010000 CHGPRM TOR g6 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      152.010000 CHGPRM TOR g7 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      152.010000 CHGPRM TOR g14 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      152.010000 CHGPRM TOR g15 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      152.010000 CHGPRM TOR g16 Tm0 0.00018286589750311056 0
+Pausing at      153.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      153.010000 CHGPRM TOR g6 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      153.010000 CHGPRM TOR g7 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      153.010000 CHGPRM TOR g14 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      153.010000 CHGPRM TOR g15 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      153.010000 CHGPRM TOR g16 Tm0 0.00018286589750311056 0
+Pausing at      154.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      154.010000 CHGPRM TOR g6 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      154.010000 CHGPRM TOR g7 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      154.010000 CHGPRM TOR g14 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      154.010000 CHGPRM TOR g15 Tm0 0.00018286589750311056 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      154.010000 CHGPRM TOR g16 Tm0 0.00018286589750311056 0
+Pausing at      155.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      155.010000 CHGPRM TOR g6 Tm0 -0.00029753165796079893 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      155.010000 CHGPRM TOR g7 Tm0 -0.00029753165796079893 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      155.010000 CHGPRM TOR g14 Tm0 -0.00029753165796079893 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      155.010000 CHGPRM TOR g15 Tm0 -0.00029753165796079893 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      155.010000 CHGPRM TOR g16 Tm0 -0.00029753165796079893 0
+Pausing at      156.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      156.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      156.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      156.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      156.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      156.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      157.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      157.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      157.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      157.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      157.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      157.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      158.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      158.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      158.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      158.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      158.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      158.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      159.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      159.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      159.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      159.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      159.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      159.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      160.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      160.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      160.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      160.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      160.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      160.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      161.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      161.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      161.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      161.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      161.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      161.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      162.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      162.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      162.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      162.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      162.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      162.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      163.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      163.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      163.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      163.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      163.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      163.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      164.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      164.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      164.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      164.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      164.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      164.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      165.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      165.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      165.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      165.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      165.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      165.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      166.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      166.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      166.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      166.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      166.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      166.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      167.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      167.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      167.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      167.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      167.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      167.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      168.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      168.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      168.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      168.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      168.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      168.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      169.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      169.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      169.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      169.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      169.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      169.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      170.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      170.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      170.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      170.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      170.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      170.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      171.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      171.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      171.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      171.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      171.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      171.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      172.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      172.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      172.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      172.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      172.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      172.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      173.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      173.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      173.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      173.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      173.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      173.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      174.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      174.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      174.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      174.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      174.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      174.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      175.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      175.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      175.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      175.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      175.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      175.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      176.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      176.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      176.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      176.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      176.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      176.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      177.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      177.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      177.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      177.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      177.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      177.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      178.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      178.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      178.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      178.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      178.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      178.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      179.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      179.010000 CHGPRM TOR g6 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      179.010000 CHGPRM TOR g7 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      179.010000 CHGPRM TOR g14 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      179.010000 CHGPRM TOR g15 Tm0 6.544530541481297e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      179.010000 CHGPRM TOR g16 Tm0 6.544530541481297e-05 0
+Pausing at      180.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      180.010000 CHGPRM TOR g6 Tm0 -0.0003836981555967034 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      180.010000 CHGPRM TOR g7 Tm0 -0.0003836981555967034 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      180.010000 CHGPRM TOR g14 Tm0 -0.0003836981555967034 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      180.010000 CHGPRM TOR g15 Tm0 -0.0003836981555967034 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      180.010000 CHGPRM TOR g16 Tm0 -0.0003836981555967034 0
+Pausing at      181.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      181.010000 CHGPRM TOR g6 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      181.010000 CHGPRM TOR g7 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      181.010000 CHGPRM TOR g14 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      181.010000 CHGPRM TOR g15 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      181.010000 CHGPRM TOR g16 Tm0 -4.433604239748146e-05 0
+Pausing at      182.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      182.010000 CHGPRM TOR g6 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      182.010000 CHGPRM TOR g7 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      182.010000 CHGPRM TOR g14 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      182.010000 CHGPRM TOR g15 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      182.010000 CHGPRM TOR g16 Tm0 -4.433604239748146e-05 0
+Pausing at      183.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      183.010000 CHGPRM TOR g6 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      183.010000 CHGPRM TOR g7 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      183.010000 CHGPRM TOR g14 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      183.010000 CHGPRM TOR g15 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      183.010000 CHGPRM TOR g16 Tm0 -4.433604239748146e-05 0
+Pausing at      184.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      184.010000 CHGPRM TOR g6 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      184.010000 CHGPRM TOR g7 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      184.010000 CHGPRM TOR g14 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      184.010000 CHGPRM TOR g15 Tm0 -4.433604239748146e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      184.010000 CHGPRM TOR g16 Tm0 -4.433604239748146e-05 0
+Pausing at      185.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      185.010000 CHGPRM TOR g6 Tm0 0.00039344712964535674 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      185.010000 CHGPRM TOR g7 Tm0 0.00039344712964535674 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      185.010000 CHGPRM TOR g14 Tm0 0.00039344712964535674 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      185.010000 CHGPRM TOR g15 Tm0 0.00039344712964535674 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      185.010000 CHGPRM TOR g16 Tm0 0.00039344712964535674 0
+Pausing at      186.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      186.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      186.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      186.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      186.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      186.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      187.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      187.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      187.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      187.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      187.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      187.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      188.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      188.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      188.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      188.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      188.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      188.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      189.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      189.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      189.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      189.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      189.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      189.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      190.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      190.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      190.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      190.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      190.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      190.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      191.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      191.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      191.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      191.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      191.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      191.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      192.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      192.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      192.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      192.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      192.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      192.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      193.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      193.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      193.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      193.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      193.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      193.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      194.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      194.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      194.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      194.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      194.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      194.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      195.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      195.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      195.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      195.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      195.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      195.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      196.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      196.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      196.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      196.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      196.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      196.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      197.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      197.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      197.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      197.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      197.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      197.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      198.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      198.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      198.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      198.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      198.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      198.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      199.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      199.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      199.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      199.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      199.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      199.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      200.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      200.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      200.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      200.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      200.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      200.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      201.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      201.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      201.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      201.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      201.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      201.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      202.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      202.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      202.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      202.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      202.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      202.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      203.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      203.010000 CHGPRM TOR g6 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      203.010000 CHGPRM TOR g7 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      203.010000 CHGPRM TOR g14 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      203.010000 CHGPRM TOR g15 Tm0 6.266858050890001e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      203.010000 CHGPRM TOR g16 Tm0 6.266858050890001e-05 0
+Pausing at      204.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      204.010000 CHGPRM TOR g6 Tm0 -0.00040717874171082076 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      204.010000 CHGPRM TOR g7 Tm0 -0.00040717874171082076 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      204.010000 CHGPRM TOR g14 Tm0 -0.00040717874171082076 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      204.010000 CHGPRM TOR g15 Tm0 -0.00040717874171082076 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      204.010000 CHGPRM TOR g16 Tm0 -0.00040717874171082076 0
+Pausing at      205.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      205.010000 CHGPRM TOR g6 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      205.010000 CHGPRM TOR g7 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      205.010000 CHGPRM TOR g14 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      205.010000 CHGPRM TOR g15 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      205.010000 CHGPRM TOR g16 Tm0 -5.2173283565251084e-05 0
+Pausing at      206.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      206.010000 CHGPRM TOR g6 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      206.010000 CHGPRM TOR g7 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      206.010000 CHGPRM TOR g14 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      206.010000 CHGPRM TOR g15 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      206.010000 CHGPRM TOR g16 Tm0 -5.2173283565251084e-05 0
+Pausing at      207.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      207.010000 CHGPRM TOR g6 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      207.010000 CHGPRM TOR g7 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      207.010000 CHGPRM TOR g14 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      207.010000 CHGPRM TOR g15 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      207.010000 CHGPRM TOR g16 Tm0 -5.2173283565251084e-05 0
+Pausing at      208.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      208.010000 CHGPRM TOR g6 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      208.010000 CHGPRM TOR g7 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      208.010000 CHGPRM TOR g14 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      208.010000 CHGPRM TOR g15 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      208.010000 CHGPRM TOR g16 Tm0 -5.2173283565251084e-05 0
+Pausing at      209.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      209.010000 CHGPRM TOR g6 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      209.010000 CHGPRM TOR g7 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      209.010000 CHGPRM TOR g14 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      209.010000 CHGPRM TOR g15 Tm0 -5.2173283565251084e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      209.010000 CHGPRM TOR g16 Tm0 -5.2173283565251084e-05 0
+Pausing at      210.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      210.010000 CHGPRM TOR g6 Tm0 0.00047453706350188975 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      210.010000 CHGPRM TOR g7 Tm0 0.00047453706350188975 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      210.010000 CHGPRM TOR g14 Tm0 0.00047453706350188975 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      210.010000 CHGPRM TOR g15 Tm0 0.00047453706350188975 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      210.010000 CHGPRM TOR g16 Tm0 0.00047453706350188975 0
+Pausing at      211.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      211.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      211.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      211.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      211.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      211.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
+Pausing at      212.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      212.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      212.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      212.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      212.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      212.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
+Pausing at      213.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      213.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      213.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      213.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      213.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      213.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
+Pausing at      214.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      214.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      214.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      214.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      214.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      214.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
+Pausing at      215.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      215.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      215.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      215.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      215.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      215.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
+Pausing at      216.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      216.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      216.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      216.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      216.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      216.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
+Pausing at      217.000
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      217.010000 CHGPRM TOR g6 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      217.010000 CHGPRM TOR g7 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      217.010000 CHGPRM TOR g14 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      217.010000 CHGPRM TOR g15 Tm0 7.656725665655007e-05 0
+MESSAGE FROM add_disturb: 
+PyRAMSES: Adding disturbance      217.010000 CHGPRM TOR g16 Tm0 7.656725665655007e-05 0
