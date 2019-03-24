@@ -56,7 +56,7 @@ def move_file(flag, kp, ki, td):
 		'''
 		Move output.trace file:
 		'''
-		
+		'''
 		# Open, read and re-write contents to another file (in public folder) (output.trace)
 		with open("output.trace") as f10:
 				with open("output_.trace", "w") as f11:
@@ -73,7 +73,7 @@ def move_file(flag, kp, ki, td):
 		os.rename('output/output_.trace',
 				 'output/output_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.trace')
 		print("rename output.trace successfully")
-
+		'''
 
 		'''
 		Delete cur & trace files:
@@ -84,13 +84,13 @@ def move_file(flag, kp, ki, td):
 		os.unlink("temp_display_.cur")
 		print("delete temp_display(_).cur successfully")
 
-		# Delete trace: cont, disc, init, output(_)
+		# Delete trace: cont, disc, init, output
 		os.unlink("cont.trace")
 		os.unlink("disc.trace")
 		os.unlink("init.trace")
 		os.unlink("output.trace")
-		os.unlink("output_.trace")
-		print("delete trace: cont, disc, init, output(_) successfully\n")
+		# os.unlink("output_.trace")
+		print("delete trace: cont, disc, init, output successfully\n")
 
 
 
@@ -188,61 +188,79 @@ def agc(ram, start_time, t, comp_type, comp_name, obs_name, nominal_frequency, e
 			return
 		
 		
-		
+
 if __name__ == '__main__':
 	'''
 	tuning kp & ki:
 	'''
 	
-	if __name__ == '__main__':
-		'''
-		tuning kp & ki:
-		'''
-		
-		for td in np.arange(0.01, 0.02, 0.02):  # td: 0.010 sec
-			td = "{0:.2f}".format(round(td,2))
-			for kp in np.arange(50.6, 199.7, 0.5):  # kp: 50.6-199.6
-						
-				if float(kp)>=50.6 and float(kp)<=99.6:  # kp: 50.6-99.6
-					kp = "{0:.2f}".format(round(float(kp),2))
-					for ki in np.arange(0.1, 0.57*float(kp), 0.5):  # ki: 0.1-0.57*kp
-						ki = "{0:.2f}".format(round(float(ki),2))
-
-						print("kp = " + str(kp))
-						print("ki = " + str(ki))
-						print("td = " + str(td))
-						
-						'''
-						Run sfc:
-						'''
-						sfc(kp, ki, td)
-						
-				if float(kp)>=100.6 and float(kp)<=149.6:  # kp: 100.6-149.6
-					kp = "{0:.2f}".format(round(float(kp),2))
-					for ki in np.arange(0.1, 0.5355*float(kp), 0.5):  # ki: 0.1-0.5355*kp
-						ki = "{0:.2f}".format(round(float(ki),2))
-
-						print("kp = " + str(kp))
-						print("ki = " + str(ki))
-						print("td = " + str(td))
-						
-						'''
-						Run sfc:
-						'''
-						sfc(kp, ki, td)
-						
-				if float(kp)>=150.6 and float(kp)<=199.6:  # kp: 150.6-199.6
-					kp = "{0:.2f}".format(round(float(kp),2))
-					for ki in np.arange(0.1, 0.4837*float(kp), 0.5):  # ki: 0.1-0.4837*kp
-						ki = "{0:.2f}".format(round(float(ki),2))
-
-						print("kp = " + str(kp))
-						print("ki = " + str(ki))
-						print("td = " + str(td))
-						
-						'''
-						Run sfc:
-						'''
-						sfc(kp, ki, td)
-						pass
+	for td in np.arange(0.01, 0.02, 0.02):  # td: 0.010 sec
+		td = "{0:.2f}".format(round(td,2))
+		for kp in np.arange(50.6, 199.7, 0.5):  # kp: 50.6-199.6
+			
+			'''
+			define relationship between kp and ki
+			'''
+			if float(kp)>=0.1 and float(kp)<=49.6:  # kp: 0.1-49.6
+				coef = 0.6341
 				pass
+				
+			if float(kp)>=50.6 and float(kp)<=99.6:  # kp: 50.6-99.6
+				coef = 0.5709
+				pass
+				
+			if float(kp)>=100.6 and float(kp)<=149.6:  # kp: 100.6-149.6
+				coef = 0.5355
+				pass
+				
+			if float(kp)>=150.6 and float(kp)<=199.6:  # kp: 150.6-199.6
+				coef = 0.4837
+				pass
+				
+			if float(kp)>=200.6 and float(kp)<=249.6:  # kp: 200.6-249.6
+				coef = 0.4153
+				pass
+				
+			if float(kp)>=250.6 and float(kp)<=299.6:  # kp: 250.6-299.6
+				coef = 0.3583
+				pass
+				
+			if float(kp)>=300.6 and float(kp)<=349.6:  # kp: 300.6-349.6
+				coef = 0.2919
+				pass
+				
+			if float(kp)>=350.6 and float(kp)<=399.6:  # kp: 350.6-399.6
+				coef = 0.2288
+				pass
+				
+			if float(kp)>=400.6 and float(kp)<=449.6:  # kp: 400.6-449.6
+				coef = 0.1602
+				pass
+				
+			if float(kp)>=450.6 and float(kp)<=499.6:  # kp: 450.6-499.6
+				coef = 0.1602
+				pass
+				
+			if float(kp)>=500.6 and float(kp)<=499.6:  # kp: 450.6-539.6
+				coef = 0.0432
+				pass
+			
+				
+			kp = "{0:.2f}".format(round(float(kp),2))
+			for ki in np.arange(0.1, coef*float(kp), 0.5):  # ki: 0.1-coef*kp
+				ki = "{0:.2f}".format(round(float(ki),2))
+
+				print("kp = " + str(kp))
+				print("ki = " + str(ki))
+				print("td = " + str(td))
+				
+				'''
+				Run sfc:
+				'''
+				sfc(kp, ki, td)
+				pass
+					
+			pass
+			
+			
+			
