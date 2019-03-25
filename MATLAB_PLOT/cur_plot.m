@@ -79,9 +79,9 @@ for kp = 0.1:10:540.1
     end
 end
 T = table(KP, KI, DELAY, SETTLINGTIME);
-% Mac: /Users/realgjl/OneDrive - University of Leeds\Nordic\td_' num2str(delay,'%.2f') 'ms\rank.xlsx
-% PC: D:\OneDrive - University of Leeds\Nordic\td_' num2str(delay,'%.2f') 'ms\rank.xlsx
-xlsx_dic = ['D:\OneDrive - University of Leeds\Nordic\td_' num2str(delay,'%.2f') 'ms\rank.xlsx']; % save to a dictionary
+% Mac: /Users/realgjl/OneDrive - University of Leeds\Nordic\td_' num2str(delay,'%.2f') 's\rank.xlsx
+% PC: D:\OneDrive - University of Leeds\Nordic\td_' num2str(delay,'%.2f') 's\rank.xlsx
+xlsx_dic = ['D:\OneDrive - University of Leeds\Nordic\td_' num2str(delay,'%.2f') 's\rank.xlsx']; % save to a dictionary
 writetable(T,xlsx_dic);
 hold off
 
