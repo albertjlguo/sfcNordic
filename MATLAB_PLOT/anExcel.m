@@ -89,6 +89,6 @@ theTitle = 'Machine g2';
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 639]);
+xlim([0 369]);
 ylim([0.99 1.01]);
 grid on
