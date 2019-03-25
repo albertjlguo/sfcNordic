@@ -8,7 +8,7 @@ def agc(ram, start_time, t, comp_type, comp_name, obs_name, nominal_frequency, e
     PI Control:
     '''
     
-    for i in np.arange(start_time+1,t):
+    for i in np.arange(start_time+1,t+1):  # ending time will be include the 't' sec
         #print("i = " + str(i))
         actual_frequency = ram.getObs(comp_type,comp_name, obs_name)[0] # g2
         error = nominal_frequency - actual_frequency
