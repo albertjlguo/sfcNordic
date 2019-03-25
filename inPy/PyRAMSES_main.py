@@ -70,7 +70,7 @@ if __name__ == '__main__':
             ki loop
             '''
             kp = "{0:.2f}".format(round(float(kp),2))
-            for ki in np.arange(0.1, coef*float(kp), 0.5):  # ki: 0.1-coef*kp
+            for ki in np.arange(0.1, coef*float(kp), 10.0):  # ki: 0.1-coef*kp
                 ki = "{0:.2f}".format(round(float(ki),2))
 
                 print("kp = " + str(kp))
