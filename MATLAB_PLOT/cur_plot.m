@@ -9,9 +9,12 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
+endingTime = 240;
+nordic_limit = 0.002;  % Nordic: 1±0.2%
+gb_limit = 0.004;  % GB: 1±0.4%
 
 for kp = 0.1:10:540.1
-    
+    %{
     if kp>=0.1 && kp<=49.6  % kp: 0.1-49.6
         coef = 0.6341;
     end
@@ -55,7 +58,7 @@ for kp = 0.1:10:540.1
     if kp>=500.1 && kp<=539.6  % kp: 500.1-539.6
         coef = 0.0432;
     end
-    
+    %}
     for ki = 0.1:10:(coef*kp)
         for delay = 0.01:0.10:0.22
             s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3];
@@ -63,11 +66,11 @@ for kp = 0.1:10:540.1
             t = a(:,1);
             f = a(:,4);
             info = stepinfo(f,t,1.0); % set steady-state value (y_final) to nominal value.
-            if info.SettlingMax < 1.01 && info.SettlingMin > 0.99 && max(f) < 1.01 && min(f) > 0.99
+            if info.SettlingMax < (1 + nordic_limit) && info.SettlingMin > (1 - nordic_limit) && max(f) < (1 + nordic_limit) && min(f) > (1 - nordic_limit)
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ', delay = ', num2str(delay,'%.2f')];
                 plot(t, f, 'DisplayName',txt)
                 settlingTime = info.SettlingTime;
-                if max(t) < 499
+                if max(t) < endingTime
                     settlingTime = 999999999;
                 end
                 KP = [KP; kp];
