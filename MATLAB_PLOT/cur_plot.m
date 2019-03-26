@@ -52,7 +52,7 @@ writetable(T,xlsx_dic);
 hold off
 
 legend show
-theTitle = ['Machine g2 (Nordic: 0.998 ~ 1.002): AGC starting from ' num2str(startingTime) 'sec, system ending at ' num2str(240) 'sec'];
+theTitle = ['Machine g2 (Nordic: 0.998 ~ 1.002): AGC starting from ' num2str(startingTime) 'sec, system ending at ' num2str(endingTime) 'sec'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
