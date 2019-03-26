@@ -13,7 +13,7 @@ $SCHEME DE                        ;
 $OMEGA_REF COI                    ;
 $SPARSE_SOLVER ma41 ;
 # $GP_MODE png ;
-$CALL_GP F ;
+$CALL_GP F;
 
 DCTL SIM_MINMAXVOLT MINMAXVOLT_Warning 0.85 1.10 5.0 1 ;
 DCTL SIM_MINMAXVOLT MINMAXVOLT_Stopping 0.7 1.20 5.0 0 ;
