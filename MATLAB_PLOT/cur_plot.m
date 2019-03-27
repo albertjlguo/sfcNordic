@@ -13,8 +13,6 @@ prefix_Win = 'D:/OneDrive - University of Leeds/';
 Nordic_Data = 'Nordic/Data/';
 excel_name = 'rank.xlsx';
 
-folder_name = '2.3';
-
 figure();
 hold on
 KP = [];
@@ -22,8 +20,41 @@ KI = [];
 DELAY = [];
 SETTLINGTIME = [];
 
-for kp = 125.1
-    for ki = 0.1:10:125.1 %0.1:10:125.1
+for kp = 0.1:5.0:345.1
+    
+    if kp == 0.1  % kp: 0.1
+        coef = 3.0;
+    end
+    
+    if kp>0.1 && kp<50.1  % kp: 5.1~45.1
+        coef = 0.3;
+    end
+
+    if kp>=50.1 && kp<100.1  % kp: 50.1~95.1
+        coef = 0.2415;
+    end
+
+    if kp>=100.1 && kp<150.1  % kp: 100.1~145.1
+        coef = 0.1908;
+    end
+
+    if kp>=150.1 && kp<200.1  % kp: 150.1~195.1
+        coef = 0.1339;
+    end
+
+    if kp>=200.1 && kp<250.1  % kp: 200.1~245.1
+        coef = 0.0655;
+    end
+
+    if kp>=250.1 && kp<300.1  % kp: 250.1~295.1
+        coef = 0.0444;
+    end
+
+    if kp>=300.1 && kp<=349.6  % kp: 300.1~345.1
+        coef = 0.0337;
+    end
+    
+    for ki = 0.1:1.0:coef*kp  % ki: 0.1-coef*kp, step: 1.0
         for delay = 0.01
             s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3];
             a = importdata(s);
@@ -46,7 +77,9 @@ for kp = 125.1
         end
     end
 end
+
 T = table(KP, KI, DELAY, SETTLINGTIME);
+folder_name = ['td_' num2str(delay,'%.2f') 's'];
 xlsx_dic = [prefix_Win Nordic_Data folder_name '/' excel_name];  % save to a dictionary
 writetable(T,xlsx_dic);
 hold off
