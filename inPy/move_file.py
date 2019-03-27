@@ -2,6 +2,20 @@ import os
 import shutil
 
 def move_file(flag, kp, ki, td):
+  
+  folderName = 'td_' + str(td) + 's'
+  
+  '''
+  Create a folder
+  '''
+  prepared_folder_address = 'D:/OneDrive - University of Leeds/Nordic/Data/' + folderName
+  try:
+    if not os.path.exists(prepared_folder_address):
+      os.makedirs(prepared_folder_address)
+  except OSError:
+    print('Error: Creating floder:' + prepared_folder_address)
+  
+  
   '''
   Move cur file:
   '''
@@ -14,15 +28,16 @@ def move_file(flag, kp, ki, td):
           f01.write(line)
   print("re-write cur successfully")
 
-  # Copy the file (in public folder) to another prepared folder (cur)
-  shutil.copy("temp_display_.cur", 'D:/OneDrive - University of Leeds/Nordic/td_' + str(td) + 's')
+  # Copy the file (in public folder) to another prepared folder
+  shutil.copy("temp_display_.cur", prepared_folder_address)
   print("copy cur successfully")
 
   # Rename the file in new folder (cur)
-  os.rename('D:/OneDrive - University of Leeds/Nordic/td_' + str(td) + 's' + '/temp_display_.cur', 
-        'D:/OneDrive - University of Leeds/Nordic/td_' + str(td) + 's' + '/temp_display_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
+  os.rename(prepared_folder_address + '/temp_display_.cur', 
+        prepared_folder_address + '/temp_display_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
   print("rename cur successfully")
 
+  
   '''
   Delete cur & trace files:
   '''
