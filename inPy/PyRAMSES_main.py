@@ -22,35 +22,35 @@ if __name__ == '__main__':
             '''
             if float(kp) == 0.1:  # kp: 0.1
                 coef = 3.0
-            pass
+                pass
 
             if float(kp)>0.1 and float(kp)<50.1:  # kp: 5.1~45.1
                 coef = 0.3
-            pass
+                pass
 
             if float(kp)>=50.1 and float(kp)<100.1:  # kp: 50.1~95.1
                 coef = 0.2415
-            pass
+                pass
 
             if float(kp)>=100.1 and float(kp)<150.1:  # kp: 100.1~145.1
                 coef = 0.1908
-            pass
+                pass
 
             if float(kp)>=150.1 and float(kp)<200.1:  # kp: 150.1~195.1
                 coef = 0.1339
-            pass
+                pass
 
             if float(kp)>=200.1 and float(kp)<250.1:  # kp: 200.1~245.1
                 coef = 0.0655
-            pass
+                pass
 
             if float(kp)>=250.1 and float(kp)<300.1:  # kp: 250.1~295.1
                 coef = 0.0444
-            pass
+                pass
 
             if float(kp)>=300.1 and float(kp)<=349.6:  # kp: 300.1~345.1
                 coef = 0.0337
-            pass
+                pass
             
             '''
             ki loop
