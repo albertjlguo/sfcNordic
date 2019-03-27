@@ -12,62 +12,50 @@ if __name__ == '__main__':
     tuning kp & ki:
     '''
 
-    for td in np.arange(0.01, 0.22, 0.10):  # td: 0.010 sec, 0.110, 0.210
+    for td in np.arange(0.21, 0.22, 0.10):  # td: 0.21 sec
         td = "{0:.2f}".format(round(td,2))
-        for kp in np.arange(0.1, 540.2, 10.0):  # (start, end (exclude), step)
-
+        for kp in np.arange(0.1, 345.2, 5.0):  # kp: 0.1~345.1, step: 5.0
+            kp = "{0:.2f}".format(round(float(kp),2))
+            
             '''
             define relationship between kp and ki
             '''
-            if float(kp)>=0.1 and float(kp)<=49.6:  # kp: 0.1-49.6
-                coef = 0.6341
-                pass
+            if float(kp) == 0.1:  # kp: 0.1
+                coef = 3.0
+            pass
 
-            if float(kp)>=50.1 and float(kp)<=99.6:  # kp: 50.1-99.6
-                coef = 0.5709
-                pass
+            if float(kp)>0.1 and float(kp)<50.1:  # kp: 5.1~45.1
+                coef = 0.3
+            pass
 
-            if float(kp)>=100.1 and float(kp)<=149.6:  # kp: 100.1-149.6
-                coef = 0.5355
-                pass
+            if float(kp)>=50.1 and float(kp)<100.1:  # kp: 50.1~95.1
+                coef = 0.2415
+            pass
 
-            if float(kp)>=150.1 and float(kp)<=199.6:  # kp: 150.1-199.6
-                coef = 0.4837
-                pass
+            if float(kp)>=100.1 and float(kp)<150.1:  # kp: 100.1~145.1
+                coef = 0.1908
+            pass
 
-            if float(kp)>=200.1 and float(kp)<=249.6:  # kp: 200.1-249.6
-                coef = 0.4153
-                pass
+            if float(kp)>=150.1 and float(kp)<200.1:  # kp: 150.1~195.1
+                coef = 0.1339
+            pass
 
-            if float(kp)>=250.1 and float(kp)<=299.6:  # kp: 250.1-299.6
-                coef = 0.3583
-                pass
+            if float(kp)>=200.1 and float(kp)<250.1:  # kp: 200.1~245.1
+                coef = 0.0655
+            pass
 
-            if float(kp)>=300.1 and float(kp)<=349.6:  # kp: 300.1-349.6
-                coef = 0.2919
-                pass
+            if float(kp)>=250.1 and float(kp)<300.1:  # kp: 250.1~295.1
+                coef = 0.0444
+            pass
 
-            if float(kp)>=350.1 and float(kp)<=399.6:  # kp: 350.1-399.6
-                coef = 0.2288
-                pass
-
-            if float(kp)>=400.1 and float(kp)<=449.6:  # kp: 400.1-449.6
-                coef = 0.1602
-                pass
-
-            if float(kp)>=450.1 and float(kp)<=499.6:  # kp: 450.1-499.6
-                coef = 0.1602
-                pass
-
-            if float(kp)>=500.1 and float(kp)<=539.6:  # kp: 500.1-539.6
-                coef = 0.0432
-                pass
-
+            if float(kp)>=300.1 and float(kp)<=349.6:  # kp: 300.1~345.1
+                coef = 0.0337
+            pass
+            
             '''
             ki loop
             '''
-            kp = "{0:.2f}".format(round(float(kp),2))
-            for ki in np.arange(0.1, coef*kp, 10):  # ki: 0.1-coef*kp
+            for ki in np.arange(0.1, coef*float(kp), 1.0):  # ki: 0.1-coef*kp, step: 1.0
                 ki = "{0:.2f}".format(round(float(ki),2))
 
                 print("kp = " + str(kp))
