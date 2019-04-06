@@ -15,7 +15,7 @@ def sfc(kp, ki, td):
     case = PyRAMSES.cfg('cmd.txt')
 
     # Add one observation more
-    case.addRunObs('MS g2') # will plot in real-time the voltage on bus g1
+    case.addRunObs('MS g2') # will plot in real-time the voltage on bus g2
 
     # Run simulation and pause at t=15 seconds
     start_time=25.0
