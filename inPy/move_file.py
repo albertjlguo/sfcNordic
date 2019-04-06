@@ -21,8 +21,8 @@ def move_file(flag, kp, ki, td):
   '''
   
   # Open, read and re-write contents to another file (in public folder) (cur)
-  with open("temp_display.cur") as f00:
-    with open("temp_display_.cur", "w") as f01:
+  with open("temp_display.cur", encoding='utf-8') as f00:
+    with open("temp_display_.cur", "w", encoding='utf-8') as f01:
       for line in f00:
         if "error" not in line:
           f01.write(line)

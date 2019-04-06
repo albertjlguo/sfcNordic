@@ -10,18 +10,18 @@ def end_simulation(ram, case, flag):
     '''
     
     if flag == 1:
-        print("flag = 1: cannot start simulation........")
+        print("flag = 1: cannot start simulation")
 
         # Kill gnuplot
         os.system("TASKKILL /F /IM gnuplot.exe /T")
-        print("kill gnuplot successfully: no-simulation...")
+        print("kill gnuplot successfully: no-simulation")
 
         # End simulation and exit
         try:
             ram.endSim()
-            print("endSim() successfully: no-simulation...")
+            print("endSim() successfully: no-simulation")
         except:
-            print("skip endSim(): no-simulation...")
+            print("skip endSim(): no-simulation")
 
             
     '''
