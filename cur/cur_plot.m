@@ -32,7 +32,7 @@ for delay = 0.01:0.01:0.21
             % Nordic (1±0.2%):
             if info.Overshoot <= nordic_limit
                 settlingTime = info.SettlingTime;
-                txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ', delay = ', num2str(delay,'%.2f'), 'settling time = ', num2str(settlingTime,'%.4f')];
+                txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ', Delay = ', num2str(delay,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime,'%.4f'), ' sec'];
                 plot(t, f, 'DisplayName',txt)
                 if max(t) < endingTime
                     settlingTime = 999999999;
