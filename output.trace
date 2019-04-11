@@ -1,0 +1,34 @@
+
+8888888b.         d8888 888b     d888  .d8888b.  8888888888 .d8888b.  
+888   Y88b       d88888 8888b   d8888 d88P  Y88b 888       d88P  Y88b 
+888    888      d88P888 88888b.d88888 Y88b.      888       Y88b.      
+888   d88P     d88P 888 888Y88888P888  "Y888b.   8888888    "Y888b.   
+8888888P"     d88P  888 888 Y888P 888     "Y88b. 888           "Y88b. 
+888 T88b     d88P   888 888  Y8P  888       "888 888             "888 
+888  T88b   d8888888888 888   "   888 Y88b  d88P 888       Y88b  d88P 
+888   T88b d88P     888 888       888  "Y8888P"  8888888888 "Y8888P" 
+
+RApid Multithreaded Simulation of Electric power Systems
+Version:  3.39 (Full Version)
+
+(c) University of Liege, Belgium
+Execution time: 14:33 11/04/2019
+
+
+
+SOLVER SETTINGS :
+   Using fully decomposed Scheme
+   Updating Jacobian only locally, whenever possible
+   Skipping Newton solution of converged components
+   Using COI reference frame
+   Variation of x in Jacobian computation : max( 0.1000E-04 |x|, 0.1000E-04)
+   Tolerance on network equations in pu (system base) :  0.1000E-02 pu
+   Tolerance on injector equations (absolute, relative) :  0.1000E-03 pu,  0.1000E-03 pu
+
+
+**Run-time observable refresh rate:     1.00s**
+
+
+**Parallel computing activated (threads: 2 -- scheduling: DYNAMIC -- chunk_injs:   10  -- chunk_dctls:   12  -- chunk_subs:    1)**
+ 
+Pausing at       25.000
