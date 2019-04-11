@@ -5,10 +5,10 @@ ram = PyRAMSES.sim()
 case = PyRAMSES.cfg('cmd.txt')
 
 def end_simulation(ram, case, flag):
+    
     '''
     End the simulation without starting both the simulation and AGC:
     '''
-    
     if flag == 1:
         print("flag = 1: cannot start simulation")
 
@@ -27,7 +27,6 @@ def end_simulation(ram, case, flag):
     '''
     End the simulation normally:
     '''
-    
     if flag == 0:
         # Kill gnuplot
         os.system("TASKKILL /F /IM gnuplot.exe /T")
@@ -44,7 +43,6 @@ def end_simulation(ram, case, flag):
     '''
     Make sure the process of simulation and the case is ended.
     '''
-
     del(ram)
     del(case)
     print("delete ram & case successfully")
