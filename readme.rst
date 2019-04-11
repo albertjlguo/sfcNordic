@@ -1,7 +1,7 @@
 Nordic-Test-System
 ===================
 
-Open the Anaconda3 terminal, move to the current folder and execute: jupyter notebook example_testing.ipynb
+Open the Anaconda3 terminal, move to 'example' and jupyter: example_testing.ipynb
 
 
 Installation
