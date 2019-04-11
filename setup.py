@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 if __name__ == "__main__":
-    setup(name="ehtim",
+    setup(name="Nordic-Test-System",
           version = "0.0.3",
           author = "Jialeng Guo",
           author_email = "el17jg@leeds.ac.uk",
