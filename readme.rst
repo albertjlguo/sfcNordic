@@ -1,5 +1,32 @@
-Open the Anaconda3 terminal, move to the current folder and execute: jupyter notebook PyRAMSES.ipynb
+Nordic-Test-System
+===================
 
-To test the interface to MATLAB, I have added a new notebook PyRAMSES-MAT.ipynb
+Open the Anaconda3 terminal, move to the current folder and execute: jupyter notebook example_testing.ipynb
 
-You need first to install the necessary modules: https://uk.mathworks.com/help/matlab/matlab-engine-for-python.html
+
+Installation
+------------
+Download the latest version from the `GitHub repository <https://github.com/realgjl/Nordic-Test-System>`_, change to the main directory and run:
+
+.. code-block:: bash
+
+    pip install .
+
+It should install most of the required libraries automatically (`pyramses <https://anaconda.org/apetros/pyramses>`_, `numpy <http://www.numpy.org/>`_).
+
+
+Documentation
+-------------
+Documentation is  `here <https://ramses.paristidou.info/interfaces/python/getting_started.html>`_ .
+
+Here are some ways to learn to use the code:
+
+- Start with the examples/example_testing.ipynb, which you can simulate some examples.
+
+
+License
+-------
+Nordic-Test-System is licensed under GPLv3. See LICENSE.txt for more details.
+
+
+
