@@ -8,7 +8,6 @@ def sfc(kp, ki, td):
     '''
     Framework of sfc
     '''
-    
     ram = PyRAMSES.sim()
 
     # Load saved test-case
@@ -24,7 +23,6 @@ def sfc(kp, ki, td):
     '''
     The simulation CANNOT be started => flag = 1:
     '''
-    
     flag = 0
     try:
         ram.execSim(case,start_time)
@@ -36,27 +34,24 @@ def sfc(kp, ki, td):
     '''
     Normal <=> flag = 0:
     '''
-    
     if flag == 0:
         # Initialization
         comp_type = ['SYN']
-        comp_name = ['g2']
         obs_name = ['Omega']
         errSum = 0.0
         t=240.0
         nominal_frequency = 1.0
-        list_of_gens = ['g6', 'g7', 'g14', 'g15', 'g16']
+        
 
         '''
         Run agc control:
         '''
-        agc(ram, start_time, t, comp_type, comp_name, obs_name, nominal_frequency, errSum, kp, ki, list_of_gens, td)
+        agc(ram, start_time, t, comp_type, monitor, obs_name, nominal_frequency, errSum, agcTimeStep, kp, ki, list_of_gens, weight_of_gens, td)
         pass
 
     
     '''
     End simulation & Move files:
     '''
-    
     end_simulation(ram, case, flag)
-    move_file(flag, kp, ki, td)
+    move_file(prepared_folder_address, breaker, flag, kp, ki, td)
