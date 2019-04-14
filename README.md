@@ -8,8 +8,7 @@ Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/
 3. Packages or Libraries:
 	- [pyramses](https://anaconda.org/apetros/pyramses) (Only for Windows or Linux)
 	- [numpy](http://www.numpy.org/)
-	- os
-	- shutil
+	- [pandas](https://pandas.pydata.org)
 4. For the libraries above, they should be downloaded automatically via pip through 'requiremnts.txt' exclude pyramses.
 	
 	PyRAMSES is not part of the main anaconda repository but included in a personal repository.
