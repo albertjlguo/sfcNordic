@@ -6,7 +6,6 @@ Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/
 1. Only for Windows or Linux;
 2. Download the latest version from the [GitHub repository](https://github.com/realgjl/Nordic-Test-System);
 3. Packages or Libraries:
-	- [pyramses](https://anaconda.org/apetros/pyramses) (Only for Windows or Linux)
 	- [numpy](http://www.numpy.org/)
 	- [pandas](https://pandas.pydata.org)
 4. For the libraries above, they should be downloaded automatically via pip through 'requiremnts.txt' exclude pyramses.
