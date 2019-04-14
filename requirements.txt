@@ -1,4 +1,3 @@
-pyramses
 numpy
 os
 shutil
