@@ -14,5 +14,5 @@ if __name__ == "__main__":
           keywords = "Centralized control algorithms for Nordic Smart Grid operation.",
           url = "https://github.com/realgjl/Nordic-Test-System",
           packages = ["examples", "analysis"],
-          long_description=read('README.md'),
+          long_description=read('README.md')
     )
