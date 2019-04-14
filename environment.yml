@@ -4,4 +4,5 @@ channels:
 dependencies:
   - numpy
   - pandas
-  - pyramses
+  - apetros
+    -pyramses
