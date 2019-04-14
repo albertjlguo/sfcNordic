@@ -15,9 +15,7 @@ if __name__ == "__main__":
           url = "https://github.com/realgjl/Nordic-Test-System",
           packages = ["examples"],
           long_description=read('README.md'),
-          install_requires=["PyRAMSES",
-                            "numpy",
+          install_requires=["numpy",
                             "os",
-                            "shutil",
-                            "sys"]
+                            "shutil"]
     )
