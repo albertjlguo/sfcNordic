@@ -11,8 +11,8 @@
 %                                 (b) system sattled before endingTime.
 % 
 % 3. Output: (1) A MATLAB figure;
-%            (2) A xlsx file, saving at xlsx_address, e.g.:
-%                D:/OneDrive - University of Leeds/Nordic/cur_g12/analysis/g12/td_0.01s.xlsx
+%            (2) An xlsx file, saving at xlsx_address:
+%                C:/Users/el17jg/Desktop/GitHub/Nordic-test-system/analysis/g12/ori.xlsx
 % 
 % p.s. This program is expecially friendly in multiple delays situations.
 
