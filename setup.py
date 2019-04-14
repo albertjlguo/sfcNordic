@@ -14,7 +14,7 @@ if __name__ == "__main__":
           keywords = "Centralized control algorithms for Nordic Smart Grid operation.",
           url = "https://github.com/realgjl/Nordic-Test-System",
           packages = ["examples"],
-          long_description=read('README.rst'),
+          long_description=read('README.txt'),
           install_requires=["PyRAMSES",
                             "numpy",
                             "os",
