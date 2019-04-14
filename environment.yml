@@ -1,8 +1,8 @@
 name: environment
 channels:
   - conda-forge
+  - apetros
 dependencies:
   - numpy
   - pandas
-  - apetros
-    -pyramses
+  - pyramses
