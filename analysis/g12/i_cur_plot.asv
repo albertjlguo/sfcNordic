@@ -10,11 +10,9 @@
 %                   stable means: (a) overshoot <= required limit;
 %                                 (b) system sattled before endingTime.
 % 
-% 3. Output: (1) A MATLAB figure;
-%            (2) A xlsx file, saving at xlsx_address, e.g.:
-%                D:/OneDrive - University of Leeds/Nordic/cur_g12/analysis/g12/td_0.01s.xlsx
+% 3. Output: 
 % 
-% p.s. This program is expecially friendly in multiple delays situations.
+% 
 
 % start : step point : end
 
@@ -37,7 +35,7 @@ DELAY = [];
 SETTLINGTIME = [];
 
 breaker = 'g12';
-for delay = 0.01:0.01:0.21
+for delay = 0.01 %:0.01:0.21
     KP = [];
     KI = [];
     DELAY = [];
@@ -68,7 +66,7 @@ for delay = 0.01:0.01:0.21
     end
     T = table(KP, KI, DELAY, SETTLINGTIME);
     xlsx_address = [xlsxFolder, ...
-                    '/td_', num2str(delay,'%.2f'), 's.xlsx'];
+                    '/aaaatd_', num2str(delay,'%.2f'), '.xlsx'];
     %xlsx_address
     writetable(T,xlsx_address)
 end

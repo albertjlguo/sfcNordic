@@ -1,10 +1,13 @@
+% testing.m
+%
+% This ia MATLAB program use for plotting only.
+% Put a value or a range of kp, ki, delay into the following program.
+% p.s.: file name, e.g.: temp_display_0.00-0.00-0.01s.cur
+%       the file should be in the same direction with this testing program.
+
 % start : step point : end
 startingTime = 25;
 endingTime = 240;
-
-s1 = 'temp_display_';
-s2 = 's';
-s3 = '.cur';
 
 figure();
 hold on
@@ -12,12 +15,10 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
-
-
 for kp = 0:55.1:55.1
     for ki = 0:0.1:0.1
         for delay = 0.01
-            s = [s1 num2str(kp,'%.2f') '-' num2str(ki,'%.2f') '-' num2str(delay,'%.2f') s2 s3];
+            s = ['temp_display_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);

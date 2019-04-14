@@ -1,3 +1,7 @@
+% This program will generate a 3D plot 
+%                          & best points under different delays
+%                          & best point in average
+
 % 3D Tri-Surface Plot
 num = xlsread('ori.xlsx', 'A2:C1745');
 x = num(:,1);
@@ -17,7 +21,7 @@ set(gca,'YTick',[0.1:5.0:21.1])
 set(gca,'ZTick',[0.01:0.01:0.21])
 
 
-% Marker: best points in different delays
+% Marker: best points under different delays
 hold on
 data = xlsread('best_points.xlsx', 'B2:E22');
 kp = data(:,1);

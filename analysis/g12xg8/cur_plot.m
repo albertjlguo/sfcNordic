@@ -1,6 +1,7 @@
+% This program will only plot the cur files without using filter.
+
 % start : step point : end
 
-% breaker = 'g12';
 startingTime = 25;
 endingTime = 240;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
@@ -12,6 +13,8 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
+
+% breaker = 'g12';
 kp = 45.1;
 ki = 0.1;
 for breakerN = 8:4:12
