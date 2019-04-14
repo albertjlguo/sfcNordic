@@ -4,7 +4,7 @@ channels:
   - apetros
   - bioconda
 dependencies:
-  - numpy
-  - pandas
-  - pyramses
-  - gnuplot
+  - python=3.6.8
+  - numpy=1.16.2
+  - pandas=0.24.2
+  - pyramses=0.0.1
