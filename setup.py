@@ -13,7 +13,7 @@ if __name__ == "__main__":
           license = "GPLv3",
           keywords = "Centralized control algorithms for Nordic Smart Grid operation.",
           url = "https://github.com/realgjl/Nordic-Test-System",
-          packages = ["examples"],
+          packages = ["examples", "analysis"],
           long_description=read('README.md'),
           install_requires=["numpy",
                             "os",

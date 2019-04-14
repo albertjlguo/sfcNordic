@@ -1,0 +1,6 @@
+name: environment
+channels:
+	- conda-forge
+dependencies:
+	- numpy
+	- pyramses

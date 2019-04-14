@@ -2,7 +2,7 @@
 Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/Nordic-Test-System/tree/master/examples) and find **example_testing.ipynb**
 
 
-## Requriments
+## Environment
 1. Only for Windows or Linux;
 2. Download the latest version from the [GitHub repository](https://github.com/realgjl/Nordic-Test-System);
 3. Packages or Libraries:
