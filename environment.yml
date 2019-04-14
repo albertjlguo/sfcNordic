@@ -2,7 +2,9 @@ name: environment
 channels:
   - conda-forge
   - apetros
+  - bioconda
 dependencies:
   - numpy
   - pandas
   - pyramses
+  - gnuplot
