@@ -13,6 +13,8 @@ if __name__ == "__main__":
           license = "GPLv3",
           keywords = "Centralized control algorithms for Nordic Smart Grid operation.",
           url = "https://github.com/realgjl/Nordic-Test-System",
-          packages = ["examples", "analysis"],
+          packages = ["examples",
+                      "analysis.g12",
+                      "analysis.g12xg8"],
           long_description=read('README.md')
     )
