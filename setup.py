@@ -10,12 +10,13 @@ if __name__ == "__main__":
           author = "Jialeng Guo",
           author_email = "el17jg@leeds.ac.uk",
           description = ("Python code to load, simulate"),
-          license = "GPLv3",
+          license = "GPLv3.txt",
           keywords = "Centralized control algorithms for Nordic Smart Grid operation.",
           url = "https://github.com/realgjl/Nordic-Test-System",
           packages = ["examples", "analysis"],
           long_description=read('README.md'),
           install_requires=["numpy",
+                            "pandas",
                             "os",
                             "shutil"]
     )
