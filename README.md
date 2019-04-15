@@ -5,28 +5,22 @@ Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/
 
 
 ## Environment
-1. Only for Windows or Linux;
+1. Windows / Linux;
 2. Download the latest version from the [GitHub repository](https://github.com/realgjl/Nordic-Test-System);
 3. Packages or Libraries:
 	- [numpy](http://www.numpy.org/)
 	- [pandas](https://pandas.pydata.org)
-4. For the libraries above, they should be downloaded automatically via pip through 'requiremnts.txt' exclude pyramses.
-	
-	PyRAMSES is not part of the main anaconda repository but included in a personal repository.
+	- [PyRAMSES](https://ramses.paristidou.info)
 
-	To install it, you should use the following command via anaconda terminal/prompt :
-	```shell
+4. For the libraries above, they should be downloaded automatically via conda through 'environment.yml' exclude gnuplot:
+	1. Download the GZ file and unzip somewhere on your drive (for instance on the Desktop) from [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/) or [my shared dropbox link](https://www.dropbox.com/sh/zl5pbcibh2dwdhz/AABc7QlNwGHck0gFf6YnGh49a?dl=0); 
+	2. Add the directory to gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties). For instance, C:\Users\el17jg\Desktop\gnuplot\bin.
 
-	conda install PyRAMSES -c apetros
-	```
-	
+
 ## Documentation
-Documentation is [here](https://ramses.paristidou.info/interfaces/python/getting_started.html).
+RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/getting_started.html).
 
 
 ## License
 
 Nordic-Test-System is licensed under GPLv3. See LICENSE.txt for more details.
-
-
-
