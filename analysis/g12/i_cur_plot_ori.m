@@ -24,10 +24,10 @@ nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = 'D:/OneDrive - University of Leeds/Nordic/cur_g12/data';
+curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/cur_g12/data';
 
 % output folder (generate xlsx files)
-xlsxFolder = 'C:/Users/el17jg/Desktop/GitHub/Nordic-test-system/analysis/g12';
+xlsxFolder = '/Users/realgjl/Desktop/GitHub/Nordic-Test-System/analysis/g12';
 
 figure();
 hold on
@@ -35,15 +35,14 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
-
 breaker = 'g12';
-for delay = 0.01:0.01:0.21
-    KP = [];
-    KI = [];
-    DELAY = [];
-    SETTLINGTIME = [];
-    for kp = 0.1:5.0:325.1
-        for ki = 0.1:5.0:25.1
+for delay = 0.01:0.01:0.02  %0.21
+    %KP = [];
+    %KI = [];
+    %DELAY = [];
+    %SETTLINGTIME = [];
+    for kp = 0.1:5.0:50.1   %325.1
+        for ki = 0.1        %:5.0:25.1
             s = [curFolder, ...
                 '/temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
             %s
@@ -67,12 +66,12 @@ for delay = 0.01:0.01:0.21
         end
     end
 end
+hold off
 T = table(KP, KI, DELAY, SETTLINGTIME);
 xlsx_address = [xlsxFolder, ...
                 '/ori.xlsx'];
 %xlsx_address
 writetable(T,xlsx_address)
-hold off
 
 legend show
 theTitle = ['Machine g2 (Nordic: 0.998 ~ 1.002): AGC starting from ', num2str(startingTime), ' sec, system ending at ', num2str(endingTime), ' sec'];

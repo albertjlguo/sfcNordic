@@ -31,10 +31,10 @@ xlsxFolder = 'D:/OneDrive - University of Leeds/Nordic/cur_g12/analysis/g12';
 
 figure();
 hold on
-KP = [];
-KI = [];
-DELAY = [];
-SETTLINGTIME = [];
+%KP = [];
+%KI = [];
+%DELAY = [];
+%SETTLINGTIME = [];
 
 breaker = 'g12';
 for delay = 0.01:0.01:0.21
