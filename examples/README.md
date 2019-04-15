@@ -22,7 +22,7 @@ $CALL_GP F;
 3. short\_trip_branch.dst: default breaker: g12; default end time: 240.0 sec;
 4. temp_display.plt: Gnuplot's parameters.
 
-## Data: Nominal Power from dyn_A.dat
+### Data: Nominal Power from dyn_A.dat
 | Generator | Nominal Power (W) |
 |-----------|-------------------|
 | g1        | 760.0             |
