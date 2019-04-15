@@ -1,6 +1,6 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/realgjl/Nordic-Test-System/master)
 
-### General
+### Start
 Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/Nordic-Test-System/tree/master/examples) and find **example_testing.ipynb**
 
 
