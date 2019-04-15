@@ -7,4 +7,5 @@ dependencies:
   - python
   - numpy
   - pandas
+  - mkl
   - PyRAMSES
