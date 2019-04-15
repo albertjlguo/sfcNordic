@@ -5,7 +5,7 @@
 %          D:/OneDrive - University of Leeds/Nordic/cur_g12/data/temp_display_0.00-0.00-0.01s.cur
 % 
 % 2. Function: (1) Generate a MATLAB figure of all the "stable" points;
-%              (2) Generate an xlsx file of all the "stable" points.
+%              (2) Generate xlsx files of all the "stable" points.
 %                                        
 %                   stable means: (a) overshoot <= required limit;
 %                                 (b) system sattled before endingTime.
