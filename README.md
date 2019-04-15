@@ -12,7 +12,7 @@ Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/
 	- [pandas](https://pandas.pydata.org)
 	- [PyRAMSES](https://ramses.paristidou.info)
 
-4. For the libraries above, they should be downloaded automatically via conda through 'environment.yml' exclude gnuplot:
+4. For the libraries above, they should be downloaded automatically via conda through 'environment.yml' excluding for gnuplot:
 	1. Download the GZ file and unzip somewhere on your drive (for instance on the Desktop) from [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/) or [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0); 
 	2. Add the directory to gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties). For instance, C:\Users\el17jg\Desktop\gnuplot\bin.
 
