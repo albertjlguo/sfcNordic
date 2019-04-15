@@ -27,6 +27,31 @@ RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/
 
 3. [eth - Deterministic Sizing of the Frequency Bias Factor of Secondary Control.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth%20-%20Deterministic%20Sizing%20of%20the%20Frequency%20Bias%20Factor%20of%20Secondary%20Control.pdf) & [eth-Frequency Control in the European Power System Considering the Organisational Structure and Division of Responsibilities.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth-Frequency%20Control%20in%20the%20European%20Power%20System%20Considering%20the%20Organisational%20Structure%20and%20Division%20of%20Responsibilities.pdf).
 
+## Data: Nominal Power from dyn_A.dat
+| Generator | Nominal Power (W) |
+|-----------|-------------------|
+| g1        | 760.0             |
+| g2        | 570.0             |
+| g3        | 665.0             |
+| g4        | 570.0             |
+| g5        | 237.5             |
+| g6        | 360.0             |
+| g7        | 180.0             |
+| g8        | 807.5             |
+| g9        | 950.0             |
+| g10       | 760.0             |
+| g11       | 285.0             |
+| g12       | 332.5             |
+| g13       | 0.0               |
+| g14       | 630.0             |
+| g15       | 1080.0            |
+| g16       | 630.0             |
+| g17       | 540.0             |
+| g18       | 1080.0            |
+| g19       | 475.0             |
+| g20       | 4275.0            |
+
+
 ## License
 
 Nordic-Test-System is licensed under GPLv3. See LICENSE.txt for more details.
