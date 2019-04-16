@@ -23,7 +23,7 @@ $CALL_GP F;
 4. temp_display.plt: Gnuplot's parameters.
 
 ### Data: Nominal Power from dyn_A.dat
-| Generator | Nominal Power (W) |
+| Generator | Nominal Power (MW)|
 |-----------|-------------------|
 | g1        | 760.0             |
 | g2        | 570.0             |
