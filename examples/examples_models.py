@@ -47,6 +47,8 @@ def end_simulation(ram, case, flag):
 	del(case)
 	print("delete ram & case successfully")
 
+
+
 def move_file(prepared_folder_address, breaker, kp, ki, td):
 	''' move the cur file to a prepared folder & delete some cur and trace files
 
@@ -98,6 +100,8 @@ def move_file(prepared_folder_address, breaker, kp, ki, td):
 	os.unlink("init.trace")
 	os.unlink("output.trace")
 	print("delete trace: cont, disc, init, output successfully\n")
+	
+	
 	
 def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_gens, weight_of_gens, td, prepared_folder_address, breaker):
 
