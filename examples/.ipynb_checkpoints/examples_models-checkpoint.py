@@ -154,7 +154,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 		'''
 		for i in np.arange(start_time+agcTimeStep,end_time+1,agcTimeStep):  # ending time will be include the 'end_time' sec
 			#print("i = " + str(i))
-			actual_frequency = ram.getObs(comp_type, monitor, obs_name)[0] # g2
+			actual_frequency = ram.getObs(comp_type, monitor, obs_name)[0] # monitor
 			error = nominal_frequency - actual_frequency
 			if abs(error)<0.00001:
 				error = 0.0
