@@ -81,6 +81,7 @@ def move_file(prepared_folder_address, breaker, kp, ki, td):
 	print("copy cur successfully")
 
 
+    
 	######### rename the file in new folder (cur) #########
 	os.rename(prepared_folder_address + '/temp_display_.cur', 
 			  prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + '-' + str(td) + 's' + '.cur')
@@ -126,7 +127,9 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 	Raises:
 		PyRAMSESError: voltages or frequency out of bound
 	'''
-
+	kp = float(kp)
+	ki = float(ki)
+	td = float(td)
 	######### simulation CANNOT be started => flag = 1: #########
 	flag = 0
 	try:
@@ -184,7 +187,9 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 		'''
 		pass
 
-
+	kp = "{0:.2f}".format(round(float(kp),2))
+	ki = "{0:.2f}".format(round(float(ki),2))
+	td = "{0:.2f}".format(round(float(td),2))
 	######### end simulation & move files: #########
 	end_simulation(ram, case, flag)
 	move_file(prepared_folder_address, breaker, kp, ki, td)
