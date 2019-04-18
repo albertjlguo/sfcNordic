@@ -53,7 +53,7 @@ RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/
 
 4. [eth - Deterministic Sizing of the Frequency Bias Factor of Secondary Control.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth%20-%20Deterministic%20Sizing%20of%20the%20Frequency%20Bias%20Factor%20of%20Secondary%20Control.pdf) & [eth-Frequency Control in the European Power System Considering the Organisational Structure and Division of Responsibilities.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth-Frequency%20Control%20in%20the%20European%20Power%20System%20Considering%20the%20Organisational%20Structure%20and%20Division%20of%20Responsibilities.pdf);
 
-5. [Delay-Robust Distributed Secondary Frequency Control: A Case Study] (http://eprints.whiterose.ac.uk/144279/8/PID5849209.pdf), Alghamdi, S, Smith, N, Schiffer, J, Aristidou, P.
+5. [Delay-Robust Distributed Secondary Frequency Control: A Case Study](http://eprints.whiterose.ac.uk/144279/8/PID5849209.pdf), Alghamdi, S, Smith, N, Schiffer, J, Aristidou, P.
 
 ### License
 
