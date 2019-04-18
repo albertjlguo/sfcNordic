@@ -23,7 +23,7 @@ RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/
 ### Reference
 1. [PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf) (Page 12: Nordic Grid map);
 
-2. [PID control from Caltech](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/Caltech%20PID%20Control.pdf)
+2. [PID control from Caltech](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/Caltech%20PID%20Control.pdf);
 
 3. My [Interim Report](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/interim%20report.pdf);
 
