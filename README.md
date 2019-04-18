@@ -1,7 +1,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/realgjl/Nordic-Test-System/master)
 
 ### Start
-Open the Anaconda terminal, move to [example folder](https://github.com/realgjl/Nordic-Test-System/tree/master/examples) and find [**example_testing.ipynb**](https://github.com/realgjl/Nordic-Test-System/blob/master/examples/example_testing.ipynb)
+Open JupyterLab via Anaconda, move to [example folder](https://github.com/realgjl/Nordic-Test-System/tree/master/examples) and find [**example_testing.ipynb**](https://github.com/realgjl/Nordic-Test-System/blob/master/examples/example_testing.ipynb)
 
 
 ### Environment
