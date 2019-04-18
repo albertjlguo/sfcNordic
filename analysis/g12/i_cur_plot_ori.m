@@ -24,10 +24,10 @@ nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/cur_g12/data';
+curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/g12/data';
 
 % output folder (generate xlsx files)
-xlsxFolder = '/Users/realgjl/Desktop/GitHub/Nordic-Test-System/analysis/g12';
+% xlsxFolder = '/Users/realgjl/Desktop/GitHub/Nordic-Test-System/analysis/g12';
 
 figure();
 hold on
@@ -68,8 +68,7 @@ for delay = 0.01:0.01:0.21
 end
 hold off
 T = table(KP, KI, DELAY, SETTLINGTIME);
-xlsx_address = [xlsxFolder, ...
-                '/ori.xlsx'];
+xlsx_address = ['ori.xlsx'];
 %xlsx_address
 writetable(T,xlsx_address)
 

@@ -26,8 +26,7 @@ for breakerN = 8:4:12
         DELAY = [];
         SETTLINGTIME = [];
 
-        s = ['D:/OneDrive - University of Leeds/Nordic/cur_g12', '/analysis/g12xg8', ...
-            '/temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
+        s = ['temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
         %s
         a = importdata(s);
         t = a(:,1);

@@ -24,10 +24,10 @@ nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = 'D:/OneDrive - University of Leeds/Nordic/cur_g12/data';
+curFolder = 'D:/OneDrive - University of Leeds/Nordic/g12/data';
 
 % output folder (generate xlsx files)
-xlsxFolder = 'D:/OneDrive - University of Leeds/Nordic/cur_g12/analysis/g12';
+% xlsxFolder = 'D:/OneDrive - University of Leeds/Nordic/g12/analysis/g12';
 
 figure();
 hold on
