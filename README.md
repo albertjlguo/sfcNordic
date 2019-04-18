@@ -16,6 +16,30 @@ Open JupyterLab via Anaconda, move to [example folder](https://github.com/realgj
 	1. Download the GZ file and unzip somewhere on your drive (for instance on the Desktop) from [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/) or [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0); 
 	2. Add the directory to gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties). For instance, C:\Users\el17jg\Desktop\gnuplot\bin.
 
+### Data: Nominal Power from dyn_A.dat (SYNC_MACH)
+| Generator | Nominal Power (MW)| Nominal Power (MW) (g8)|
+|-----------|-------------------|------------------------|
+| g1        | 760.0             |                        |
+| g2        | 570.0             |                        |
+| g3        | 665.0             |                        |
+| g4        | 570.0             |                        |
+| g5        | 237.5             |                        |
+| **g6**    | **360.0**         | **468.0**              |
+| **g7**    | **180.0**         | **234.0**              |
+| g8        | 807.5             |                        |
+| g9        | 950.0             |                        |
+| g10       | 760.0             |                        |
+| g11       | 285.0             |                        |
+| g12       | 332.5             |                        |
+| g13       | 0.0               |                        |
+| **g14**   | **630.0**         | **819.0**              |
+| **g15**   | **1080.0**        | **1404.0**             |
+| **g16**   | **630.0**         | **819.0**              |
+| g17       | 540.0             | 640.0                  |
+| g18       | 1080.0            |                        |
+| g19       | 475.0             |                        |
+| g20       | 4275.0            |                        |
+
 
 ### Documentation
 RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/getting_started.html).
