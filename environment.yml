@@ -1,5 +1,6 @@
 name: sfcNordic environment
 channels:
+  - anaconda
   - conda-forge
   - apetros
   - bioconda
