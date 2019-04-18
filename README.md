@@ -23,9 +23,11 @@ RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/
 ### Reference
 1. [PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf) (Page 12: Nordic Grid map);
 
-2. My [Interim Report](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/interim%20report.pdf);
+2. [PID control from Caltech](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/Caltech%20PID%20Control.pdf)
 
-3. [eth - Deterministic Sizing of the Frequency Bias Factor of Secondary Control.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth%20-%20Deterministic%20Sizing%20of%20the%20Frequency%20Bias%20Factor%20of%20Secondary%20Control.pdf) & [eth-Frequency Control in the European Power System Considering the Organisational Structure and Division of Responsibilities.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth-Frequency%20Control%20in%20the%20European%20Power%20System%20Considering%20the%20Organisational%20Structure%20and%20Division%20of%20Responsibilities.pdf).
+3. My [Interim Report](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/interim%20report.pdf);
+
+4. [eth - Deterministic Sizing of the Frequency Bias Factor of Secondary Control.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth%20-%20Deterministic%20Sizing%20of%20the%20Frequency%20Bias%20Factor%20of%20Secondary%20Control.pdf) & [eth-Frequency Control in the European Power System Considering the Organisational Structure and Division of Responsibilities.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/eth-Frequency%20Control%20in%20the%20European%20Power%20System%20Considering%20the%20Organisational%20Structure%20and%20Division%20of%20Responsibilities.pdf).
 
 ### License
 
