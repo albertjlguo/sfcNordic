@@ -1,3 +1,5 @@
+## Pormised in my interim report
+
 ### Data: Nominal Power from [dyn_A.dat](https://github.com/realgjl/sfcNordic/blob/master/examples/dyn_A.dat) (SYNC_MACH)
 | Generator | Nominal Power (MW)| Nominal Power (MW) (g4)|
 |-----------|-------------------|------------------------|
