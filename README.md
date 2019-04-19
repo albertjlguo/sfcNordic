@@ -17,28 +17,28 @@ Open JupyterLab via Anaconda, move to [example folder](https://github.com/realgj
 	2. Add the directory to gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties). For instance, C:\Users\el17jg\Desktop\gnuplot\bin.
 
 ### Data: Nominal Power from [dyn_A.dat](https://github.com/realgjl/sfcNordic/blob/master/examples/dyn_A.dat) (SYNC_MACH)
-| Generator | Nominal Power (MW)| Nominal Power (MW) (g8)|
-|-----------|-------------------|------------------------|
-| g1        | 760.0             |                        |
-| g2        | 570.0             |                        |
-| g3        | 665.0             |                        |
-| g4        | 570.0             |                        |
-| g5        | 237.5             |                        |
-| **g6**    | **360.0** (1/8)   | **468.0**  (1/8)       |
-| **g7**    | **180.0** (1/16)  | **234.0**  (1/16)      |
-| g8        | 807.5             |                        |
-| g9        | 950.0             |                        |
-| g10       | 760.0             |                        |
-| g11       | 285.0             |                        |
-| g12       | 332.5             |                        |
-| g13       | 0.0               |                        |
-| **g14**   | **630.0** (7/32)  | **819.0**  (7/32)      |
-| **g15**   | **1080.0** (3/8)  | **1404.0**  (3/8)      |
-| **g16**   | **630.0** (7/32)  | **819.0**  (7/32)      |
-| g17       | 540.0             | 640.0                  |
-| g18       | 1080.0            |                        |
-| g19       | 475.0             |                        |
-| g20       | 4275.0            |                        |
+| Generator | Nominal Power (MW)| Nominal Power (MW) (g4/8)|
+|-----------|-------------------|--------------------------|
+| g1        | 760.0             |                          |
+| g2        | 570.0             |                          |
+| g3        | 665.0             |                          |
+| g4        | 570.0             |                          |
+| g5        | 237.5             |                          |
+| **g6**    | **360.0** (1/8)   | **468.0**  (1/8)         |
+| **g7**    | **180.0** (1/16)  | **234.0**  (1/16)        |
+| g8        | 807.5             |                          |
+| g9        | 950.0             |                          |
+| g10       | 760.0             |                          |
+| g11       | 285.0             |                          |
+| g12       | 332.5             |                          |
+| g13       | 0.0               |                          |
+| **g14**   | **630.0** (7/32)  | **819.0**  (7/32)        |
+| **g15**   | **1080.0** (3/8)  | **1404.0**  (3/8)        |
+| **g16**   | **630.0** (7/32)  | **819.0**  (7/32)        |
+| g17       | 540.0             | 640.0                    |
+| g18       | 1080.0            |                          |
+| g19       | 475.0             |                          |
+| g20       | 4275.0            |                          |
 
 
 ### Documentation
