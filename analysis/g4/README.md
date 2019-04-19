@@ -22,8 +22,8 @@
 | g19       | 475.0             |                        |
 | g20       | 4275.0            |                        |
 
-1. kp = 0, ki = 0, delay = 0.01s, disconnect generator g4
+1. **kp = 0, ki = 0, delay = 0.01s, disconnect generator g4**:
 ![](https://i.loli.net/2019/04/19/5cb9ceb923347.png)
 
-2. Secondary frequency control starts at t = 100s & the system will be sattled at the 8.0761s after the control starts
+2. **Secondary frequency control starts at t = 100s & the system will be sattled at the 8.0761s after the control starts**:
 ![](https://i.loli.net/2019/04/19/5cb9d244a7df4.png)
