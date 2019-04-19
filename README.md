@@ -41,9 +41,6 @@ Open JupyterLab via Anaconda, move to [example folder](https://github.com/realgj
 | g20       | 4275.0            |                          |
 
 
-### Documentation
-RAMSES documentation is [here](https://ramses.paristidou.info/interfaces/python/getting_started.html).
-
 ### Reference
 1. [PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf) (Page 12: Nordic Grid map);
 
