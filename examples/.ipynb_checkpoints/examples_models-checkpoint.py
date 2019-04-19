@@ -53,7 +53,16 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 		start of agc
 		'''
 		for i in np.arange(start_time+agcTimeStep,end_time+1,agcTimeStep):  # ending time will be include the 'end_time' sec
-			#print("i = " + str(i))
+			
+            
+            # get the power of the five generators
+            
+            list_of_type = ['SYN','SYN','SYN','SYN','SYN']
+            list_of_name = ['P','P','P','P','P']
+            powerGens = ram.getObs(list_of_type, list_of_gens, list_of_name)
+            print(powerGens)
+            
+            #print("i = " + str(i))
 			actual_frequency = ram.getObs(comp_type, monitor, obs_name)[0] # monitor
 			error = nominal_frequency - actual_frequency
 			if abs(error)<0.00001:
@@ -73,7 +82,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 				gensName, gensWeight, gensTd = gen
 				command = 'CHGPRM TOR ' + gensName + ' Tm0 ' + str(output/gensWeight) + ' 0'
 				#print(str(ram.getSimTime()+0.01)+' '+command)
-                gensTd = "{0:.2f}".format(gensTd,2)
+				gensTd = "{0:.2f}".format(gensTd,2)
 				gensTd = float(gensTd)
 				ram.addDisturb(ram.getSimTime() + gensTd, command)
 
@@ -176,24 +185,24 @@ def move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, li
 	print("copy cur successfully")
 
 
-    
+
 	######### rename the file in new folder (cur) #########
-    if flagTd = "ones":
-        strTd = "{0:.2f}".format(list_of_td[0],2)
-        tdText = strTd + 's'
-        os.rename(prepared_folder_address + '/temp_display_.cur', 
-                  prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + '-' + tdText + '.cur')
-        print("rename cur successfully")
+	if flagTd == "ones":
+		strTd = "{0:.2f}".format(list_of_td[0],2)
+		tdText = '-' + strTd + 's'
+		os.rename(prepared_folder_address + '/temp_display_.cur', 
+                  prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + tdText + '.cur')
+		print("rename cur successfully")
     
-    if flagTd = "communicationLink":
-        tdText = ''
-        i = 0
-        while i < len(list_of_gens):
-            strTd = "{0:.2f}".format(list_of_td[i],2)
-            tdText += '_' + str(list_of_gens[i]) + '-' + strTd + 's'
-            i += 1
-        os.rename(prepared_folder_address + '/temp_display_.cur', 
-                    prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + '-' + tdText + '.cur')
+	if flagTd == "communicationLink":
+		tdText = ''
+		i = 0
+		while i < len(list_of_gens):
+			strTd = "{0:.2f}".format(list_of_td[i],2)
+			tdText += '_' + str(list_of_gens[i]) + '-' + strTd + 's'
+			i += 1
+		os.rename(prepared_folder_address + '/temp_display_.cur', 
+                    prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + tdText + '.cur')
 
 
 	######### delete cur & trace files #########
@@ -209,8 +218,4 @@ def move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, li
 	os.unlink("init.trace")
 	os.unlink("output.trace")
 	print("delete trace: cont, disc, init, output successfully\n")
-	
-	
-	
 
-	
