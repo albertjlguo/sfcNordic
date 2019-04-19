@@ -21,3 +21,9 @@
 | g18       | 1080.0            |                        |
 | g19       | 475.0             |                        |
 | g20       | 4275.0            |                        |
+
+1. **kp = 0, ki = 0, delay = 0.01s, diconnect g8: the system will blacked out**:
+![](https://i.loli.net/2019/04/19/5cb9e45407eab.png)
+
+2. **Statring the control at t = 15 sec, the system can be sattled at t = 24.9354s**:
+![](https://i.loli.net/2019/04/19/5cb9e5773523b.png)
