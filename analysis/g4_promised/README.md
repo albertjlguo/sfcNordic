@@ -1,4 +1,4 @@
-## Pormised in my interim report
+## Pormised in my [interim report](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/interim%20report.pdf)(page 4)
 
 ### Data: Nominal Power from [dyn_A.dat](https://github.com/realgjl/sfcNordic/blob/master/examples/dyn_A.dat) (SYNC_MACH)
 | Generator | Nominal Power (MW)| Nominal Power (MW) (g4)|
