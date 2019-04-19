@@ -1,5 +1,6 @@
 ### Data: Nominal Power from [dyn_A.dat](https://github.com/realgjl/sfcNordic/blob/master/examples/dyn_A.dat) (SYNC_MACH)
-| Generator | Nominal Power (MW)| Nominal Power (MW) (g8)|
+p.s: blank space means value not changed.
+| Generator | Nominal Power (MW)| Nominal Power (MW) (g4)|
 |-----------|-------------------|------------------------|
 | g1        | 760.0             |                        |
 | g2        | 570.0             |                        |
