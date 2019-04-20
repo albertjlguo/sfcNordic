@@ -3,7 +3,7 @@
 %                          & best point in average
 
 % 3D Tri-Surface Plot
-num = xlsread('ori.xlsx', 'A2:C1745');
+num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/g12_delay/ori.xlsx', 'A2:C1745');
 x = num(:,1);
 y = num(:,2);
 z = num(:,3);
@@ -13,10 +13,10 @@ colorbar
 xlabel('kp')
 ylabel('ki')
 zlabel('delay (sec)')
-xlim([0.1 350.1]);
+xlim([0.1 250.1]);
 ylim([0.1 21.1]);
 zlim([0.01 0.21]);
-set(gca,'XTick',[0.1:25:350.1])
+set(gca,'XTick',[0.1:25:250.1])
 set(gca,'YTick',[0.1:5.0:21.1])
 set(gca,'ZTick',[0.01:0.01:0.21])
 
