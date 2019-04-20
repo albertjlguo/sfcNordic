@@ -25,7 +25,7 @@
 1. kp = 0, ki = 0, delay = 0.01s, diconnect g8: the system will blacked out:
 ![](https://i.loli.net/2019/04/19/5cb9e45407eab.png)
 
-2. Statring the control at t = 15 sec, the system can be sattled at t = 24.9354s:
+2. Statring the control at t = 15 sec, the system can be sattled at t = 24.9354s (kp = 45.1, ki = 0.1):
 ![](https://i.loli.net/2019/04/19/5cb9e5773523b.png)
 
 3. However, it's might be too fast for the generators. We need to make sure the five generators have enough power to handle the situation.Thus, we must find power (power output)-time relationship by the five generators.
