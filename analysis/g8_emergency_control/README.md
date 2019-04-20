@@ -22,11 +22,22 @@
 | g19       | 475.0             |                        |                                                       |
 | g20       | 4275.0            |                        |                                                       |
 
-1. **kp = 0, ki = 0, delay = 0.01s, diconnect g8: the system will blacked out**:
+1. kp = 0, ki = 0, delay = 0.01s, diconnect g8: the system will blacked out:
 ![](https://i.loli.net/2019/04/19/5cb9e45407eab.png)
 
-2. **Statring the control at t = 15 sec, the system can be sattled at t = 24.9354s**:
+2. Statring the control at t = 15 sec, the system can be sattled at t = 24.9354s:
 ![](https://i.loli.net/2019/04/19/5cb9e5773523b.png)
 
-3. However, it's might be too fast for the generators. We need to make sure the five generators have enough power to handle the situation.
-Thus, we must find power-time relationship of the five generators.
+3. However, it's might be too fast for the generators. We need to make sure the five generators have enough power to handle the situation.Thus, we must find power (power output)-time relationship by the five generators.
+
+4. **A good way is to add power output to cur files like what we do to the frequency before.**
+
+By monitoring the transformer that the generator is connected to, we can get the power in the CUR file.
+
+For instance, generator g6 is connected to transformer g6-1042  (because in dyn_A.dat there is a record TRFO g6-1042 g6 1042).
+
+Thus, you can put:
+```shell
+case.addRunObs(‘BPO g6-1042’)
+```
+This will add an extra column to the .cur file, after the frequency of g2, with the power output by g6. The value is in MW.
