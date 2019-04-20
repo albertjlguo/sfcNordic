@@ -52,17 +52,9 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 		'''
 		start of agc
 		'''
+
 		for i in np.arange(start_time+agcTimeStep,end_time+1,agcTimeStep):  # ending time will be include the 'end_time' sec
-			
-            
-            # get the power of the five generators
-            
-            list_of_type = ['SYN','SYN','SYN','SYN','SYN']
-            list_of_name = ['P','P','P','P','P']
-            powerGens = ram.getObs(list_of_type, list_of_gens, list_of_name)
-            print(powerGens)
-            
-            #print("i = " + str(i))
+			#print("i = " + str(i))
 			actual_frequency = ram.getObs(comp_type, monitor, obs_name)[0] # monitor
 			error = nominal_frequency - actual_frequency
 			if abs(error)<0.00001:
@@ -100,11 +92,11 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 	kp = "{0:.2f}".format(round(float(kp),2))
 	ki = "{0:.2f}".format(round(float(ki),2))
 	# td = "{0:.2f}".format(round(float(td),2))
-    
+	
 	######### end simulation & move files: #########
 	end_simulation(ram, case, flag)
 	move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, list_of_td)
-    
+	
 
 
 def end_simulation(ram, case, flag):
@@ -215,7 +207,7 @@ def move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, li
 	######### delete trace: cont, disc, init, output #########
 	os.unlink("cont.trace")
 	os.unlink("disc.trace")
-	os.unlink("init.trace")
+    os.unlink("init.trace")
 	os.unlink("output.trace")
 	print("delete trace: cont, disc, init, output successfully\n")
 

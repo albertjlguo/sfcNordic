@@ -205,9 +205,9 @@ def move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, li
 
 
 	######### delete trace: cont, disc, init, output #########
-	# os.unlink("cont.trace")
-	# os.unlink("disc.trace")
-	# os.unlink("init.trace")
-	# os.unlink("output.trace")
-	# print("delete trace: cont, disc, init, output successfully\n")
+	os.unlink("cont.trace")
+	os.unlink("disc.trace")
+	os.unlink("init.trace")
+	os.unlink("output.trace")
+	print("delete trace: cont, disc, init, output successfully\n")
 
