@@ -41,3 +41,6 @@ Thus, you can put:
 case.addRunObs(‘BPO g6-1042’)
 ```
 This will add an extra column to the .cur file, after the frequency of g2, with the power output by g6. The value is in MW.
+
+5. Results:
+![](https://i.loli.net/2019/04/21/5cbb54fb890ac.png)
