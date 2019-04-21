@@ -24,7 +24,9 @@
 
 
 ### Results
+1. Nodric grid without secondary frequency control (sfc):
+![](https://i.loli.net/2019/04/22/5cbcd2698e41f.png)
+From the figure above, we can start secondary frequency control (sfc) from the 75 sec.
 
-1.  Stable points (overshoot <= required limit (Nordic: 1±0.2%) & system sattled before endingTime (240s))
-[![Screen Shot 2019-04-18 at 14.28.11.png](https://i.loli.net/2019/04/18/5cb87fb03733d.png)](https://i.loli.net/2019/04/18/5cb87fb03733d.png)
-Download [MATLAB fig source file](https://www.dropbox.com/s/q899mh46llfdzpe/i_MATLAB-fig-result.fig?dl=0) for details.
+2. Stable points (overshoot <= required limit (Nordic: 1±0.2%) & system ending at 360 sec, the system will be sattled before 240 sec):
+![]()
