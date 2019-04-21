@@ -18,16 +18,16 @@
 
 % start : step point : end
 
-startingTime = 25;
-endingTime = 240;
+startingTime = 75;
+endingTime = 360;
+sattledTime = 240;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/g12/data';
-
-% output folder (generate xlsx files)
-% xlsxFolder = '/Users/realgjl/Desktop/GitHub/Nordic-Test-System/analysis/g12';
+curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/g12_delay/data/';
+% excel folder (store xlsx files)
+xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/g12_delay/';
 
 figure();
 hold on
@@ -41,11 +41,11 @@ for delay = 0.01:0.01:0.21
     %KI = [];
     %DELAY = [];
     %SETTLINGTIME = [];
-    for kp = 0.1:5.0:325.1
-        for ki = 0.1:5.0:25.1
+    for kp = 0.1:5.0:300.1
+        for ki = 0.1:5.0:15.1
             s = [curFolder, ...
-                '/temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
-            %s
+                'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
+            s
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);
@@ -53,7 +53,7 @@ for delay = 0.01:0.01:0.21
             info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
             settlingTime = info.SettlingTime;
             
-            if info.Overshoot <= nordic_limit && settlingTime < endingTime
+            if info.Overshoot < nordic_limit && info.Undershoot < nordic_limit && settlingTime < sattledTime
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
                     ', Delay = ', num2str(delay,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime,'%.4f'), ' sec'];
                 plot(t, f, 'DisplayName',txt)
@@ -68,15 +68,17 @@ for delay = 0.01:0.01:0.21
 end
 hold off
 T = table(KP, KI, DELAY, SETTLINGTIME);
-xlsx_address = ['ori.xlsx'];
+xlsx_address = [xlsxFolder, 'ori.xlsx'];
 %xlsx_address
 writetable(T,xlsx_address)
 
 legend show
-theTitle = ['Machine g2 (Nordic: 0.998 ~ 1.002): AGC starting from ', num2str(startingTime), ' sec, system ending at ', num2str(endingTime), ' sec'];
+theTitle = ['Machine g12 (Nordic: 0.998 ~ 1.002): AGC starting from ', num2str(startingTime), ' sec, ', ...
+            'system ending at ', num2str(endingTime), ' sec, ', ...
+            'the system will be sattled before ', num2str(sattledTime), ' sec.'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 369]);
+xlim([0 510]);
 ylim([0.995 1.005]);
 grid on
