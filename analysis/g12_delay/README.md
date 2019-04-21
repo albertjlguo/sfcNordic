@@ -29,7 +29,7 @@
 From the figure above, we can start secondary frequency control (sfc) from the 75 sec.
 
 2. Stable points (overshoot <= required limit (Nordic: 1±0.2%) & system ending at 360 sec, the system will be sattled before 240 sec):
-![]()
+![](https://i.loli.net/2019/04/22/5cbce90caa848.png)
 p.s. **Reasons do not to require min(f) > 0.998 or max(f) < 1.002 after the control starts** (Nordic frequency limit: 1±0.2%):
 - The shape of the frequency-time curve will be controlled if we limit the range of overshoot & the sattling time. In other word, the system will not be unstable if not add min(f) > 0.998 or max(f) < 1.002;
 - Not having min(f) > 0.998 may produce frequency below 0.998 after the sfc starts, but:
