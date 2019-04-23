@@ -28,7 +28,9 @@
 1. Nodric grid without secondary frequency control (sfc):
 ![](https://i.loli.net/2019/04/22/5cbcd2698e41f.png)
 
- 2. Stable points (overshoot <= required limit (Nordic: 1±0.2%) & system sattled before endingTime (240s))
+2. Searching spaces: kp: 0.1~325.1, step: 5.0; ki: 0.1~25.1, step: 5.0; delay: 0.01s~0.21s, step: 0.01s.
+
+3. Stable points (overshoot <= required limit (Nordic: 1±0.2%) & system sattled before endingTime (240s))
 [![Screen Shot 2019-04-18 at 14.28.11.png](https://i.loli.net/2019/04/18/5cb87fb03733d.png)](https://i.loli.net/2019/04/18/5cb87fb03733d.png)
 
 3. 
