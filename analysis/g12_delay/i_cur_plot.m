@@ -1,4 +1,3 @@
-
 % This is the first step after generating all the cur files.
 % cur file should be in a form of, e.g., temp_display_0.00-0.00-0.01s.cur
 %
@@ -19,16 +18,16 @@
 
 % start : step point : end
 
-startingTime = 75;
-endingTime = 360;
-sattledTime = 75+240;
+startingTime = 25;
+endingTime = 240;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/g12_delay/data/';
-% excel folder (store xlsx files)
-xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/g12_delay/';
+curFolder = 'D:/OneDrive - University of Leeds/Nordic/g12/data';
+
+% output folder (generate xlsx files)
+% xlsxFolder = 'D:/OneDrive - University of Leeds/Nordic/g12/analysis/g12';
 
 figure();
 hold on
@@ -38,24 +37,24 @@ hold on
 %SETTLINGTIME = [];
 
 breaker = 'g12';
-for delay = 0.01:0.05:0.21
+for delay = 0.01:0.01:0.21
     KP = [];
     KI = [];
     DELAY = [];
     SETTLINGTIME = [];
-    for kp = 0.1:5.0:300.1
-        for ki = 0.1:5.0:15.1
+    for kp = 0.1:5.0:325.1
+        for ki = 0.1:5.0:25.1
             s = [curFolder, ...
-                'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
-            s
+                '/temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
+            %s
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);
-            % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 1.5%:
-            info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.015);
+            % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
+            info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
             settlingTime = info.SettlingTime;
             
-            if info.Overshoot < nordic_limit && settlingTime < sattledTime
+            if info.Overshoot <= nordic_limit && settlingTime < endingTime
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
                     ', Delay = ', num2str(delay,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime,'%.4f'), ' sec'];
                 plot(t, f, 'DisplayName',txt)
@@ -68,19 +67,18 @@ for delay = 0.01:0.05:0.21
         end
     end
     T = table(KP, KI, DELAY, SETTLINGTIME);
-    xlsx_address = [xlsxFolder, 'td_', num2str(delay,'%.2f'), 's.xlsx'];
+    xlsx_address = [xlsxFolder, ...
+                    '/td_', num2str(delay,'%.2f'), 's.xlsx'];
     %xlsx_address
     writetable(T,xlsx_address)
 end
 hold off
 
 legend show
-theTitle = ['Machine g12 (Nordic: 0.998 ~ 1.002): AGC starting from ', num2str(startingTime), ' sec, ', ...
-            'system ending at ', num2str(endingTime), ' sec, ', ...
-            'the system will be sattled before ', num2str(sattledTime), ' sec.'];
+theTitle = ['Machine g2 (Nordic: 0.998 ~ 1.002): AGC starting from ', num2str(startingTime), ' sec, system ending at ', num2str(endingTime), ' sec'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 510]);
+xlim([0 369]);
 ylim([0.995 1.005]);
 grid on
