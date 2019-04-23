@@ -142,3 +142,11 @@ The best groups of kp & ki of all delays (average) (Top 10).
 | 35.1   | 0.1     | 40.4876                     |
 | 75.1   | 0.1     | 41.0838                     |
 | 80.1   | 0.1     | 41.3066                     |
+
+6. 3d tri-surface plot of all the stable points
+
+Reference :Searching spaces: kp: 0.1-325.1, step: 5.0; ki: 0.1-25.1, step: 5.0; delay: 0.01s~0.21s, step: 0.01s.
+![](https://i.loli.net/2019/04/24/5cbf5411c5425.png)
+![](https://i.loli.net/2019/04/24/5cbf541c6e618.png)
+![](https://i.loli.net/2019/04/24/5cbf5426d7f89.png)
+![](https://i.loli.net/2019/04/24/5cbf5431cbc14.png)
