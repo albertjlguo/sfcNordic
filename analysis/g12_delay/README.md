@@ -31,7 +31,8 @@
 3. Stable points (overshoot <= required limit (Nordic: 1±0.2%) & system sattled before endingTime (240s))
 [![Screen Shot 2019-04-18 at 14.28.11.png](https://i.loli.net/2019/04/18/5cb87fb03733d.png)](https://i.loli.net/2019/04/18/5cb87fb03733d.png)
 
-4. delay = 0.01 sec
+4. **Delay = 0.01 sec**
+****Rank by SETTLINGTIME:****
 
 | KP    | KI   | DELAY | SETTLINGTIME |
 |-------|------|-------|--------------|
@@ -177,5 +178,6 @@
 | 25.1  | 0.1  | 0.01  | 74.586       |
 | 20.1  | 5.1  | 0.01  | 90.6208      |
 
+****Plot kp & ki:****
 ![](https://i.loli.net/2019/04/24/5cbf498ba71bc.png)
 
