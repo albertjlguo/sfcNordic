@@ -55,7 +55,7 @@ Plot all the stable points (kp & ki):
 
 **Delay = 0.11 sec**
 
-All the stable points ranked by SETTLINGTIME:
+Some of the stable points ranked by SETTLINGTIME:
 
 | KP    | KI   | DELAY | SETTLINGTIME |
 |-------|------|-------|--------------|
@@ -76,7 +76,7 @@ Plot all the stable points (kp & ki):
 
 **Delay = 0.21 sec**
 
-All the stable points ranked by SETTLINGTIME:
+Some of the stable points ranked by SETTLINGTIME:
 
 | KP    | KI  | DELAY | SETTLINGTIME |
 |-------|-----|-------|--------------|
@@ -94,3 +94,51 @@ All the stable points ranked by SETTLINGTIME:
 
 Plot all the stable points (kp & ki):
 ![](https://i.loli.net/2019/04/24/5cbf4cb46b584.png)
+
+**From the three plots above, it is can be concluded that a larger delay will make kp & ki more and more concentrated. Besides, obviously, a larger delay will remove some larger kps and/or some larger kis.**
+
+**Thus, find the boundary is far from enough. It is necessary to make sure which kp and ki will bring the best (fastest) results for all the delays situation.**
+
+**Even though the object of this project is not really to find the best ONE, it's worth to find the one in my searching spaces.**
+
+5. The best groups of kp & ki for different delays.
+
+| kp   | ki  | delay | settling time |
+|------|-----|-------|---------------|
+| 55.1 | 0.1 | 0.01  | 35.8142       |
+| 55.1 | 0.1 | 0.02  | 35.8292       |
+| 55.1 | 0.1 | 0.03  | 35.8392       |
+| 55.1 | 0.1 | 0.04  | 35.8392       |
+| 55.1 | 0.1 | 0.05  | 35.8492       |
+| 50.1 | 0.1 | 0.06  | 36.7849       |
+| 50.1 | 0.1 | 0.07  | 36.7816       |
+| 50.1 | 0.1 | 0.08  | 36.7716       |
+| 50.1 | 0.1 | 0.09  | 36.7683       |
+| 50.1 | 0.1 | 0.1   | 36.7516       |
+| 50.1 | 0.1 | 0.11  | 36.7464       |
+| 50.1 | 0.1 | 0.12  | 36.7264       |
+| 45.1 | 0.1 | 0.13  | 37.7064       |
+| 45.1 | 0.1 | 0.14  | 37.6708       |
+| 45.1 | 0.1 | 0.15  | 37.6564       |
+| 45.1 | 0.1 | 0.16  | 37.6108       |
+| 45.1 | 0.1 | 0.17  | 37.5808       |
+| 45.1 | 0.1 | 0.18  | 37.4908       |
+| 45.1 | 0.1 | 0.19  | 37.4408       |
+| 40.1 | 0.1 | 0.2   | 38.7264       |
+| 40.1 | 0.1 | 0.21  | 38.6808       |
+
+
+The best groups of kp & ki of all delays (average) (Top 10).
+
+|   kp   |   ki    | Average Settling Time (sec) |
+|--------|---------|-----------------------------|
+|**45.1**| **0.1** | **37.9994**                 |
+| 50.1   | 0.1     | 38.413                      |
+| 40.1   | 0.1     | 38.9001                     |
+| 55.1   | 0.1     | 38.9327                     |
+| 60.1   | 0.1     | 39.3549                     |
+| 65.1   | 0.1     | 39.5537                     |
+| 70.1   | 0.1     | 40.2168                     |
+| 35.1   | 0.1     | 40.4876                     |
+| 75.1   | 0.1     | 41.0838                     |
+| 80.1   | 0.1     | 41.3066                     |
