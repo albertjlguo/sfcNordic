@@ -24,10 +24,10 @@ nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.3/b/';
+curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.2/b/';
 
 % output folder (generate xlsx files)
-xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.1.3/b/';
+xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.1.2/b/';
 
 figure();
 hold on

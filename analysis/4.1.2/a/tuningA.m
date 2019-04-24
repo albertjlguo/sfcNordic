@@ -20,14 +20,15 @@
 
 startingTime = 150;
 endingTime = 900;
+required_settlingTime = 800;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.3/a/';
+curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.2/a/';
 
 % output folder (generate xlsx files)
-xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.1.3/a/';
+xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.1.2/a/';
 
 figure();
 hold on
@@ -53,7 +54,7 @@ for delay = 0.01
             info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
             settlingTime = info.SettlingTime;
             
-            if info.Overshoot <= nordic_limit && settlingTime < endingTime
+            if info.Overshoot <= nordic_limit && settlingTime < required_settlingTime
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
                     ', Delay = ', num2str(delay,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime,'%.4f'), ' sec'];
                 plot(t, f, 'DisplayName',txt)
