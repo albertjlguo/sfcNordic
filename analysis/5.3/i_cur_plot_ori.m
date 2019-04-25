@@ -18,7 +18,7 @@
 
 % start : step point : end
 
-startingTime = 25;
+startingTime = 150;
 endingTime = 240;
 required_settlingTime = 200;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
@@ -75,7 +75,7 @@ xlsx_address = [xlsxFolder,...
 writetable(T,xlsx_address)
 
 legend show
-theTitle = ['5.3: Machine g2 (Nordic: 0.998 ~ 1.002): AGC starts from ', num2str(startingTime), ' sec, '...
+theTitle = ['5.3: Machine g2 (Nordic: 0.998 ~ 1.002): SFC starts from ', num2str(startingTime), ' sec, '...
             'system ends at ', num2str(endingTime), ' sec, ', ...
             'system need to settle before ', num2str(required_settlingTime), ' sec.'];
 title(theTitle)

@@ -15,7 +15,7 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
-breaker_list = {'g1', 'g2', 'g3', 'g4', 'g5', 'g8', 'g9', 'g10', 'g11', 'g12', 'g13', 'g17', 'g18', 'g19', 'g20'};
+breaker_list = {'g1', 'g3', 'g4', 'g5', 'g8', 'g9', 'g10', 'g11', 'g12', 'g13', 'g17', 'g18', 'g19', 'g20'};
 
 hold on
 for i = 1:length(breaker_list)
@@ -24,7 +24,7 @@ for i = 1:length(breaker_list)
     kp = 0;
     ki = 0;
     delay = 0.01;
-    s = ['/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.1/',...
+    s = ['/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.1/',...
         'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
     a = importdata(s);
     t = a(:,1);
@@ -40,5 +40,5 @@ hold off
     xlabel('t(s)')
     ylabel('Omega(pµ)')
     xlim([0 950]);
-    ylim([0.99 1.01]);
+    ylim([0.97 1.01]);
     grid on
