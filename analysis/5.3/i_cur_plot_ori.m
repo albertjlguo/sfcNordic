@@ -37,7 +37,7 @@ KI = [];
 DELAY = [];
 SETTLINGTIME = [];
 breaker = 'g9';
-for delay = 0.01:0.1:0.21
+for delay = 0.01:0.01:0.21
     %KP = [];
     %KI = [];
     %DELAY = [];
@@ -46,7 +46,7 @@ for delay = 0.01:0.1:0.21
         for ki = 0.1:0.5:10.1
             s = [curFolder, ...
                 'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
-            %s
+            s
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);
@@ -57,7 +57,7 @@ for delay = 0.01:0.1:0.21
             if info.Overshoot <= nordic_limit && settlingTime < required_settlingTime
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
                     ', Delay = ', num2str(delay,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime,'%.4f'), ' sec'];
-                plot(t, f, 'DisplayName',txt)
+                plot(t, f, 'DisplayName',txt, 'LineWidth',1)
                 
                 KP = [KP; kp];
                 KI = [KI; ki];
@@ -82,5 +82,5 @@ title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
 xlim([0 369]);
-ylim([0.989 1.002]);
+ylim([0.989 1.003]);
 grid on

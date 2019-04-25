@@ -18,7 +18,7 @@
 
 % start : step point : end
 
-startingTime = 25;
+startingTime = 150;
 endingTime = 240;
 required_settlingTime = 200;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
@@ -38,7 +38,7 @@ hold on
 %SETTLINGTIME = [];
 
 breaker = 'g9';
-for delay = 0.01:0.1:0.21
+for delay = 0.01:0.01:0.21
     KP = [];
     KI = [];
     DELAY = [];
@@ -83,5 +83,5 @@ title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
 xlim([0 369]);
-ylim([0.989 1.002]);
+ylim([0.989 1.003]);
 grid on

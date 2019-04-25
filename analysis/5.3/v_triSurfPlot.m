@@ -3,7 +3,7 @@
 %                          & best point in average
 
 % 3D Tri-Surface Plot
-num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/5.3/ori.xlsx', 'A2:C282');
+num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/5.3/ori.xlsx', 'A2:C1970');
 x = num(:,1);
 y = num(:,2);
 z = num(:,3);
@@ -18,12 +18,12 @@ ylim([0.1 10.1]);
 zlim([0.01 0.21]);
 set(gca,'XTick',[0.1:10:140.1])
 set(gca,'YTick',[0.1:0.5:10.1])
-set(gca,'ZTick',[0.01:0.1:0.21])
+set(gca,'ZTick',[0.01:0.01:0.21])
 
 
 % Marker: best points under different delays
 hold on
-data = xlsread('best_points.xlsx', 'B2:E4');
+data = xlsread('best_points.xlsx', 'B2:E22');
 kp = data(:,1);
 ki = data(:,2);
 delay = data(:,3);
@@ -42,7 +42,7 @@ end
 
 % Marker: best point in average
 hold on
-digit = xlsread('settlingTime_90.1_0.1.xlsx', 'B2:E4');
+digit = xlsread('settlingTime_80.1_0.1.xlsx', 'B2:E22');
 b_kp = digit(:,1);
 b_ki = digit(:,2);
 b_delay = digit(:,3);
