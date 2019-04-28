@@ -25,10 +25,10 @@ nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.2/d/';
+curFolder = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.3/';
 
 % output folder (generate xlsx files)
-xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.1.2/d/';
+xlsxFolder = '/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/4.3/';
 
 figure();
 hold on
@@ -42,8 +42,8 @@ for delay = 0.01
     %KI = [];
     %DELAY = [];
     %SETTLINGTIME = [];
-    for kp = 0.1:10.0:140.1
-        for ki = 0.1:1.0:10.1
+    for kp = 90.1 %0.1:10.0:140.1
+        for ki = 7.1 %0.1:1.0:10.1
             s = [curFolder, ...
                 'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
             %s
@@ -75,10 +75,11 @@ xlsx_address = [xlsxFolder,...
 writetable(T,xlsx_address)
 
 legend show
-theTitle = ['4.1.2 (d)'];
+theTitle = ['#4. Low Time Delay']
+%theTitle = ['#4. Low Time Delay (Delay = 0.01s, kp = 0.1~140.1, ki = 0.1~10.1, Start time: 150s, End Time: 240s, Settling Time: 200s)'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
 xlim([0 369]);
-ylim([0.989 1.002]);
+ylim([0.989 1.0025]);
 grid on

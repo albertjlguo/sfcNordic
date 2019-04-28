@@ -47,7 +47,7 @@ for delay = 0.01:0.01:0.21
         for ki = 0.1:0.5:10.1
             s = [curFolder, ...
                 'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
-            %s
+            s
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);
