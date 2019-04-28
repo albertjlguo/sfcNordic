@@ -49,7 +49,7 @@ for delay = 0.01:0.01:0.21
             a = importdata(s);
             t = a(:,1);
             f = a(:,4);
-            % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
+            % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 0.02% (0.9998~1.0002):
             info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
             settlingTime = info.SettlingTime;
             

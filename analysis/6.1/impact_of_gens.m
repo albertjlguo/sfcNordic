@@ -17,7 +17,7 @@ KP = [];
 KI = [];
 DELAY = [];
 SETTLINGTIME = [];
-breaker_list = {'g1', 'g3', 'g4', 'g5', 'g9', 'g10', 'g11', 'g12', 'g13', 'g19'};
+breaker_list = {'g1', 'g3', 'g4', 'g5', 'g9', 'g10', 'g11', 'g12', 'g19'};
 
 hold on
 for i = 1:length(breaker_list)
