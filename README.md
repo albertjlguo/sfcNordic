@@ -1,5 +1,5 @@
 ### Start
-Open JupyterLab via Anaconda, move to [example folder](https://github.com/realgjl/sfcNordic/blob/master/examples/Nordic_example_testing1.ipynb) and find [**Nordic_example_testing1.ipynb**](https://github.com/realgjl/Nordic-Test-System/blob/master/examples/example_testing.ipynb)
+Open JupyterLab via Anaconda, move to example folder and find [**Nordic_example_testing1.ipynb**](https://github.com/realgjl/sfcNordic/blob/master/examples/Nordic_example_testing1.ipynb)
 
 
 ### Environment
