@@ -59,6 +59,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 			error = nominal_frequency - actual_frequency
 			if abs(error)<0.00001:
 				error = 0.0
+				errSum = 0.0
 			#print("error = " + str(error))
 
 			errSum += error * agcTimeStep
