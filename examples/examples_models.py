@@ -57,7 +57,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 			#print("i = " + str(i))
 			actual_frequency = ram.getObs(comp_type, monitor, obs_name)[0] # monitor
 			error = nominal_frequency - actual_frequency
-			if abs(error)<0.00001:
+			if abs(error)<0.000001: #10e-6
 				error = 0.0
 				errSum = 0.0
 			#print("error = " + str(error))
