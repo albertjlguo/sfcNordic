@@ -1,0 +1,19 @@
+dyn_A.dat
+volt_rat_A.dat
+settings1.dat
+
+init.trace
+short_trip_branch.dst
+
+cont.trace
+disc.trace
+BV 4044
+BV 1041
+MS g2
+BPO g6-1042
+BPO g7-1043
+BPO g14-4042
+BPO g15-4047
+BPO g16-4051
+
+
