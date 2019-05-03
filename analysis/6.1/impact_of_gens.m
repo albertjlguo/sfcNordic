@@ -32,24 +32,31 @@ for i = 1:length(breaker_list)
     a = importdata(s);
     t = a(:,1);
     f = a(:,4);
+    for i = 1:length(f)
+        if t(i)>=150.0
+            break
+        end
+    end
+    tchopped = t(i:end,1) -150;
+    fchopped = f(i:end,1);
     % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
-    info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
+    info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
     settlingTime = info.SettlingTime;
     txt = [breaker, ': ', ...
         'Settling Time = ', num2str(settlingTime,'%.4f'), ' sec'];
-    plot(t, f, 'DisplayName',txt,'LineWidth',1)
+    plot(tchopped, fchopped, 'DisplayName',txt,'LineWidth',1)
 end
 hold off
 
 legend show
-theTitle = ['Nordic: 0.998~1.002, ',...
-            'Impact of generator size, kp = 90.1, ki = 0.1, delay = 0.01 sec',...
+theTitle = ['#6. Impact of generator size: kp = 90.1, ki = 0.1, delay = 0.01 sec;  ',...
             'SFC starts from ', num2str(startingTime), ' sec, '...
-            'system ends at ', num2str(endingTime), ' sec, ', ...
-            'system need to settle before ', num2str(required_settlingTime), ' sec.'];
+            'system ends at ', num2str(endingTime), ' sec'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
 xlim([0 1100]);
-ylim([0.989 1.003]);
+ylim([0.996 1.003]);
+%set(gca,'XTick',[0:50:1100])
+%set(gca,'YTick',[0.989:0.001:1.003])
 grid on

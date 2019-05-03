@@ -34,11 +34,11 @@ for i = 1:length(breaker_list)
 end
 
 hold off
-    legend show
-    theTitle = ['without Secondary Frequency Control'];
-    title(theTitle)
-    xlabel('t(s)')
-    ylabel('Omega(pµ)')
-    xlim([0 950]);
-    ylim([0.97 1.01]);
-    grid on
+legend show
+theTitle = ['without Secondary Frequency Control'];
+title(theTitle)
+xlabel('t(s)')
+ylabel('Omega(pµ)')
+xlim([0 950]);
+ylim([0.97 1.01]);
+grid on
