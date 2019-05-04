@@ -64,12 +64,13 @@ for delay = 0.01
             
             if info.Overshoot <= nordic_limit && settlingTime < required_settlingTime
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
-                    ', Delay = ', num2str(delay+startingTime,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime+startingTime,'%.4f'), ' sec'];
+                    ', Delay = ', num2str(delay,'%.2f'), ...
+                    ' sec, Settling Time = ', num2str(settlingTime+startingTime,'%.4f'), ' sec'];
                 plot(t, f, 'DisplayName',txt)
                 
                 KP = [KP; kp];
                 KI = [KI; ki];
-                DELAY = [DELAY; delay+startingTime];
+                DELAY = [DELAY; delay];
                 SETTLINGTIME = [SETTLINGTIME; settlingTime+startingTime]; % if sys cannot go settling, it will be shown as blank
             end
         end

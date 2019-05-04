@@ -44,7 +44,7 @@ for delay = 0.01:0.01:0.21
     DELAY = [];
     SETTLINGTIME = [];
     for kp = 0.1:10.0:140.1
-        for ki = 0.1:0.5:10.1
+        for ki = 0.1:1:10.1
             s = [curFolder, ...
                 'temp_display_', breaker, '_', num2str(kp,'%.2f'), '-', num2str(ki,'%.2f'), '-', num2str(delay,'%.2f'), 's', '.cur'];
             s
@@ -65,12 +65,13 @@ for delay = 0.01:0.01:0.21
             
             if info.Overshoot <= nordic_limit && settlingTime < required_settlingTime
                 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
-                    ', Delay = ', num2str(delay+startingTime,'%.2f'), ' sec, Settling Time = ', num2str(settlingTime+startingTime,'%.4f'), ' sec'];
+                    ', Delay = ', num2str(delay,'%.2f'), ...
+                    ' sec, Settling Time = ', num2str(settlingTime+startingTime,'%.4f'), ' sec'];
                 plot(t, f, 'DisplayName',txt)
                 
                 KP = [KP; kp];
                 KI = [KI; ki];
-                DELAY = [DELAY; delay+startingTime];
+                DELAY = [DELAY; delay];
                 SETTLINGTIME = [SETTLINGTIME; settlingTime+startingTime]; % if sys cannot go settling, it will be shown as blank
             end
         end
@@ -90,6 +91,6 @@ theTitle = ['5.3: Machine g2 (Nordic: 0.998 ~ 1.002): AGC starts from ', num2str
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 639]);
-ylim([0.989 1.002]);
+xlim([0 699]);
+ylim([0.989 1.0025]);
 grid on

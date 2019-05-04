@@ -19,14 +19,14 @@
 % start : step point : end
 
 startingTime = 150;
-endingTime = 240;
-required_settlingTime = 200;
+endingTime = 390;
+required_settlingTime = 330;
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
 % input folder (store cur files)
-curFolder1 = '/Users/realgjl/OneDrive - University of Leeds/Nordic/5.3/';
-curFolder2 = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.1/'
+curFolder1 = '/Users/realgjl/OneDrive - University of Leeds/Nordic/5.1/';
+curFolder2 = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.1.1/';
 figure();
 
 hold on
@@ -40,9 +40,20 @@ for delay = 0.01:0.01:0.21
     a = importdata(s);
     t = a(:,1);
     f = a(:,4);
-    % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 0.02% (0.9998~1.0002):
-    info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
+    % shift time-axis
+    for index = 1:length(t)
+        if t(index)>=150.0
+            break
+        end
+    end
+    tchopped = t(index:end,1) - 150;
+    fchopped = f(index:end,1);
+    % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
+    info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
     settlingTime = info.SettlingTime;
+    txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
+            ', Delay = ', num2str(delay,'%.2f'), ...
+            ' sec, Settling Time = ', num2str(settlingTime+startingTime,'%.4f'), ' sec'];
     plot(t, f, 'DisplayName',txt)
 end
 
@@ -57,9 +68,20 @@ s
 a = importdata(s);
 t = a(:,1);
 f = a(:,4);
-% set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 0.02% (0.9998~1.0002):
-info = stepinfo(f,t,1.0,'SettlingTimeThreshold',0.02);
+% shift time-axis
+for index = 1:length(t)
+    if t(index)>=150.0
+        break
+    end
+end
+tchopped = t(index:end,1) - 150;
+fchopped = f(index:end,1);
+% set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
+info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
 settlingTime = info.SettlingTime;
+txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
+        ', Delay = ', num2str(delay,'%.2f'), ...
+        ' sec, Settling Time = ', num2str(settlingTime+startingTime,'%.4f'), ' sec'];
 plot(t, f, 'DisplayName',txt)
 
 hold off

@@ -3,7 +3,7 @@
 %                          & best point in average
 
 % 3D Tri-Surface Plot
-num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/5.3/ori.xlsx', 'A2:C1970');
+num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/5.1/orih.xlsx', 'A2:C1052');
 x = num(:,1);
 y = num(:,2);
 z = num(:,3);
@@ -42,7 +42,7 @@ end
 
 % Marker: best point in average
 hold on
-digit = xlsread('settlingTime_80.1_0.1.xlsx', 'B2:E22');
+digit = xlsread('settlingTime_100.1_0.1.xlsx', 'B2:E22');
 b_kp = digit(:,1);
 b_ki = digit(:,2);
 b_delay = digit(:,3);
@@ -56,10 +56,10 @@ for j = 1:length(b_kp)
         ', Delay = ', num2str(bd,'%.2f'), ' sec, Settling Time = ', num2str(bt,'%.4f'), ' sec'];
     plot3(bp, bi, bd, 'color', 'r', 'marker', '.', 'markersize', 27, 'DisplayName', text);
 end
-
 hold off
+
 legend show
-title('Machine g2: 3D TriSurface Plot (stable cases) & Best in a single delay & Best in all delays')
+title('Machine g9: 3D TriSurface Plot (stable cases) & Best in a single delay & Best in all delays')
 
 
 
