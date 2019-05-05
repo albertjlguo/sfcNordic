@@ -7,9 +7,9 @@
 6. temp_display.plt
 7. volt\_rat_A.dat
 
-### Algorithms & Testing files (ipynb)
-1. example_models
-2. example_testing
+### Algorithms & Testing files
+1. example_models.py
+2. example_testing.ipynb
 
 ### Document
 1. dyn_A.dat: record parameters of operating points (BUS g1~g20, BUS 1011/1012/1013/1014, BUS 1021/1022, .....);
