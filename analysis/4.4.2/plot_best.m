@@ -19,8 +19,8 @@
 % start : step point : end
 
 startingTime = 150;
-endingTime = 390;
-required_settlingTime = 330;
+endingTime = 1000;
+required_settlingTime = 900-startingTime;  % after the control
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
@@ -42,14 +42,14 @@ t = a(:,1);
 f = a(:,4);
 % shift time-axis
 for index = 1:length(t)
-    if t(index)>=150.0
+    if t(index)>=startingTime
         break
     end
 end
-tchopped = t(index:end,1) - 150;
+tchopped = t(index:end,1) - startingTime;
 fchopped = f(index:end,1);
 % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
-info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.03);
+info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
 settlingTime = info.SettlingTime;
 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
        ', Delay = ', num2str(delay,'%.2f'), ...
@@ -70,14 +70,14 @@ f = a(:,4);
 f = a(:,4);
 % shift time-axis
 for index = 1:length(t)
-    if t(index)>=150.0
+    if t(index)>=startingTime
         break
     end
 end
-tchopped = t(index:end,1) - 150;
+tchopped = t(index:end,1) - startingTime;
 fchopped = f(index:end,1);
 % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
-info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.03);
+info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
 settlingTime = info.SettlingTime;
 txt = ['kp = ', num2str(kp,'%.2f'), ', ki = ', num2str(ki,'%.2f'), ...
        ', Delay = ', num2str(delay,'%.2f'), ...
@@ -90,7 +90,6 @@ theTitle = ['#4. Low Time Delay: The Best SFC vs Without Control']
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 240]);
+xlim([0 1350]);
 ylim([0.989 1.0025]);
-set(gca,'XTick',[0:10:240])
 grid on

@@ -19,8 +19,8 @@
 % start : step point : end
 
 startingTime = 150;
-endingTime = 390;
-required_settlingTime = 330-startingTime;
+endingTime = 1000;
+required_settlingTime = 900-startingTime;  % after the control
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
@@ -52,11 +52,11 @@ for delay = 0.01
             f = a(:,4);
             % shift time-axis
             for index = 1:length(t)
-                if t(index)>=150.0
+                if t(index)>=startingTime
                     break
                 end
             end
-            tchopped = t(index:end,1) - 150;
+            tchopped = t(index:end,1) - startingTime;
             fchopped = f(index:end,1);
             % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
             info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
@@ -84,11 +84,11 @@ xlsx_address = [xlsxFolder,...
 writetable(T,xlsx_address)
 
 legend show
-theTitle = '#4. Low Time Delay';
-%theTitle = ['#4. Low Time Delay (Delay = 0.01s, kp = 0.1~140.1, ki = 0.1~10.1, Start time: 150s, End Time: 240s, Settling Time: 200s)'];
+%theTitle = '#4. Low Time Delay';
+theTitle = ['#4. Low Time Delay (Delay = 0.01s, kp = 0.1~140.1, ki = 0.1~10.1, Start time: 150s, End Time: 1000s, Settling Time: 900s)'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 639]);
-ylim([0.989 1.002]);
+xlim([0 1350]);
+ylim([0.989 1.0025]);
 grid on
