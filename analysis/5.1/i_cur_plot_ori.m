@@ -19,8 +19,8 @@
 % start : step point : end
 
 startingTime = 150;
-endingTime = 390;
-required_settlingTime = 330-startingTime;
+endingTime = 1000;
+required_settlingTime = 900-startingTime;  % after the control
 nordic_limit = 0.2;  % Nordic: 1±0.2%
 gb_limit = 0.4;  % GB: 1±0.4%
 
@@ -52,11 +52,11 @@ for delay = 0.01:0.01:0.21
             f = a(:,4);
             % shift time-axis
             for index = 1:length(t)
-                if t(index)>=150.0
+                if t(index)>=startingTime
                     break
                 end
             end
-            tchopped = t(index:end,1) - 150;
+            tchopped = t(index:end,1) - startingTime;
             fchopped = f(index:end,1);
             % set steady-state value (y_final) to nominal value & SettlingTimeThreshold to 2%:
             info = stepinfo(fchopped,tchopped,1.0,'SettlingTimeThreshold',0.02);
@@ -85,10 +85,10 @@ writetable(T,xlsx_address)
 legend show
 theTitle = ['5.3: Machine g2 (Nordic: 0.998 ~ 1.002): SFC starts from ', num2str(startingTime), ' sec, '...
             'system ends at ', num2str(endingTime), ' sec, ', ...
-            'system need to settle before ', num2str(required_settlingTime), ' sec.'];
+            'system need to settle before ', num2str(required_settlingTime+startingTime), ' sec.'];
 title(theTitle)
 xlabel('t(s)')
 ylabel('Omega(pµ)')
-xlim([0 699]);
+xlim([0 1350]);
 ylim([0.989 1.0025]);
 grid on

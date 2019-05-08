@@ -1,4 +1,4 @@
-s = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.3/temp_display_g9_0.10-0.10-0.01s.cur';
+s = '/Users/realgjl/OneDrive - University of Leeds/Nordic/4.3/temp_display_g9_0.10-3.10-0.01s.cur';
 a = importdata(s);
 t = a(:,1);
 f = a(:,4);
@@ -24,20 +24,27 @@ g15chopped = g15(index:end,1);
 g16chopped = g16(index:end,1);
 
 %step info of P6-t
-info6 = stepinfo(g6chopped,tchopped)
-peakTime6 = info6.PeakTime;
-peak6 = info6.Peak;
-
-delta = g6chopped(end) - g6chopped(1)
+info6 = stepinfo(g6chopped,tchopped,360,'RiseTimeLimits',[0.4 0.6])
+settlingTime6 = info6.SettlingTime;
+peak = info6.Peak
+peakTimr = info6.PeakTime
+for index6 = 1:length(t)
+    if t(index6)>= settlingTime
+        break
+    end
+end
+settlingValue6 = g6chopped(index6)
+deltaP6 = settlingValue6 - g6chopped(1);
+mwpmin6 = deltaP6/settlingTime6
 
 
 %hold on
 %plot(t,f,'DisplayName','f-t')
 %hold on
-plot(t,g6,'DisplayName','P6-t')
+plot(t,g6,'DisplayName','P6-t: 0.10-3.10-0.01s')
 
 %hold off
+xlabel('t(s)')
+ylabel('P(MW)')
 legend show
-theTitle = ['kp=0.1, ki=0.1, td=0.1sec'];
-title(theTitle)
 grid on

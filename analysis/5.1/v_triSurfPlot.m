@@ -3,7 +3,7 @@
 %                          & best point in average
 
 % 3D Tri-Surface Plot
-num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/5.1/orih.xlsx', 'A2:C1052');
+num = xlsread('/Users/realgjl/Desktop/GitHub/sfcNordic/analysis/5.1/ori.xlsx', 'A2:C1087');
 x = num(:,1);
 y = num(:,2);
 z = num(:,3);
@@ -12,7 +12,7 @@ trisurf(K, x, y, z, 'FaceAlpha', 0.1, 'DisplayName', 'Machine g2: 3D TriSurface 
 colorbar
 xlabel('kp')
 ylabel('ki')
-zlabel('delay (sec)')
+zlabel('delay (sec)')   
 xlim([0.1 140.1]);
 ylim([0.1 10.1]);
 zlim([0.01 0.21]);
