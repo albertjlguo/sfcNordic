@@ -37,7 +37,7 @@ if __name__ == '__main__':
 	monitor = ['g2']
 	breaker = 'g9'  # (dst file)
 	list_of_gens = ['g6', 'g7', 'g14', 'g15', 'g16']
-	weight_of_gens = [8,16,32/7,8/3,32/7]
+	weight_of_gens = [1/8,1/16,7/32,3/8,7/32]  # (dny_A.dat)
 	prepared_folder_address = 'D:/OneDrive - University of Leeds/Nordic/6.3'
 
 	#### tuning delay & kp & ki: ####

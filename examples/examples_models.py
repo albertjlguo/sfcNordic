@@ -73,7 +73,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 			gens = zip(list_of_gens, weight_of_gens, list_of_td)
 			for gen in gens:
 				gensName, gensWeight, gensTd = gen
-				command = 'CHGPRM TOR ' + gensName + ' Tm0 ' + str(output/gensWeight) + ' 0'
+				command = 'CHGPRM TOR ' + gensName + ' Tm0 ' + str(output*gensWeight) + ' 0'
 				#print(str(ram.getSimTime()+0.01)+' '+command)
 				gensTd = "{0:.2f}".format(gensTd,2)
 				gensTd = float(gensTd)
