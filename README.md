@@ -9,7 +9,7 @@
 conda update --all
 ```
 5. Download [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/)
-or via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0) (Add the directory of gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties);
+or via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0) (Add the directory of gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties));
 6. Clone this respository;
 7. Move to [/examples](https://github.com/realgjl/sfcNordic/tree/master/examples) folder, check its document.
 
