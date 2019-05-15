@@ -1,7 +1,6 @@
 # Update Coming Soon
 
-### Post (pdf: https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/post.pdf)
-![](https://i.loli.net/2019/05/16/5cdc6aa5f2c6782118.png)
+### ![Post](https://i.loli.net/2019/05/16/5cdc6aa5f2c6782118.png):
 
 ### Start
 Open JupyterLab via Anaconda, move to "examples" folder and find [**Nordic_example_testing1.ipynb**](https://github.com/realgjl/sfcNordic/blob/master/examples/Nordic_example_testing1.ipynb)
