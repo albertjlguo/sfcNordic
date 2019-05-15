@@ -2,15 +2,15 @@
 
 ### Start
 1. Download/clone this repository;
-2. Download [Anaconda](https://www.anaconda.com/distribution/) (Choose Python 3.0+ version)
-3. Update/Download [numpy](http://www.numpy.org/), [pandas](https://pandas.pydata.org), [PyRAMSES](https://ramses.paristidou.info) via Anaconda Terminal (Google: anaconda + *the package you want to download* and find the related command line.)
-4. After donwloading, type the following command line to ensure the packages are latest.
+2. Download [Anaconda](https://www.anaconda.com/distribution/) (Choose Python 3.0+ version);
+3. Update/Download [numpy](http://www.numpy.org/), [pandas](https://pandas.pydata.org), [PyRAMSES](https://ramses.paristidou.info) via Anaconda Terminal (Google: anaconda + *the package you want to download* and find the related command line.);
+4. After donwloading, type the following command line to ensure the packages are latest;
 ```python
 conda update --all
 ```
 5. Download [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/)
-or download gnuplot via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0)) (Add the directory of gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties)
-6. Clone this respository
+or download gnuplot via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0)) (Add the directory of gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties);
+6. Clone this respository;
 7. Move to [/examples](https://github.com/realgjl/sfcNordic/tree/master/examples) folder, check its document.
 
 ### Some Reference
