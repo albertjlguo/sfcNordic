@@ -1,49 +1,19 @@
-# Update Coming Soon
-
-### ![Post](https://i.loli.net/2019/05/16/5cdc6aa5f2c6782118.png):
+### [Post](https://i.loli.net/2019/05/16/5cdc6aa5f2c6782118.png):
 
 ### Start
-Open JupyterLab via Anaconda, move to "examples" folder and find [**Nordic_example_testing1.ipynb**](https://github.com/realgjl/sfcNordic/blob/master/examples/Nordic_example_testing1.ipynb)
+1. Download/clone this repository;
+2. Download [Anaconda](https://www.anaconda.com/distribution/) (Choose Python 3.0+ version)
+3. Update/Download [numpy](http://www.numpy.org/), [pandas](https://pandas.pydata.org), [PyRAMSES](https://ramses.paristidou.info) via Anaconda Terminal (Google: anaconda + *the package you want to download* and find the related command line.)
+4. After donwloading, type the following command line to ensure the packages are latest.
+```python
+conda update --all
+```
+5. Download [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/)
+or download gnuplot via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0)) (Add the directory of gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties)
+6. Clone this respository
+7. Move to [/examples](https://github.com/realgjl/sfcNordic/tree/master/examples) folder, check its document.
 
-
-### Environment
-1. Windows / Linux;
-2. Download the latest version from the [GitHub repository](https://github.com/realgjl/Nordic-Test-System);
-3. Packages or Libraries:
-	- [numpy](http://www.numpy.org/)
-	- [pandas](https://pandas.pydata.org)
-	- [PyRAMSES](https://ramses.paristidou.info)
-
-4. For the libraries above, they should be downloaded automatically via conda through 'environment.yml' excluding for gnuplot:
-	1. Download the GZ file and unzip somewhere on your drive (for instance on the Desktop) from [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/) or [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0); 
-	2. Add the directory of gnuplot/bin in your [user path](https://support.microsoft.com/en-gb/help/931715/you-cannot-modify-user-environment-variables-in-the-system-properties).
-
-### Data: Nominal Power from [dyn_A.dat](https://github.com/realgjl/sfcNordic/blob/master/examples/dyn_A.dat) (SYNC_MACH)
-| Generator | Nominal Power (MW)|
-|-----------|-------------------|
-| g1        | 760.0             |
-| g2        | 570.0             |
-| g3        | 665.0             |
-| g4        | 570.0             |
-| g5        | 237.5             |
-| **g6**    | **360.0** (1/8)   |
-| **g7**    | **180.0** (1/16)  |
-| g8        | 807.5             |
-| g9        | 950.0             |
-| g10       | 760.0             |
-| g11       | 285.0             |
-| g12       | 332.5             |
-| g13       | 0.0               |
-| **g14**   | **630.0** (7/32)  |
-| **g15**   | **1080.0** (3/8)  |
-| **g16**   | **630.0** (7/32)  |
-| g17       | 540.0             |
-| g18       | 1080.0            |
-| g19       | 475.0             |
-| g20       | 4275.0            |
-
-
-### Reference
+### Some Reference
 1. [PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf) (Page 12: Nordic Grid map);
 
 2. [PID control from Caltech](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/Caltech%20PID%20Control.pdf);
