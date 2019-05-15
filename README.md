@@ -1,5 +1,3 @@
-### [Post](https://i.loli.net/2019/05/16/5cdc6aa5f2c6782118.png):
-
 ### Start
 1. Download/clone this repository;
 2. Download [Anaconda](https://www.anaconda.com/distribution/) (Choose Python 3.0+ version);
