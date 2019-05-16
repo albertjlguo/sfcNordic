@@ -1,3 +1,7 @@
+### Suggestions:
+Reference my [report](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/guo2019centralised.pdf) on this project.
+
+
 ### Data: Nominal Power from [dyn_A.dat](https://github.com/realgjl/sfcNordic/blob/master/examples/dyn_A.dat) (SYNC_MACH)
 | Generator | Nominal Power (MW)|
 |-----------|-------------------|
