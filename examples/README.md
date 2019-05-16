@@ -34,19 +34,8 @@ means you can tune time delay to 0.01, 0.02, and 0.03, tune kp from 0.1 to 30.1 
 You can change the **specific generator(s)** via `list_of_gens`, change the **weight** ($\alpha_n$ in my [post](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/post.pdf)) via `weight_of_gens`, change the **time delay** (communication delay from this generator to the communication center) via `list_of_td` in the python/Notebook files whhich contains "\_communicationLink"
 
 
-
-
-3. Start from [Nordic_example_testing1.ipynb](https://github.com/realgjl/sfcNordic/blob/master/examples/Nordic_example_testing1.ipynb), change the parameters of the file (kp, ki, td) and find what will happen in gnuplot diagram. (You can uncomment (delete `#`) `$CALL_GP F;` and use MATLAB or Python Matplotlib to draw the the related diagram.)
+3. **Start from** [Nordic_example_testing1.ipynb](https://github.com/realgjl/sfcNordic/blob/master/examples/Nordic_example_testing1.ipynb), change the parameters of the file (kp, ki, td) and find what will happen in gnuplot diagram. (You can uncomment (delete `#`) `$CALL_GP F;` and use MATLAB or Python Matplotlib to draw the the related diagram.)
 I have designed many MATLAB programs that contain the content above, for instance, [i_cur_plot.m](https://github.com/realgjl/sfcNordic/blob/master/analysis/5.1/i_cur_plot.m) in "analysis" folder. You only need part of them.
-
-
-
-
-
-
-
-
-
 
 
 
