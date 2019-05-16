@@ -23,7 +23,7 @@ td = 0.01
 ```
 "\_tuning\_" means you can change kp, ki, td in a range, for example
 ```python
-for td in np.arange(0.01, 0.04, 0.01);
+for td in np.arange(0.01, 0.04, 0.01):
   for kp in np.arange(0.1, 30.2, 10.0):
     for ki in np.arange(0.1, 0.2, 0.5):
 ```
