@@ -1,8 +1,8 @@
 ### Start
-1. Download/clone this repository;
+1. Download/Clone this repository;
 2. Download [Anaconda](https://www.anaconda.com/distribution/) (Choose Python 3.0+ version);
 3. Update/Download [numpy](http://www.numpy.org/), [pandas](https://pandas.pydata.org), [PyRAMSES](https://ramses.paristidou.info) via Anaconda Terminal;
-4. After donwloading, type the following command line to ensure the packages are latest;
+4. After downloading, type the following command line to ensure the packages are latest;
 ```python
 conda update --all
 ```
