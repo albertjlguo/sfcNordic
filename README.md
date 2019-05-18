@@ -1,11 +1,19 @@
-# Dependencies ([environment.yml](https://github.com/realgjl/sfcNordic/blob/master/environment.yml))
+# Secondary Frequency Control
+## Frequency and Power
+![](https://i.loli.net/2019/05/19/5ce09912785a964695.jpg)
+
+## Secondary Frequency Control block diagram
+![](https://i.loli.net/2019/05/19/5ce09936d296f73901.png)
+
+
+## Dependencies ([environment.yml](https://github.com/realgjl/sfcNordic/blob/master/environment.yml))
 - Python 3.0+
 - Pandas
 - numpy
 - PyRAMSES
 
 
-# Start
+## Start
 1. Download/Clone this repository;
 2. Download [Anaconda](https://www.anaconda.com/distribution/) (Choose Python 3.0+ version);
 3. Update/Download [numpy](http://www.numpy.org/), [pandas](https://pandas.pydata.org), [PyRAMSES](https://ramses.paristidou.info) via Anaconda Terminal;
@@ -18,7 +26,7 @@ or via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0) (
 6. Clone this respository;
 7. Move to [/examples](https://github.com/realgjl/sfcNordic/tree/master/examples) folder, check its document.
 
-# Some Reference
+## Some Reference
 1. [PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf](https://github.com/realgjl/Nordic-Test-System/blob/master/reference%20(pdf)/PES_TR19_Test-Systems-for-Voltage-Stability-Analysis-and-Security-Assessment1.pdf) (Page 12: Nordic Grid map);
 
 2. [PID control from Caltech](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/Caltech%20PID%20Control.pdf);
