@@ -10,7 +10,7 @@
 - Python 3.0+
 - Pandas
 - numpy
-- PyRAMSES
+- pramses 0.0.12+
 
 
 ## Start
