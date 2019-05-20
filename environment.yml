@@ -10,5 +10,5 @@ dependencies:
   - pandas
   - mkl
   - mkl-rt
-  - PyRAMSES
+  - pyramses>=0.0.12
   - gnuplot 
