@@ -1,4 +1,6 @@
 # Secondary Frequency Control
+## My ![post](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/post.pdf) on this project
+
 ## Frequency and Power
 ![](https://i.loli.net/2019/05/19/5ce09912785a964695.jpg)
 
