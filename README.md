@@ -19,6 +19,13 @@ bash ~/conda_environment.sh
 ```
 The above will install anaconda packages via bash in the terminal.
 
+The bash file could be: (conda_environment.sh)
+```bash
+conda install -c anaconda python
+conda install -c anaconda pandas
+conda install -c anaconda numpy
+conda install -c apetros pyramses
+```
 
 ## Start
 1. Download/Clone this repository;
