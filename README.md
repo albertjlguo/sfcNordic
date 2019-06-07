@@ -12,7 +12,7 @@
 - Python 3.6+
 - Pandas
 - numpy
-- pramses 0.0.12+
+- pyramses 0.0.12+
 
 ```bash
 bash ~/conda_environment.sh
