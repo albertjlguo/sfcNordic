@@ -6,10 +6,10 @@
 - numpy
 - pyramses 0.0.12+
 
+Install anaconda packages via bash in the terminal:
 ```bash
 bash ~/conda_environment.sh
 ```
-The above will install anaconda packages via bash in the terminal.
 
 The bash file could be: (conda_environment.sh)
 ```bash
