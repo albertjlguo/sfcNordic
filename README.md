@@ -1,12 +1,4 @@
 # Secondary Frequency Control
-## My [post](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/post.pdf) on this project
-
-## Frequency and Power
-![](https://i.loli.net/2019/05/19/5ce09912785a964695.jpg)
-
-## Secondary Frequency Control block diagram
-![](https://i.loli.net/2019/05/19/5ce09936d296f73901.png)
-
 
 ## Dependencies ([environment.yml](https://github.com/realgjl/sfcNordic/blob/master/environment.yml))
 - Python 3.6+
@@ -54,3 +46,11 @@ or via [this link](https://www.dropbox.com/s/qqr0yarrag3e9ia/gnuplot.zip?dl=0) (
 # License
 
 Nordic-Test-System is licensed under GPLv3. See [LICENSE.txt](https://github.com/realgjl/Nordic-Test-System/blob/master/LICENSE.txt) for more details.
+
+## Frequency and Power
+![](https://i.loli.net/2019/05/19/5ce09912785a964695.jpg)
+
+## Secondary Frequency Control block diagram
+![](https://i.loli.net/2019/05/19/5ce09936d296f73901.png)
+
+## My [post](https://github.com/realgjl/sfcNordic/blob/master/reference%20(pdf)/post.pdf) on this project
