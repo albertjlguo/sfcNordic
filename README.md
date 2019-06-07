@@ -9,10 +9,15 @@
 
 
 ## Dependencies ([environment.yml](https://github.com/realgjl/sfcNordic/blob/master/environment.yml))
-- Python 3.0+
+- Python 3.6+
 - Pandas
 - numpy
 - pramses 0.0.12+
+
+```bash
+bash ~/conda_environment.sh
+```
+The above will install anaconda packages via bash in the terminal.
 
 
 ## Start
