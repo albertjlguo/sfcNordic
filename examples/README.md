@@ -1,9 +1,9 @@
 ### Useful files/folders
-1. .../ipynb->py/
-2. Nordic_example_testing1.ipynb
-3. Nordic_example_testing2_communicationLink.ipynb
-4. Nordic_example_tuning1.ipynb
-5. Nordic_example_tuning2_communicationLink.ipynb
+1. .../ipynb\_to_py/
+2. Nordic\_example_testing1.ipynb
+3. Nordic\_example\_testing2_communicationLink.ipynb
+4. Nordic\_example\_tuning1.ipynb
+5. Nordic\_example\_tuning2_communicationLink.ipynb
 6. README.md
 7. cmd.txt
 8. dyn_A.dat
