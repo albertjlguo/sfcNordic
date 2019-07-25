@@ -17,6 +17,7 @@ conda install -c conda-forge python
 conda install -c conda-forge pandas 
 conda install -c conda-forge numpy
 pip install pyramses
+conda install -c conda-forge jupyterlab
 ```
 
 ## Start
