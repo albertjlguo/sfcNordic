@@ -4,15 +4,7 @@ settings1.dat
 
 init.trace
 short_trip_branch.dst
-
+obs.trj
+obs.dat
 cont.trace
 disc.trace
-BV 4044
-BV 1041
-
-
-
-
-
-
-

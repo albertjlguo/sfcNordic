@@ -4,7 +4,7 @@ import os
 import shutil
 
 
-def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_gens, weight_of_gens, list_of_td, prepared_folder_address, breaker, flagTd):
+def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_gens, weight_of_gens, list_of_td, prepared_folder_address, breaker):
 
 	'''The framework of Secondary Frequency Control
 	
@@ -96,7 +96,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 	
 	######### end simulation & move files: #########
 	end_simulation(ram, case, flag)
-	move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, list_of_td)
+	move_file(prepared_folder_address, breaker, kp, ki, list_of_gens, list_of_td)
 	
 
 
@@ -146,7 +146,7 @@ def end_simulation(ram, case, flag):
 
 
 
-def move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, list_of_td):
+def move_file(prepared_folder_address, breaker, kp, ki, list_of_gens, list_of_td):
 	''' move the cur file to a prepared folder & delete some cur and trace files
 
 	Args:
@@ -180,22 +180,14 @@ def move_file(prepared_folder_address, flagTd, breaker, kp, ki, list_of_gens, li
 
 
 	######### rename the file in new folder (cur) #########
-	if flagTd == "ones":
-		strTd = "{0:.2f}".format(list_of_td[0],2)
-		tdText = '-' + strTd + 's'
-		os.rename(prepared_folder_address + '/temp_display_.cur', 
-                  prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + tdText + '.cur')
-		print("rename cur successfully")
-    
-	if flagTd == "communicationLink":
-		tdText = ''
-		i = 0
-		while i < len(list_of_gens):
-			strTd = "{0:.2f}".format(list_of_td[i],2)
-			tdText += '_' + str(list_of_gens[i]) + '-' + strTd + 's'
-			i += 1
-		os.rename(prepared_folder_address + '/temp_display_.cur', 
-                    prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + tdText + '.cur')
+	tdText = ''
+	i = 0
+	while i < len(list_of_gens):
+		strTd = "{0:.2f}".format(list_of_td[i],2)
+		tdText += '_' + str(list_of_gens[i]) + '-' + strTd + 's'
+		i += 1
+	os.rename(prepared_folder_address + '/temp_display_.cur', 
+				prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + tdText + '.cur')
 
 
 	######### delete cur & trace files #########
