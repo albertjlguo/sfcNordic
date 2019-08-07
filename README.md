@@ -109,7 +109,7 @@ You may need to install [gnuplot](https://sourceforge.net/projects/gnuplot/files
 
 ## Start
 1. Clone this respository;
-2. Move to [examples](https://github.com/realgjl/sfcNordic/tree/master/examples) folder, check its document.
+2. Move to [examples](https://github.com/realgjl/sfcNordic/tree/master/examples) folder, start with nordic.ipynb
 
 ## Frequency and Power
 ![](https://i.loli.net/2019/05/19/5ce09912785a964695.jpg)
