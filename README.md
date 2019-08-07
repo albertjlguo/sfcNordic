@@ -91,19 +91,7 @@ Test if pyramses is in your path via ipython:
 import pyramses
 ram = pyramses.sim()
 ```
-If a "ModuleNotFoundError" occured, check out your python execution path via ipython:
-```python
-import sys
-sys.path
-```
-search "pyramses" in your Anaconda3/Miniconda3 folder, then add _PATH_ to your system path via ipython. In my case:
-```python
-import sys
-sys.path.append('/Users/realgjl/miniconda3/lib/site-packages')
-sys.path.append('/Users/realgjl/miniconda3/pkgs')
-sys.path.append('/Users/realgjl/miniconda3/conda-meta')
-```
-If it still cannot find the package pyramses, install pyramses via [pypi](https://pypi.org/project/pyramses/).
+Alternatively, you can install pyramses via [pypi](https://pypi.org/project/pyramses/).
 
 ### Other package(s) and application(s)
 #### intel
