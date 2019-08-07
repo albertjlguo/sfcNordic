@@ -1,2 +1,5 @@
 
 .DS_Store
+examples/obs.trj
+*.trj
+*.trj

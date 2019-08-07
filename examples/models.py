@@ -4,7 +4,7 @@ import os
 import shutil
 
 
-def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_gens, weight_of_gens, list_of_td, prepared_folder_address, breaker):
+def sfc(ram, case, monitor, list_of_gens, weight_of_gens, list_of_td, prepared_folder_address, start_time, end_time, agcTimeStep, breaker, kp, ki):
 
 	'''The framework of Secondary Frequency Control
 	
@@ -75,7 +75,7 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 				gensName, gensWeight, gensTd = gen
 				command = 'CHGPRM TOR ' + gensName + ' Tm0 ' + str(output*gensWeight) + ' 0'
 				#print(str(ram.getSimTime()+0.01)+' '+command)
-				gensTd = "{0:.2f}".format(gensTd,2)
+				gensTd = "{0:.4f}".format(gensTd,4)
 				gensTd = float(gensTd)
 				ram.addDisturb(ram.getSimTime() + gensTd, command)
 
@@ -92,7 +92,6 @@ def sfc(ram, case, start_time, end_time, agcTimeStep, monitor, kp, ki, list_of_g
 
 	kp = "{0:.2f}".format(round(float(kp),2))
 	ki = "{0:.2f}".format(round(float(ki),2))
-	# td = "{0:.2f}".format(round(float(td),2))
 	
 	######### end simulation & move files: #########
 	end_simulation(ram, case, flag)
@@ -183,24 +182,64 @@ def move_file(prepared_folder_address, breaker, kp, ki, list_of_gens, list_of_td
 	tdText = ''
 	i = 0
 	while i < len(list_of_gens):
-		strTd = "{0:.2f}".format(list_of_td[i],2)
+		strTd = "{0:.4f}".format(list_of_td[i],4)
 		tdText += '_' + str(list_of_gens[i]) + '-' + strTd + 's'
 		i += 1
 	os.rename(prepared_folder_address + '/temp_display_.cur', 
-				prepared_folder_address + '/temp_display_' + breaker + '_' + str(kp) + '-' + str(ki) + tdText + '.cur')
+				prepared_folder_address + '/temp_display_' + 
+				'breaker-' + breaker + tdText + '_' + str(kp) + '-' + str(ki) + '.cur')
 
 
-	######### delete cur & trace files #########
+	######### delete cur files #########
 	# Delete cur files in public folder
 	os.unlink("temp_display.cur")
 	os.unlink("temp_display_.cur")
 	print("delete temp_display(_).cur successfully")
 
 
-	######### delete trace: cont, disc, init, output #########
+	######### delete other files #########
 	os.unlink("cont.trace")
 	os.unlink("disc.trace")
 	os.unlink("init.trace")
 	# os.unlink("output.trace")
-	print("delete trace: cont, disc, init, output successfully\n")
+	print("delete some trace files successfully\n")
 
+
+
+## Introduce the generators for fixing disturbance
+class Gens:
+    name = ''
+    weight = 0
+    delay = 0.0
+
+    def __init__(self, n, w, td):
+        self.name = n
+        self.weight = w
+        self.delay = td
+    
+    def __cmp__(self, other):
+        return cmp(self.delay, other.delay)
+
+    def printGensInfo(self):
+        print("Generator %s: weight = %f, delay = %f sec" %(self.name, self.weight, self.delay))
+
+
+def sortGens(liST, list_of_gens, weight_of_gens, list_of_td):
+	'''Sort Generator's information according to the size of delay, and send them into a new list.
+		Args:
+			liST
+	Returns:
+			list_of_gens
+			weight_of_gens
+			list_of_td
+	'''
+
+	liST.sort(key=lambda x: x.delay)
+	for i in liST:
+		list_of_gens.append(i.name)
+		weight_of_gens.append(i.weight)
+		list_of_td.append(i.delay)
+
+	print(list_of_gens)
+	print(weight_of_gens)
+	print(list_of_td)
