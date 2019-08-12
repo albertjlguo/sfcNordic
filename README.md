@@ -1,4 +1,4 @@
-# Secondary Frequency Control / AGC in Nordic grid
+# Secondary Frequency Control (SFC)/ Automatic Generation Control (AGC) in Nordic grid
 
 ## Installing applications and libraries with Conda
 ### Download the [Miniconda installer](https://repo.continuum.io/miniconda/)
