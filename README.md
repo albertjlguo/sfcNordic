@@ -1,10 +1,10 @@
 # Secondary Frequency Control (SFC)/ Automatic Generation Control (AGC) in Nordic grid
 
-## Installing applications and libraries with Conda
+## Installing Python 3 applications and libraries with Conda
 ### Download the [Miniconda installer](https://repo.continuum.io/miniconda/)
 At a command prompt, enter (Mac):
 ```terminal
-curl -o ./Miniconda3-latest-MacOSX-x86_64.sh -k https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+curl -o ./Miniconda3-latest-MacOSX-x86_64.sh -k https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 ```
 In Linux (Ubuntu, CentOS, ...):
 ```terminal
@@ -16,6 +16,7 @@ Mac:
 ```terminal
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
+
 Linux:
 ```terminal
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -31,6 +32,34 @@ To make the changes take effect, close and then re-open your terminal window.
 To test your installation, in your terminal window or Anaconda Prompt, run the command ```conda list```.
 
 For a successful installation, a list of installed packages appears.
+
+#### To check if the Python has been installed successfully, in terminal:
+```terminal
+python -V
+```
+It's done if the python version is 3.x nor 2.x.
+
+### For Mac users (macOS 10.15 Catalina, macOS 11.0 Big Sur, and later)
+The default shell of terminal is now "zsh" instead of "bash". 
+
+According to the offcial doc from [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html) (search "zsh" in the webpage), we need to find the path/direction of miniconda3's folder, for instance, in my case:
+```terminal
+/Users/realgjl/miniconda3
+```
+Then in the Terminal.app:
+```terminal
+source /Users/realgjl/miniconda3/bin/activate
+```
+```terminal
+conda init zsh
+```
+Check the python version again and/or check if "conda" command works.
+
+#### Suggestions: add path to the system
+Go to the file "/etc/paths", add the path of python binary direction (like "/Users/realgjl/miniconda3/bin") in it.
+
+p.s., to show the hidden files in Mac, press: "command" + "shift" + ".".
+
 
 ### Configuring Conda
 Before first use, the conda package management system needs some initial configuration.
@@ -77,6 +106,11 @@ mkl_info:
     include_dirs = ['/home/home01/el17jg/miniconda3/include']
 ```
 
+#### [pandas](https://anaconda.org/conda-forge/pandas)
+```terminal
+conda install -c conda-forge pandas 
+```
+
 #### [matplotlib](https://anaconda.org/conda-forge/matplotlib)
 ```terminal
 conda install -c conda-forge matplotlib 
@@ -99,7 +133,7 @@ If the error "libifport.so.5: : cannot open shared object file" occurs, you may 
 You can review this [intel's forum](https://software.intel.com/comment/1942377) as a reference.
 
 #### gnuplot
-You may need to install [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/) although it is not necessary if you remote to a supercomputer.
+You _may need to install [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/) although it is not necessary if you remote to a supercomputer.
  You can choose to use gnuplot or not in `~/settings.dat`:
  ```dat
  $CALL_GP F;
