@@ -56,7 +56,7 @@ conda init zsh
 Check the python version again and/or check if "conda" command works.
 
 #### Suggestions: add path to the system
-Go to the file "/etc/paths", add the path of python binary direction (like "/Users/realgjl/miniconda3/bin") in it.
+Go to the file "/etc/paths", and add the path of python binary folder (like "/Users/realgjl/miniconda3/bin") to it.
 
 p.s., to show the hidden files in Mac, press: "command" + "shift" + ".".
 
