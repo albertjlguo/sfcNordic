@@ -57,6 +57,7 @@ Check the python version again and/or check if "conda" command works.
 
 #### Suggestions: add path to the system
 Go to the file "/etc/paths", and add the path of python binary folder (like "/Users/realgjl/miniconda3/bin") to it.
+**Make sure this new miniconda directory is the first one, meaning that it will have precedence.**
 
 p.s., to show the hidden files in Mac, press: "command" + "shift" + ".".
 
