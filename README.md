@@ -1,5 +1,7 @@
 # Secondary Frequency Control (SFC)/ Automatic Generation Control (AGC) in Nordic grid
 
+## Thesis in PDF: https://realgjl.com/thesis/BEng.pdf
+
 ## Installing Python 3 applications and libraries with Conda
 ### Download the [Miniconda installer](https://repo.continuum.io/miniconda/)
 At a command prompt, enter (Mac):
